@@ -6,6 +6,7 @@
 ![Pytest Engine](https://img.shields.io/badge/Engine-Pytest%20%7C%20Python-3776ab?style=for-the-badge&logo=python)
 ![GitHub Pages](https://img.shields.io/badge/Status-Online%20%26%20Live-16a34a?style=for-the-badge&logo=githubpages)
 ![Architecture](https://img.shields.io/badge/Architecture-3--Tier%20POM-8b5cf6?style=for-the-badge)
+![Auditing](https://img.shields.io/badge/Auditing-Immutable%20Permalinks-10b981?style=for-the-badge)
 
 <br>
 
@@ -19,16 +20,17 @@
 
 Este repositório atua como o **Portal Oficial de Apresentação e Hospedagem** do **Dashboard de Telemetria de Qualidade de Software** da plataforma **SGO**.
 
-Aqui são publicadas as métricas consolidadas, taxas de confiabilidade e histórico de execuções gerados pela suíte de testes automatizados End-to-End (E2E).
+Aqui são publicadas as métricas consolidadas, taxas de confiabilidade e o histórico de execuções gerados pela suíte de testes automatizados End-to-End (E2E).
 
 ---
 
 ## 🚀 Destaques da Engenharia de QA
 
-- ⚡ **Automação End-to-End (E2E) de Alta Fidelidade:** Validação contínua de fluxos complexos de interface gráfica desktop (Delphi) com conciliação transacional direta em banco de dados relacional.
+- ⚡ **Automação End-to-End (E2E) de Alta Fidelidade:** Validação contínua de fluxos complexos de interface gráfica desktop (Delphi) com conciliação transacional direta em banco de dados relacional (Firebird).
+- 🧊 **Auditoria Contínua com Permalinks Imutáveis:** Cada bateria de testes gera uma evidência independente e imutável (`/r/<run_id>/`), garantindo rastreabilidade histórica perpétua sem sobreposição de dados.
 - 📊 **Telemetria e Observabilidade em Tempo Real:** Painel executivo com visualização de KPIs de estabilidade, tempos de resposta de tela e histórico evolutivo de versões.
 - 🔍 **Triagem Inteligente de Causa-Raiz (*Triage Tags*):** Categorização automática de divergências de negócio, timeouts de interface, integridade de banco de dados e visão computacional.
-- 📱 **Mensageria Executiva Multi-Canal:** Disparo automatizado de sumários para a Diretoria e Gestão via WhatsApp e E-mail corporativo com links interativos.
+- 📱 **Mensageria Executiva Multi-Canal:** Disparo automatizado de sumários e links compactos para a Diretoria e Gestão via WhatsApp e E-mail corporativo.
 
 ---
 
