@@ -49,6 +49,7 @@
                     <h1 class="text-2xl font-extrabold text-slate-900 tracking-tight">SGO QA — Telemetria de Testes</h1>
                     <span class="px-2.5 py-0.5 text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-full">v2607.1.1000.20</span>
                     <span class="px-2.5 py-0.5 text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-200 rounded-full">LABSP QA TRUNK</span>
+                    
                 </div>
                 <p class="text-sm text-slate-500 mt-1">Dashboard Executivo de Qualidade Contínua e Rastreabilidade E2E</p>
             </div>
@@ -57,7 +58,7 @@
         <div class="flex flex-wrap items-center gap-3 no-print w-full md:w-auto justify-start md:justify-end">
             <div class="text-left md:text-right bg-slate-50 px-4 py-2 rounded-xl border border-slate-200/80">
                 <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Gerado em</p>
-                <p class="text-sm font-bold text-slate-700">03/09/2026 19:05:57</p>
+                <p class="text-sm font-bold text-slate-700">26/09/2026 15:14:37</p>
             </div>
             
             <button onclick="exportTableToCSV()" class="inline-flex items-center gap-2 px-4 py-2.5 bg-white hover:bg-slate-50 text-slate-700 font-semibold text-sm rounded-xl border border-slate-200 shadow-sm transition-all hover:shadow">
@@ -79,8 +80,8 @@
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow">
             <div>
                 <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Total de Testes</p>
-                <p class="text-3xl font-extrabold text-slate-900 mt-1">1</p>
-                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600">16.1s</span></p>
+                <p class="text-3xl font-extrabold text-slate-900 mt-1">0</p>
+                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600">0.0s</span></p>
             </div>
             <div class="p-3.5 rounded-xl bg-blue-50 text-blue-600 border border-blue-100">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
@@ -105,9 +106,9 @@
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow border-l-4 border-l-rose-500">
             <div>
                 <p class="text-xs font-semibold text-rose-700 uppercase tracking-wider">Falhas</p>
-                <p class="text-3xl font-extrabold text-rose-600 mt-1">1</p>
+                <p class="text-3xl font-extrabold text-rose-600 mt-1">0</p>
                 <p class="text-xs text-rose-600/80 mt-1 font-medium">
-                    100.0% do total
+                    0.0% do total
                 </p>
             </div>
             <div class="p-3.5 rounded-xl bg-rose-50 text-rose-600 border border-rose-100">
@@ -137,7 +138,7 @@
                     <span class="text-3xl font-extrabold text-rose-600">
                         0.0%
                     </span>
-                    <span class="text-xs text-slate-400 font-medium">Média: 16.05s</span>
+                    <span class="text-xs text-slate-400 font-medium">Média: 0.00s</span>
                 </div>
             </div>
             <!-- Mini Progress Bar -->
@@ -167,7 +168,7 @@
                 </div>
                 <div class="p-2 rounded-lg bg-rose-50">
                     <p class="text-[11px] font-semibold text-rose-800">Falhou</p>
-                    <p class="text-base font-bold text-rose-600">1</p>
+                    <p class="text-base font-bold text-rose-600">0</p>
                 </div>
                 <div class="p-2 rounded-lg bg-amber-50">
                     <p class="text-[11px] font-semibold text-amber-800">Pulado</p>
@@ -208,7 +209,7 @@
                 <div>
                     <h2 class="text-lg font-bold text-slate-900">Detalhamento dos Cenários de Teste</h2>
                     <p class="text-sm text-slate-500 mt-0.5" id="records-counter">
-                        Exibindo todos os <span class="font-bold text-slate-700">1</span> testes executados.
+                        Exibindo todos os <span class="font-bold text-slate-700">0</span> testes executados.
                     </p>
                 </div>
 
@@ -226,7 +227,7 @@
                     <div class="inline-flex rounded-xl p-1 bg-slate-100 border border-slate-200 text-xs font-semibold">
                         <button onclick="filterStatus('ALL')" id="btn-filter-ALL" 
                             class="filter-btn active px-3 py-1.5 rounded-lg transition-all bg-white text-slate-900 shadow-sm">
-                            Todos (1)
+                            Todos (0)
                         </button>
                         <button onclick="filterStatus('PASSED')" id="btn-filter-PASSED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-emerald-700 transition-all">
@@ -234,7 +235,7 @@
                         </button>
                         <button onclick="filterStatus('FAILED')" id="btn-filter-FAILED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-rose-700 transition-all">
-                            ❌ Falhou (1)
+                            ❌ Falhou (0)
                         </button>
                         <button onclick="filterStatus('SKIPPED')" id="btn-filter-SKIPPED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-amber-700 transition-all">
@@ -261,102 +262,6 @@
                     </tr>
                 </thead>
                 <tbody class="bg-white divide-y divide-slate-100 font-normal text-sm" id="test-tbody">
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="FAILED" 
-                        data-name="valida a inclusão completa de um pedido de atacado até a persistência no banco."
-                        data-triage="unknown"
-                        data-id="499">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #499
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Valida a inclusão completa de um pedido de atacado até a persistência no banco.
-                                </span>
-                                
-                                <span class="text-xs text-rose-600 line-clamp-1 mt-0.5 font-mono">
-                                    venv\Lib\site-packages\pywinauto\mouse.py:59: in _set_cursor_pos
-                                </span>
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span>
-                                Falhou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="px-2.5 py-0.5 text-xs font-semibold rounded-md bg-slate-100 text-slate-600">
-                                Unknown
-                            </span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            16.05s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            03/09/2026 19:05:56
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <button onclick="toggleDetails(499)" class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 px-3 py-1 rounded-lg transition-colors">
-                                Ver Erro
-                            </button>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Errors -->
-                    
-                    <tr id="details-499" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800">
-                        <td colspan="7" class="p-6">
-                            <div class="flex items-center justify-between mb-3">
-                                <div class="flex items-center gap-2">
-                                    <span class="px-2.5 py-0.5 text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 rounded-md">
-                                        Falha Detectada (#499)
-                                    </span>
-                                    <span class="text-xs text-slate-400 font-medium">Valida a inclusão completa de um pedido de atacado até a persistência no banco.</span>
-                                </div>
-                                <button onclick="copyErrorText('error-content-499')" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-lg border border-slate-700 transition-colors flex items-center gap-1.5">
-                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                                    Copiar Stacktrace
-                                </button>
-                            </div>
-                            <pre id="error-content-499" class="text-xs bg-slate-950 p-4 rounded-xl overflow-x-auto text-rose-300 leading-relaxed border border-slate-800/80">venv\Lib\site-packages\pywinauto\mouse.py:59: in _set_cursor_pos
-    win32api.SetCursorPos(coords)
-E   pywintypes.error: (0, 'SetCursorPos', 'No error message is available')
-
-During handling of the above exception, another exception occurred:
-tests\conftest.py:194: in sgo_app
-    app = login_page.login()
-          ^^^^^^^^^^^^^^^^^^
-src\pages\login_page.py:87: in login
-    janela_login.set_focus()
-venv\Lib\site-packages\pywinauto\controls\hwndwrapper.py:1309: in set_focus
-    mouse.move(coords=(-10000, 500))  # move the mouse out of screen to the left
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-venv\Lib\site-packages\pywinauto\mouse.py:244: in move
-    _perform_click_input(button='move',coords=coords,button_down=False,button_up=False)
-venv\Lib\site-packages\pywinauto\mouse.py:137: in _perform_click_input
-    _set_cursor_pos((coords[0], coords[1]))
-venv\Lib\site-packages\pywinauto\mouse.py:62: in _set_cursor_pos
-    raise RuntimeError("There is no active desktop required for moving mouse curso</pre>
-                        </td>
-                    </tr>
-                    
                     
 
                     <!-- Empty State -->
@@ -388,7 +293,7 @@ venv\Lib\site-packages\pywinauto\mouse.py:62: in _set_cursor_pos
     Chart.defaults.color = '#64748b';
 
     const passedCount = 0;
-    const failedCount = 1;
+    const failedCount = 0;
     const skippedCount = 0;
 
     // 1. Donut Results Chart
@@ -428,10 +333,10 @@ venv\Lib\site-packages\pywinauto\mouse.py:62: in _set_cursor_pos
     });
 
     // 2. Trend History Chart (from SQLite)
-    const trendLabels = ["17/08 15:24", "18/08 13:41", "20/08 18:51", "20/08 19:44", "20/08 20:01", "03/09 19:05"];
-    const trendPassed = [0, 3, 0, 0, 0, 0];
-    const trendFailed = [0, 0, 0, 0, 0, 1];
-    const trendSkipped = [0, 0, 0, 0, 0, 0];
+    const trendLabels = ["24/09 18:05", "24/09 18:24", "25/09 08:28", "25/09 15:30", "25/09 16:12", "25/09 17:33", "25/09 18:03", "25/09 18:12", "25/09 22:10", "26/09 15:14"];
+    const trendPassed = [0, 1, 1, 22, 1, 21, 0, 2, 2, 0];
+    const trendFailed = [1, 0, 0, 1, 0, 2, 0, 0, 0, 0];
+    const trendSkipped = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
     const ctxTrend = document.getElementById('trendChart').getContext('2d');
     new Chart(ctxTrend, {
@@ -532,7 +437,7 @@ venv\Lib\site-packages\pywinauto\mouse.py:62: in _set_cursor_pos
         });
 
         // Update Counter
-        const total = 1;
+        const total = 0;
         const counterElem = document.getElementById('records-counter');
         if (counterElem) {
             if (visibleCount === total) {
