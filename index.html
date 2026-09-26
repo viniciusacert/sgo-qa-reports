@@ -58,7 +58,7 @@
         <div class="flex flex-wrap items-center gap-3 no-print w-full md:w-auto justify-start md:justify-end">
             <div class="text-left md:text-right bg-slate-50 px-4 py-2 rounded-xl border border-slate-200/80">
                 <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Gerado em</p>
-                <p class="text-sm font-bold text-slate-700">26/09/2026 15:41:53</p>
+                <p class="text-sm font-bold text-slate-700">26/09/2026 19:06:08</p>
             </div>
             
             <button onclick="exportTableToCSV()" class="inline-flex items-center gap-2 px-4 py-2.5 bg-white hover:bg-slate-50 text-slate-700 font-semibold text-sm rounded-xl border border-slate-200 shadow-sm transition-all hover:shadow">
@@ -80,8 +80,8 @@
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow">
             <div>
                 <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Total de Testes</p>
-                <p class="text-3xl font-extrabold text-slate-900 mt-1">23</p>
-                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600">802.3s</span></p>
+                <p class="text-3xl font-extrabold text-slate-900 mt-1">1</p>
+                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600">15.5s</span></p>
             </div>
             <div class="p-3.5 rounded-xl bg-blue-50 text-blue-600 border border-blue-100">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
@@ -92,9 +92,9 @@
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow border-l-4 border-l-emerald-500">
             <div>
                 <p class="text-xs font-semibold text-emerald-700 uppercase tracking-wider">Aprovados</p>
-                <p class="text-3xl font-extrabold text-emerald-600 mt-1">23</p>
+                <p class="text-3xl font-extrabold text-emerald-600 mt-1">0</p>
                 <p class="text-xs text-emerald-600/80 mt-1 font-medium">
-                    100.0% do total
+                    0.0% do total
                 </p>
             </div>
             <div class="p-3.5 rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-100">
@@ -106,9 +106,9 @@
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow border-l-4 border-l-rose-500">
             <div>
                 <p class="text-xs font-semibold text-rose-700 uppercase tracking-wider">Falhas</p>
-                <p class="text-3xl font-extrabold text-rose-600 mt-1">0</p>
+                <p class="text-3xl font-extrabold text-rose-600 mt-1">1</p>
                 <p class="text-xs text-rose-600/80 mt-1 font-medium">
-                    0.0% do total
+                    100.0% do total
                 </p>
             </div>
             <div class="p-3.5 rounded-xl bg-rose-50 text-rose-600 border border-rose-100">
@@ -135,15 +135,15 @@
             <div>
                 <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Taxa de Sucesso</p>
                 <div class="flex items-baseline gap-2 mt-1">
-                    <span class="text-3xl font-extrabold text-emerald-600">
-                        100.0%
+                    <span class="text-3xl font-extrabold text-rose-600">
+                        0.0%
                     </span>
-                    <span class="text-xs text-slate-400 font-medium">Média: 34.88s</span>
+                    <span class="text-xs text-slate-400 font-medium">Média: 15.49s</span>
                 </div>
             </div>
             <!-- Mini Progress Bar -->
             <div class="w-full bg-slate-100 rounded-full h-2 mt-3 overflow-hidden">
-                <div class="bg-emerald-500 h-2 rounded-full transition-all duration-500" style="width: 100.0%"></div>
+                <div class="bg-rose-500 h-2 rounded-full transition-all duration-500" style="width: 0.0%"></div>
             </div>
         </div>
 
@@ -164,11 +164,11 @@
             <div class="grid grid-cols-3 gap-2 mt-4 pt-4 border-t border-slate-100 text-center">
                 <div class="p-2 rounded-lg bg-emerald-50">
                     <p class="text-[11px] font-semibold text-emerald-800">Passou</p>
-                    <p class="text-base font-bold text-emerald-600">23</p>
+                    <p class="text-base font-bold text-emerald-600">0</p>
                 </div>
                 <div class="p-2 rounded-lg bg-rose-50">
                     <p class="text-[11px] font-semibold text-rose-800">Falhou</p>
-                    <p class="text-base font-bold text-rose-600">0</p>
+                    <p class="text-base font-bold text-rose-600">1</p>
                 </div>
                 <div class="p-2 rounded-lg bg-amber-50">
                     <p class="text-[11px] font-semibold text-amber-800">Pulado</p>
@@ -209,7 +209,7 @@
                 <div>
                     <h2 class="text-lg font-bold text-slate-900">Detalhamento dos Cenários de Teste</h2>
                     <p class="text-sm text-slate-500 mt-0.5" id="records-counter">
-                        Exibindo todos os <span class="font-bold text-slate-700">23</span> testes executados.
+                        Exibindo todos os <span class="font-bold text-slate-700">1</span> testes executados.
                     </p>
                 </div>
 
@@ -227,15 +227,15 @@
                     <div class="inline-flex rounded-xl p-1 bg-slate-100 border border-slate-200 text-xs font-semibold">
                         <button onclick="filterStatus('ALL')" id="btn-filter-ALL" 
                             class="filter-btn active px-3 py-1.5 rounded-lg transition-all bg-white text-slate-900 shadow-sm">
-                            Todos (23)
+                            Todos (1)
                         </button>
                         <button onclick="filterStatus('PASSED')" id="btn-filter-PASSED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-emerald-700 transition-all">
-                            ✅ Passou (23)
+                            ✅ Passou (0)
                         </button>
                         <button onclick="filterStatus('FAILED')" id="btn-filter-FAILED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-rose-700 transition-all">
-                            ❌ Falhou (0)
+                            ❌ Falhou (1)
                         </button>
                         <button onclick="filterStatus('SKIPPED')" id="btn-filter-SKIPPED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-amber-700 transition-all">
@@ -264,1053 +264,13 @@
                 <tbody class="bg-white divide-y divide-slate-100 font-normal text-sm" id="test-tbody">
                     
                     <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-name="teste e2e - inclusão de cliente/fornecedor:"
-                        data-triage=""
-                        data-id="625">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #625
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Teste E2E - Inclusão de Cliente/Fornecedor:
-                                </span>
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            115.85s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 15:28:28
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <span class="text-slate-300">OK</span>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Errors -->
-                    
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-name="teste e2e - alteração de cliente existente:"
-                        data-triage=""
-                        data-id="626">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #626
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Teste E2E - Alteração de Cliente Existente:
-                                </span>
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            37.46s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 15:29:05
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <span class="text-slate-300">OK</span>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Errors -->
-                    
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-name="teste e2e - concorrência (deadlock):"
-                        data-triage=""
-                        data-id="627">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #627
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Teste E2E - Concorrência (Deadlock):
-                                </span>
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            42.28s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 15:29:48
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <span class="text-slate-300">OK</span>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Errors -->
-                    
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-name="teste e2e - exclusão de cliente existente:"
-                        data-triage=""
-                        data-id="628">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #628
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Teste E2E - Exclusão de Cliente Existente:
-                                </span>
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            39.62s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 15:30:27
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <span class="text-slate-300">OK</span>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Errors -->
-                    
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-name="testa o fluxo e2e de inclusão de finalidade de pedido, lendo dados do yaml e validando no db."
-                        data-triage=""
-                        data-id="629">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #629
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Testa o fluxo E2E de inclusão de Finalidade de Pedido, lendo dados do YAML e validando no DB.
-                                </span>
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            17.63s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 15:30:45
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <span class="text-slate-300">OK</span>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Errors -->
-                    
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-name="testa o fluxo e2e de alteração da finalidade de pedido criada anteriormente."
-                        data-triage=""
-                        data-id="630">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #630
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Testa o fluxo E2E de alteração da Finalidade de Pedido criada anteriormente.
-                                </span>
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            19.47s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 15:31:11
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <span class="text-slate-300">OK</span>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Errors -->
-                    
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-name="testa o fluxo e2e de exclusão da finalidade de pedido criada anteriormente."
-                        data-triage=""
-                        data-id="631">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #631
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Testa o fluxo E2E de exclusão da Finalidade de Pedido criada anteriormente.
-                                </span>
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            17.40s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 15:31:35
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <span class="text-slate-300">OK</span>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Errors -->
-                    
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-name="teste e2e - inclusão de funcionário:"
-                        data-triage=""
-                        data-id="632">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #632
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Teste E2E - Inclusão de Funcionário:
-                                </span>
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            34.72s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 15:32:16
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <span class="text-slate-300">OK</span>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Errors -->
-                    
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-name="teste e2e - alteração de funcionário:"
-                        data-triage=""
-                        data-id="633">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #633
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Teste E2E - Alteração de Funcionário:
-                                </span>
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            25.84s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 15:32:47
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <span class="text-slate-300">OK</span>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Errors -->
-                    
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-name="teste e2e - exclusão de funcionário:"
-                        data-triage=""
-                        data-id="634">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #634
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Teste E2E - Exclusão de Funcionário:
-                                </span>
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            24.16s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 15:33:16
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <span class="text-slate-300">OK</span>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Errors -->
-                    
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-name="valida que o campo descrição contém o valor esperado para um código de histórico."
-                        data-triage=""
-                        data-id="635">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #635
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Valida que o campo Descrição contém o valor esperado para um código de histórico.
-                                </span>
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            7.74s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 15:33:29
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <span class="text-slate-300">OK</span>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Errors -->
-                    
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-name="teste e2e - inclusão de natureza de operação (cfop):"
-                        data-triage=""
-                        data-id="636">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #636
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Teste E2E - Inclusão de Natureza de Operação (CFOP):
-                                </span>
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            33.75s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 15:34:09
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <span class="text-slate-300">OK</span>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Errors -->
-                    
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-name="teste e2e - alteração de cfop:"
-                        data-triage=""
-                        data-id="637">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #637
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Teste E2E - Alteração de CFOP:
-                                </span>
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            19.34s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 15:34:35
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <span class="text-slate-300">OK</span>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Errors -->
-                    
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-name="teste e2e - exclusão de cfop:"
-                        data-triage=""
-                        data-id="638">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #638
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Teste E2E - Exclusão de CFOP:
-                                </span>
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            19.48s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 15:35:01
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <span class="text-slate-300">OK</span>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Errors -->
-                    
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-name="testa o fluxo e2e de inclusão de tipo de pedido, lendo dados do yaml e validando no db."
-                        data-triage=""
-                        data-id="639">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #639
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Testa o fluxo E2E de inclusão de Tipo de Pedido, lendo dados do YAML e validando no DB.
-                                </span>
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            18.25s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 15:35:26
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <span class="text-slate-300">OK</span>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Errors -->
-                    
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-name="testa a alteração do registro criado anteriormente."
-                        data-triage=""
-                        data-id="640">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #640
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Testa a alteração do registro criado anteriormente.
-                                </span>
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            20.08s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 15:35:52
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <span class="text-slate-300">OK</span>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Errors -->
-                    
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-name="testa a exclusão do registro criado anteriormente."
-                        data-triage=""
-                        data-id="641">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #641
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Testa a exclusão do registro criado anteriormente.
-                                </span>
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            18.57s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 15:36:17
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <span class="text-slate-300">OK</span>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Errors -->
-                    
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-name="teste e2e - inclusão de transportador:"
-                        data-triage=""
-                        data-id="642">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #642
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Teste E2E - Inclusão de Transportador:
-                                </span>
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            32.71s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 15:36:56
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <span class="text-slate-300">OK</span>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Errors -->
-                    
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-name="teste e2e - alteração de transportador:"
-                        data-triage=""
-                        data-id="643">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #643
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Teste E2E - Alteração de Transportador:
-                                </span>
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            19.02s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 15:37:22
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <span class="text-slate-300">OK</span>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Errors -->
-                    
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-name="teste e2e - exclusão de transportador:"
-                        data-triage=""
-                        data-id="644">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #644
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Teste E2E - Exclusão de Transportador:
-                                </span>
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            17.63s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 15:37:46
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <span class="text-slate-300">OK</span>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Errors -->
-                    
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
+                        data-status="FAILED" 
                         data-name="valida a inclusão completa de um pedido de atacado até a persistência no banco."
-                        data-triage=""
-                        data-id="645">
+                        data-triage="unknown"
+                        data-id="648">
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #645
+                            #648
                         </td>
                         
                         <td class="px-6 py-4">
@@ -1319,56 +279,8 @@
                                     Valida a inclusão completa de um pedido de atacado até a persistência no banco.
                                 </span>
                                 
-                            </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            60.46s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 15:38:53
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <span class="text-slate-300">OK</span>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Errors -->
-                    
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-name="valida a inclusão completa de um pedido de laboratório até a persistência no banco."
-                        data-triage=""
-                        data-id="646">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #646
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Valida a inclusão completa de um pedido de laboratório até a persistência no banco.
+                                <span class="text-xs text-rose-600 line-clamp-1 mt-0.5 font-mono">
+                                    src\utils\pytest_telemetry.py:326: in nfe_fechada
                                 </span>
                                 
                             </div>
@@ -1376,87 +288,61 @@
                         
                         <td class="px-6 py-4 whitespace-nowrap">
                             
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200/80">
+                                <span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span>
+                                Falhou
                             </span>
                             
                         </td>
 
                         <td class="px-6 py-4 whitespace-nowrap">
                             
-                            <span class="text-xs text-slate-400 font-medium">—</span>
+                            <span class="px-2.5 py-0.5 text-xs font-semibold rounded-md bg-slate-100 text-slate-600">
+                                Unknown
+                            </span>
                             
                         </td>
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            105.29s
+                            15.49s
                         </td>
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 15:40:45
+                            26/09/2026 19:06:08
                         </td>
 
                         <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
                             
-                            <span class="text-slate-300">OK</span>
+                            <button onclick="toggleDetails(648)" class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 px-3 py-1 rounded-lg transition-colors">
+                                Ver Erro
+                            </button>
                             
                         </td>
                     </tr>
 
                     <!-- Expandable Details Row for Errors -->
                     
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-name="valida a visualização em tela, impressão em pdf e controle no banco de um pedido de laboratório."
-                        data-triage=""
-                        data-id="647">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #647
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Valida a visualização em tela, impressão em PDF e controle no banco de um pedido de laboratório.
-                                </span>
-                                
+                    <tr id="details-648" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800">
+                        <td colspan="7" class="p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2.5 py-0.5 text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 rounded-md">
+                                        Falha Detectada (#648)
+                                    </span>
+                                    <span class="text-xs text-slate-400 font-medium">Valida a inclusão completa de um pedido de atacado até a persistência no banco.</span>
+                                </div>
+                                <button onclick="copyErrorText('error-content-648')" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-lg border border-slate-700 transition-colors flex items-center gap-1.5">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                                    Copiar Stacktrace
+                                </button>
                             </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            55.51s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 15:41:46
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <span class="text-slate-300">OK</span>
-                            
+                            <pre id="error-content-648" class="text-xs bg-slate-950 p-4 rounded-xl overflow-x-auto text-rose-300 leading-relaxed border border-slate-800/80">src\utils\pytest_telemetry.py:326: in nfe_fechada
+    main.fechar_popup_nfe(timeout=8)
+src\pages\main_page.py:28: in fechar_popup_nfe
+    from src.core.win32_utils import (
+E   ImportError: cannot import name 'focar_janela' from 'src.core.win32_utils' (C:\DEV_QA\sgo_tests\src\core\win32_utils.py)</pre>
                         </td>
                     </tr>
-
-                    <!-- Expandable Details Row for Errors -->
                     
                     
 
@@ -1488,8 +374,8 @@
     Chart.defaults.font.family = "'Plus Jakarta Sans', sans-serif";
     Chart.defaults.color = '#64748b';
 
-    const passedCount = 23;
-    const failedCount = 0;
+    const passedCount = 0;
+    const failedCount = 1;
     const skippedCount = 0;
 
     // 1. Donut Results Chart
@@ -1529,9 +415,9 @@
     });
 
     // 2. Trend History Chart (from SQLite)
-    const trendLabels = ["24/09 17:48", "24/09 18:05", "24/09 18:24", "25/09 08:28", "25/09 15:30", "25/09 16:12", "25/09 17:33", "25/09 18:12", "25/09 22:10", "26/09 15:26"];
-    const trendPassed = [0, 0, 1, 1, 22, 1, 21, 2, 2, 23];
-    const trendFailed = [1, 1, 0, 0, 1, 0, 2, 0, 0, 0];
+    const trendLabels = ["24/09 18:05", "24/09 18:24", "25/09 08:28", "25/09 15:30", "25/09 16:12", "25/09 17:33", "25/09 18:12", "25/09 22:10", "26/09 15:26", "26/09 19:05"];
+    const trendPassed = [0, 1, 1, 22, 1, 21, 2, 2, 23, 0];
+    const trendFailed = [1, 0, 0, 1, 0, 2, 0, 0, 0, 1];
     const trendSkipped = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
     const ctxTrend = document.getElementById('trendChart').getContext('2d');
@@ -1633,7 +519,7 @@
         });
 
         // Update Counter
-        const total = 23;
+        const total = 1;
         const counterElem = document.getElementById('records-counter');
         if (counterElem) {
             if (visibleCount === total) {
