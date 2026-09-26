@@ -58,7 +58,7 @@
         <div class="flex flex-wrap items-center gap-3 no-print w-full md:w-auto justify-start md:justify-end">
             <div class="text-left md:text-right bg-slate-50 px-4 py-2 rounded-xl border border-slate-200/80">
                 <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Gerado em</p>
-                <p class="text-sm font-bold text-slate-700">26/09/2026 19:07:00</p>
+                <p class="text-sm font-bold text-slate-700">26/09/2026 19:10:30</p>
             </div>
             
             <button onclick="exportTableToCSV()" class="inline-flex items-center gap-2 px-4 py-2.5 bg-white hover:bg-slate-50 text-slate-700 font-semibold text-sm rounded-xl border border-slate-200 shadow-sm transition-all hover:shadow">
@@ -80,8 +80,8 @@
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow">
             <div>
                 <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Total de Testes</p>
-                <p class="text-3xl font-extrabold text-slate-900 mt-1">1</p>
-                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600">17.4s</span></p>
+                <p class="text-3xl font-extrabold text-slate-900 mt-1">3</p>
+                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600">14.7s</span></p>
             </div>
             <div class="p-3.5 rounded-xl bg-blue-50 text-blue-600 border border-blue-100">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
@@ -106,7 +106,7 @@
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow border-l-4 border-l-rose-500">
             <div>
                 <p class="text-xs font-semibold text-rose-700 uppercase tracking-wider">Falhas</p>
-                <p class="text-3xl font-extrabold text-rose-600 mt-1">1</p>
+                <p class="text-3xl font-extrabold text-rose-600 mt-1">3</p>
                 <p class="text-xs text-rose-600/80 mt-1 font-medium">
                     100.0% do total
                 </p>
@@ -138,7 +138,7 @@
                     <span class="text-3xl font-extrabold text-rose-600">
                         0.0%
                     </span>
-                    <span class="text-xs text-slate-400 font-medium">Média: 17.44s</span>
+                    <span class="text-xs text-slate-400 font-medium">Média: 4.90s</span>
                 </div>
             </div>
             <!-- Mini Progress Bar -->
@@ -168,7 +168,7 @@
                 </div>
                 <div class="p-2 rounded-lg bg-rose-50">
                     <p class="text-[11px] font-semibold text-rose-800">Falhou</p>
-                    <p class="text-base font-bold text-rose-600">1</p>
+                    <p class="text-base font-bold text-rose-600">3</p>
                 </div>
                 <div class="p-2 rounded-lg bg-amber-50">
                     <p class="text-[11px] font-semibold text-amber-800">Pulado</p>
@@ -209,7 +209,7 @@
                 <div>
                     <h2 class="text-lg font-bold text-slate-900">Detalhamento dos Cenários de Teste</h2>
                     <p class="text-sm text-slate-500 mt-0.5" id="records-counter">
-                        Exibindo todos os <span class="font-bold text-slate-700">1</span> testes executados.
+                        Exibindo todos os <span class="font-bold text-slate-700">3</span> testes executados.
                     </p>
                 </div>
 
@@ -227,7 +227,7 @@
                     <div class="inline-flex rounded-xl p-1 bg-slate-100 border border-slate-200 text-xs font-semibold">
                         <button onclick="filterStatus('ALL')" id="btn-filter-ALL" 
                             class="filter-btn active px-3 py-1.5 rounded-lg transition-all bg-white text-slate-900 shadow-sm">
-                            Todos (1)
+                            Todos (3)
                         </button>
                         <button onclick="filterStatus('PASSED')" id="btn-filter-PASSED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-emerald-700 transition-all">
@@ -235,7 +235,7 @@
                         </button>
                         <button onclick="filterStatus('FAILED')" id="btn-filter-FAILED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-rose-700 transition-all">
-                            ❌ Falhou (1)
+                            ❌ Falhou (3)
                         </button>
                         <button onclick="filterStatus('SKIPPED')" id="btn-filter-SKIPPED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-amber-700 transition-all">
@@ -265,18 +265,18 @@
                     
                     <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
                         data-status="FAILED" 
-                        data-name="valida a inclusão completa de um pedido de atacado até a persistência no banco."
+                        data-name="teste e2e: inclusão de jitbox com extração do id via log e conferência no banco."
                         data-triage="unknown"
-                        data-id="649">
+                        data-id="650">
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #649
+                            #650
                         </td>
                         
                         <td class="px-6 py-4">
                             <div class="flex flex-col">
                                 <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Valida a inclusão completa de um pedido de atacado até a persistência no banco.
+                                    Teste E2E: Inclusão de JitBox com extração do ID via Log e conferência no Banco.
                                 </span>
                                 
                                 <span class="text-xs text-rose-600 line-clamp-1 mt-0.5 font-mono">
@@ -304,16 +304,16 @@
                         </td>
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            17.44s
+                            14.70s
                         </td>
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            26/09/2026 19:06:59
+                            26/09/2026 19:10:29
                         </td>
 
                         <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
                             
-                            <button onclick="toggleDetails(649)" class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 px-3 py-1 rounded-lg transition-colors">
+                            <button onclick="toggleDetails(650)" class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 px-3 py-1 rounded-lg transition-colors">
                                 Ver Erro
                             </button>
                             
@@ -322,21 +322,185 @@
 
                     <!-- Expandable Details Row for Errors -->
                     
-                    <tr id="details-649" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800">
+                    <tr id="details-650" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800">
                         <td colspan="7" class="p-6">
                             <div class="flex items-center justify-between mb-3">
                                 <div class="flex items-center gap-2">
                                     <span class="px-2.5 py-0.5 text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 rounded-md">
-                                        Falha Detectada (#649)
+                                        Falha Detectada (#650)
                                     </span>
-                                    <span class="text-xs text-slate-400 font-medium">Valida a inclusão completa de um pedido de atacado até a persistência no banco.</span>
+                                    <span class="text-xs text-slate-400 font-medium">Teste E2E: Inclusão de JitBox com extração do ID via Log e conferência no Banco.</span>
                                 </div>
-                                <button onclick="copyErrorText('error-content-649')" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-lg border border-slate-700 transition-colors flex items-center gap-1.5">
+                                <button onclick="copyErrorText('error-content-650')" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-lg border border-slate-700 transition-colors flex items-center gap-1.5">
                                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
                                     Copiar Stacktrace
                                 </button>
                             </div>
-                            <pre id="error-content-649" class="text-xs bg-slate-950 p-4 rounded-xl overflow-x-auto text-rose-300 leading-relaxed border border-slate-800/80">src\utils\pytest_telemetry.py:326: in nfe_fechada
+                            <pre id="error-content-650" class="text-xs bg-slate-950 p-4 rounded-xl overflow-x-auto text-rose-300 leading-relaxed border border-slate-800/80">src\utils\pytest_telemetry.py:326: in nfe_fechada
+    main.fechar_popup_nfe(timeout=8)
+src\pages\main_page.py:28: in fechar_popup_nfe
+    from src.core.win32_utils import (
+E   ImportError: cannot import name 'focar_janela' from 'src.core.win32_utils' (C:\DEV_QA\sgo_tests\src\core\win32_utils.py)</pre>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
+                        data-status="FAILED" 
+                        data-name="teste e2e: alteração do jitbox criado (muda célula de retorno) e validação no banco."
+                        data-triage="unknown"
+                        data-id="651">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
+                            #651
+                        </td>
+                        
+                        <td class="px-6 py-4">
+                            <div class="flex flex-col">
+                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
+                                    Teste E2E: Alteração do JitBox criado (muda Célula de Retorno) e validação no Banco.
+                                </span>
+                                
+                                <span class="text-xs text-rose-600 line-clamp-1 mt-0.5 font-mono">
+                                    src\utils\pytest_telemetry.py:326: in nfe_fechada
+                                </span>
+                                
+                            </div>
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200/80">
+                                <span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span>
+                                Falhou
+                            </span>
+                            
+                        </td>
+
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            
+                            <span class="px-2.5 py-0.5 text-xs font-semibold rounded-md bg-slate-100 text-slate-600">
+                                Unknown
+                            </span>
+                            
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
+                            < 0.01s
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
+                            26/09/2026 19:10:29
+                        </td>
+
+                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
+                            
+                            <button onclick="toggleDetails(651)" class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 px-3 py-1 rounded-lg transition-colors">
+                                Ver Erro
+                            </button>
+                            
+                        </td>
+                    </tr>
+
+                    <!-- Expandable Details Row for Errors -->
+                    
+                    <tr id="details-651" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800">
+                        <td colspan="7" class="p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2.5 py-0.5 text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 rounded-md">
+                                        Falha Detectada (#651)
+                                    </span>
+                                    <span class="text-xs text-slate-400 font-medium">Teste E2E: Alteração do JitBox criado (muda Célula de Retorno) e validação no Banco.</span>
+                                </div>
+                                <button onclick="copyErrorText('error-content-651')" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-lg border border-slate-700 transition-colors flex items-center gap-1.5">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                                    Copiar Stacktrace
+                                </button>
+                            </div>
+                            <pre id="error-content-651" class="text-xs bg-slate-950 p-4 rounded-xl overflow-x-auto text-rose-300 leading-relaxed border border-slate-800/80">src\utils\pytest_telemetry.py:326: in nfe_fechada
+    main.fechar_popup_nfe(timeout=8)
+src\pages\main_page.py:28: in fechar_popup_nfe
+    from src.core.win32_utils import (
+E   ImportError: cannot import name 'focar_janela' from 'src.core.win32_utils' (C:\DEV_QA\sgo_tests\src\core\win32_utils.py)</pre>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
+                        data-status="FAILED" 
+                        data-name="teste e2e: exclusão do jitbox criado e validação de que não existe mais no firebird."
+                        data-triage="unknown"
+                        data-id="652">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
+                            #652
+                        </td>
+                        
+                        <td class="px-6 py-4">
+                            <div class="flex flex-col">
+                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
+                                    Teste E2E: Exclusão do JitBox criado e validação de que não existe mais no Firebird.
+                                </span>
+                                
+                                <span class="text-xs text-rose-600 line-clamp-1 mt-0.5 font-mono">
+                                    src\utils\pytest_telemetry.py:326: in nfe_fechada
+                                </span>
+                                
+                            </div>
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200/80">
+                                <span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span>
+                                Falhou
+                            </span>
+                            
+                        </td>
+
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            
+                            <span class="px-2.5 py-0.5 text-xs font-semibold rounded-md bg-slate-100 text-slate-600">
+                                Unknown
+                            </span>
+                            
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
+                            < 0.01s
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
+                            26/09/2026 19:10:29
+                        </td>
+
+                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
+                            
+                            <button onclick="toggleDetails(652)" class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 px-3 py-1 rounded-lg transition-colors">
+                                Ver Erro
+                            </button>
+                            
+                        </td>
+                    </tr>
+
+                    <!-- Expandable Details Row for Errors -->
+                    
+                    <tr id="details-652" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800">
+                        <td colspan="7" class="p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2.5 py-0.5 text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 rounded-md">
+                                        Falha Detectada (#652)
+                                    </span>
+                                    <span class="text-xs text-slate-400 font-medium">Teste E2E: Exclusão do JitBox criado e validação de que não existe mais no Firebird.</span>
+                                </div>
+                                <button onclick="copyErrorText('error-content-652')" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-lg border border-slate-700 transition-colors flex items-center gap-1.5">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                                    Copiar Stacktrace
+                                </button>
+                            </div>
+                            <pre id="error-content-652" class="text-xs bg-slate-950 p-4 rounded-xl overflow-x-auto text-rose-300 leading-relaxed border border-slate-800/80">src\utils\pytest_telemetry.py:326: in nfe_fechada
     main.fechar_popup_nfe(timeout=8)
 src\pages\main_page.py:28: in fechar_popup_nfe
     from src.core.win32_utils import (
@@ -375,7 +539,7 @@ E   ImportError: cannot import name 'focar_janela' from 'src.core.win32_utils' (
     Chart.defaults.color = '#64748b';
 
     const passedCount = 0;
-    const failedCount = 1;
+    const failedCount = 3;
     const skippedCount = 0;
 
     // 1. Donut Results Chart
@@ -415,9 +579,9 @@ E   ImportError: cannot import name 'focar_janela' from 'src.core.win32_utils' (
     });
 
     // 2. Trend History Chart (from SQLite)
-    const trendLabels = ["24/09 18:24", "25/09 08:28", "25/09 15:30", "25/09 16:12", "25/09 17:33", "25/09 18:12", "25/09 22:10", "26/09 15:26", "26/09 19:05", "26/09 19:06"];
-    const trendPassed = [1, 1, 22, 1, 21, 2, 2, 23, 0, 0];
-    const trendFailed = [0, 0, 1, 0, 2, 0, 0, 0, 1, 1];
+    const trendLabels = ["25/09 08:28", "25/09 15:30", "25/09 16:12", "25/09 17:33", "25/09 18:12", "25/09 22:10", "26/09 15:26", "26/09 19:05", "26/09 19:06", "26/09 19:10"];
+    const trendPassed = [1, 22, 1, 21, 2, 2, 23, 0, 0, 0];
+    const trendFailed = [0, 1, 0, 2, 0, 0, 0, 1, 1, 3];
     const trendSkipped = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
     const ctxTrend = document.getElementById('trendChart').getContext('2d');
@@ -519,7 +683,7 @@ E   ImportError: cannot import name 'focar_janela' from 'src.core.win32_utils' (
         });
 
         // Update Counter
-        const total = 1;
+        const total = 3;
         const counterElem = document.getElementById('records-counter');
         if (counterElem) {
             if (visibleCount === total) {
