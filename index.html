@@ -49,6 +49,7 @@
                     <h1 class="text-2xl font-extrabold text-slate-900 tracking-tight">SGO QA — Telemetria de Testes</h1>
                     <span class="px-2.5 py-0.5 text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-full">v2607.1.1000.20</span>
                     <span class="px-2.5 py-0.5 text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-200 rounded-full">LABSP QA TRUNK</span>
+                    
                 </div>
                 <p class="text-sm text-slate-500 mt-1">Dashboard Executivo de Qualidade Contínua e Rastreabilidade E2E</p>
             </div>
@@ -57,7 +58,7 @@
         <div class="flex flex-wrap items-center gap-3 no-print w-full md:w-auto justify-start md:justify-end">
             <div class="text-left md:text-right bg-slate-50 px-4 py-2 rounded-xl border border-slate-200/80">
                 <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Gerado em</p>
-                <p class="text-sm font-bold text-slate-700">25/09/2026 18:15:12</p>
+                <p class="text-sm font-bold text-slate-700">25/09/2026 22:14:14</p>
             </div>
             
             <button onclick="exportTableToCSV()" class="inline-flex items-center gap-2 px-4 py-2.5 bg-white hover:bg-slate-50 text-slate-700 font-semibold text-sm rounded-xl border border-slate-200 shadow-sm transition-all hover:shadow">
@@ -80,7 +81,7 @@
             <div>
                 <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Total de Testes</p>
                 <p class="text-3xl font-extrabold text-slate-900 mt-1">2</p>
-                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600">157.5s</span></p>
+                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600">174.2s</span></p>
             </div>
             <div class="p-3.5 rounded-xl bg-blue-50 text-blue-600 border border-blue-100">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
@@ -137,7 +138,7 @@
                     <span class="text-3xl font-extrabold text-emerald-600">
                         100.0%
                     </span>
-                    <span class="text-xs text-slate-400 font-medium">Média: 78.75s</span>
+                    <span class="text-xs text-slate-400 font-medium">Média: 87.09s</span>
                 </div>
             </div>
             <!-- Mini Progress Bar -->
@@ -266,10 +267,10 @@
                         data-status="PASSED" 
                         data-name="valida a inclusão completa de um pedido de laboratório até a persistência no banco."
                         data-triage=""
-                        data-id="621">
+                        data-id="623">
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #621
+                            #623
                         </td>
                         
                         <td class="px-6 py-4">
@@ -297,11 +298,11 @@
                         </td>
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            104.69s
+                            123.88s
                         </td>
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            25/09/2026 18:14:06
+                            25/09/2026 22:13:10
                         </td>
 
                         <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
@@ -318,10 +319,10 @@
                         data-status="PASSED" 
                         data-name="valida a visualização em tela, impressão em pdf e controle no banco de um pedido de laboratório."
                         data-triage=""
-                        data-id="622">
+                        data-id="624">
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #622
+                            #624
                         </td>
                         
                         <td class="px-6 py-4">
@@ -349,11 +350,11 @@
                         </td>
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            52.82s
+                            50.30s
                         </td>
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            25/09/2026 18:15:06
+                            25/09/2026 22:14:07
                         </td>
 
                         <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
@@ -436,9 +437,9 @@
     });
 
     // 2. Trend History Chart (from SQLite)
-    const trendLabels = ["24/09 17:27", "24/09 17:48", "24/09 18:05", "24/09 18:24", "25/09 08:28", "25/09 15:30", "25/09 16:12", "25/09 17:33", "25/09 18:03", "25/09 18:12"];
-    const trendPassed = [1, 0, 0, 1, 1, 22, 1, 21, 0, 2];
-    const trendFailed = [0, 1, 1, 0, 0, 1, 0, 2, 0, 0];
+    const trendLabels = ["24/09 17:48", "24/09 18:05", "24/09 18:24", "25/09 08:28", "25/09 15:30", "25/09 16:12", "25/09 17:33", "25/09 18:03", "25/09 18:12", "25/09 22:10"];
+    const trendPassed = [0, 0, 1, 1, 22, 1, 21, 0, 2, 2];
+    const trendFailed = [1, 1, 0, 0, 1, 0, 2, 0, 0, 0];
     const trendSkipped = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
     const ctxTrend = document.getElementById('trendChart').getContext('2d');
