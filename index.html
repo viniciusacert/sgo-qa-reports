@@ -60,7 +60,7 @@
         <div class="flex flex-wrap items-center gap-3 no-print w-full md:w-auto justify-start md:justify-end">
             <div class="text-left md:text-right bg-slate-50 px-4 py-2 rounded-xl border border-slate-200/80">
                 <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Gerado em</p>
-                <p class="text-sm font-bold text-slate-700">30/09/2026 12:15:09</p>
+                <p class="text-sm font-bold text-slate-700">30/09/2026 12:45:02</p>
             </div>
             
             <button onclick="exportTableToCSV()" class="inline-flex items-center gap-2 px-4 py-2.5 bg-white hover:bg-slate-50 text-slate-700 font-semibold text-sm rounded-xl border border-slate-200 shadow-sm transition-all hover:shadow">
@@ -83,7 +83,7 @@
             <div>
                 <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Total de Testes</p>
                 <p class="text-3xl font-extrabold text-slate-900 mt-1">1</p>
-                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600">16.4s</span></p>
+                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600">27.1s</span></p>
             </div>
             <div class="p-3.5 rounded-xl bg-blue-50 text-blue-600 border border-blue-100">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
@@ -140,7 +140,7 @@
                     <span class="text-3xl font-extrabold text-rose-600">
                         0.0%
                     </span>
-                    <span class="text-xs text-slate-400 font-medium">Média: 16.36s</span>
+                    <span class="text-xs text-slate-400 font-medium">Média: 27.11s</span>
                 </div>
             </div>
             <!-- Mini Progress Bar -->
@@ -269,9 +269,9 @@
                         data-status="FAILED" 
                         data-name="valida o fluxo completo de alteração de um pedido de laboratório pós-impressão"
                         data-triage="assertion"
-                        data-id="703">
+                        data-id="704">
                         
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400" title="ID Banco: #703">
+                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400" title="ID Banco: #704">
                             #01
                         </td>
                         
@@ -282,7 +282,7 @@
                                 </span>
                                 
                                 <span class="text-xs text-rose-600 line-clamp-1 mt-0.5 font-mono">
-                                    tests\e2e\test_pedido_laboratorio.py:681: in test_alteracao_pedido_laboratorio
+                                    tests\e2e\test_pedido_laboratorio.py:769: in test_alteracao_pedido_laboratorio
                                 </span>
                                 
                             </div>
@@ -306,17 +306,17 @@
                         </td>
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            16.36s
+                            27.11s
                         </td>
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            30/09/2026 12:15:07
+                            30/09/2026 12:45:00
                         </td>
 
                         <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
                             
-                            <button onclick="toggleDetails(703)" class="font-semibold text-rose-600 hover:text-rose-800 bg-rose-50 hover:bg-rose-100 border border-rose-200 px-3 py-1 rounded-lg transition-colors">
-                                🔍 Erro & Passos (12)
+                            <button onclick="toggleDetails(704)" class="font-semibold text-rose-600 hover:text-rose-800 bg-rose-50 hover:bg-rose-100 border border-rose-200 px-3 py-1 rounded-lg transition-colors">
+                                🔍 Erro & Passos (17)
                             </button>
                             
                         </td>
@@ -324,99 +324,134 @@
 
                     <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
                     
-                    <tr id="details-703" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800">
+                    <tr id="details-704" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800">
                         <td colspan="7" class="p-6 space-y-5">
                             
                             <div>
                                 <div class="flex items-center gap-2 mb-3">
                                     <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md">
-                                        🧭 Linha do Tempo E2E (12 passos)
+                                        🧭 Linha do Tempo E2E (17 passos)
                                     </span>
                                     <span class="text-xs text-slate-400 font-medium">Valida o fluxo completo de alteração de um pedido de laboratório pós-impressão</span>
                                 </div>
                                 <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto">
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">12:14:31</span>
+                                        <span class="text-slate-500 shrink-0">12:44:17</span>
                                         
                                         <span class="text-slate-300">🔹 Iniciando cenário: test_alteracao_pedido_laboratorio</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">12:14:49</span>
+                                        <span class="text-slate-500 shrink-0">12:44:32</span>
                                         
                                         <span class="text-slate-300">🔹 Verificando tela de NFE...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">12:14:50</span>
+                                        <span class="text-slate-500 shrink-0">12:44:33</span>
                                         
                                         <span class="text-slate-300">🔹 Aguardando Interface...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">12:14:51</span>
+                                        <span class="text-slate-500 shrink-0">12:44:34</span>
                                         
                                         <span class="text-slate-300">🔹 Acessando menu Comercial...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">12:14:51</span>
+                                        <span class="text-slate-500 shrink-0">12:44:34</span>
                                         
                                         <span class="text-slate-300">🔹 Clique visual: Menu Comercial</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">12:14:52</span>
+                                        <span class="text-slate-500 shrink-0">12:44:35</span>
                                         
                                         <span class="text-slate-300">🔹 Clique visual: Opção Pedido de Cliente</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">12:14:54</span>
+                                        <span class="text-slate-500 shrink-0">12:44:37</span>
                                         
                                         <span class="text-slate-300">🔹 Aguardando tela...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">12:14:56</span>
+                                        <span class="text-slate-500 shrink-0">12:44:39</span>
                                         
                                         <span class="text-slate-300">🔹 Consultando Pedido ID 610842...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">12:14:59</span>
+                                        <span class="text-slate-500 shrink-0">12:44:42</span>
                                         
                                         <span class="text-slate-300">🔹 Validando trava de alteração de pedido impresso...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">12:14:59</span>
+                                        <span class="text-slate-500 shrink-0">12:44:42</span>
                                         
                                         <span class="text-slate-300">🔹 Clique visual: Botão Alterar Pedido</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">12:15:05</span>
+                                        <span class="text-slate-500 shrink-0">12:44:46</span>
                                         
                                         <span class="text-slate-300">🔹 Clicou botão Win32 'OK'</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">12:15:07</span>
+                                        <span class="text-slate-500 shrink-0">12:44:47</span>
                                         
-                                        <span class="text-rose-400 font-semibold">❌ Falha detectada [Assertion]: tests\e2e\test_pedido_laboratorio.py:681: in test_alteracao_pedido_laboratorio</span>
+                                        <span class="text-slate-300">🔹 Retirando marca de Pedido Impresso...</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">12:44:47</span>
+                                        
+                                        <span class="text-slate-300">🔹 Clique visual: Botão Rotinas da Tela</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">12:44:49</span>
+                                        
+                                        <span class="text-slate-300">🔹 Clique visual: Opção Retirar a marca do Ped. impresso</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">12:44:51</span>
+                                        
+                                        <span class="text-slate-300">🔹 Confirmando retirada da marca (Yes)...</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">12:44:51</span>
+                                        
+                                        <span class="text-slate-300">🔹 Clicou botão Win32 'Yes'</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">12:45:00</span>
+                                        
+                                        <span class="text-rose-400 font-semibold">❌ Falha detectada [Assertion]: tests\e2e\test_pedido_laboratorio.py:769: in test_alteracao_pedido_laboratorio</span>
                                         
                                     </div>
                                     
@@ -429,18 +464,18 @@
                                 <div class="flex items-center justify-between mb-3">
                                     <div class="flex items-center gap-2">
                                         <span class="px-2.5 py-0.5 text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 rounded-md">
-                                            Stacktrace da Falha (#703)
+                                            Stacktrace da Falha (#704)
                                         </span>
                                     </div>
-                                    <button onclick="copyErrorText('error-content-703')" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-lg border border-slate-700 transition-colors flex items-center gap-1.5">
+                                    <button onclick="copyErrorText('error-content-704')" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-lg border border-slate-700 transition-colors flex items-center gap-1.5">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
                                         Copiar Stacktrace
                                     </button>
                                 </div>
-                                <pre id="error-content-703" class="text-xs bg-slate-950 p-4 rounded-xl overflow-x-auto text-rose-300 leading-relaxed border border-slate-800/80">tests\e2e\test_pedido_laboratorio.py:681: in test_alteracao_pedido_laboratorio
-    assert res_trava_impresso["trava_acionada"], (
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-E   AssertionError: O SGO deveria exibir a mensagem bloqueante 'O Pedido já foi impresso, não pode ser alterado !' ao clicar em Alterar com PEDIMPRE='S', mas a trava não foi detectada.</pre>
+                                <pre id="error-content-704" class="text-xs bg-slate-950 p-4 rounded-xl overflow-x-auto text-rose-300 leading-relaxed border border-slate-800/80">tests\e2e\test_pedido_laboratorio.py:769: in test_alteracao_pedido_laboratorio
+    assert status_pos_retirada.get("pedimpre") == "N", (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: A marca de pedido impresso (PEDIMPRE) deveria ter mudado para 'N' no banco após a rotina, mas retornou 'S'.</pre>
                             </div>
                             
                         </td>
@@ -517,10 +552,10 @@ E   AssertionError: O SGO deveria exibir a mensagem bloqueante 'O Pedido já foi
     });
 
     // 2. Trend History Chart (from SQLite)
-    const trendLabels = ["26/09 19:44", "26/09 20:02", "26/09 20:13", "26/09 20:14", "26/09 20:17", "30/09 11:05", "30/09 12:03", "30/09 12:13", "30/09 12:14", "30/09 12:14"];
-    const trendPassed = [26, 1, 0, 0, 4, 0, 0, 0, 0, 0];
-    const trendFailed = [0, 0, 1, 1, 0, 1, 1, 0, 0, 1];
-    const trendSkipped = [0, 0, 3, 3, 0, 0, 0, 0, 0, 0];
+    const trendLabels = ["26/09 20:13", "26/09 20:14", "26/09 20:17", "30/09 11:05", "30/09 12:03", "30/09 12:13", "30/09 12:14", "30/09 12:14", "30/09 12:26", "30/09 12:44"];
+    const trendPassed = [0, 0, 4, 0, 0, 0, 0, 0, 0, 0];
+    const trendFailed = [1, 1, 0, 1, 1, 0, 0, 1, 0, 1];
+    const trendSkipped = [3, 3, 0, 0, 0, 0, 0, 0, 0, 0];
 
     const ctxTrend = document.getElementById('trendChart').getContext('2d');
     new Chart(ctxTrend, {
