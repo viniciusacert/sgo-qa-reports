@@ -60,7 +60,7 @@
         <div class="flex flex-wrap items-center gap-3 no-print w-full md:w-auto justify-start md:justify-end">
             <div class="text-left md:text-right bg-slate-50 px-4 py-2 rounded-xl border border-slate-200/80">
                 <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Gerado em</p>
-                <p class="text-sm font-bold text-slate-700">01/10/2026 12:29:34</p>
+                <p class="text-sm font-bold text-slate-700">01/10/2026 12:32:33</p>
             </div>
             
             <button onclick="exportTableToCSV()" class="inline-flex items-center gap-2 px-4 py-2.5 bg-white hover:bg-slate-50 text-slate-700 font-semibold text-sm rounded-xl border border-slate-200 shadow-sm transition-all hover:shadow">
@@ -83,7 +83,7 @@
             <div>
                 <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Total de Testes</p>
                 <p class="text-3xl font-extrabold text-slate-900 mt-1">1</p>
-                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600">0.1s</span></p>
+                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600">7.7s</span></p>
             </div>
             <div class="p-3.5 rounded-xl bg-blue-50 text-blue-600 border border-blue-100">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
@@ -140,7 +140,7 @@
                     <span class="text-3xl font-extrabold text-rose-600">
                         0.0%
                     </span>
-                    <span class="text-xs text-slate-400 font-medium">Média: 0.10s</span>
+                    <span class="text-xs text-slate-400 font-medium">Média: 7.65s</span>
                 </div>
             </div>
             <!-- Mini Progress Bar -->
@@ -268,10 +268,10 @@
                     <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
                         data-status="FAILED" 
                         data-name="valida o mecanismo de concorrência e bloqueio de registros do sgo entre duas instâncias."
-                        data-triage="database"
-                        data-id="741">
+                        data-triage="assertion"
+                        data-id="742">
                         
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400" title="ID Banco: #741">
+                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400" title="ID Banco: #742">
                             #01
                         </td>
                         
@@ -282,7 +282,7 @@
                                 </span>
                                 
                                 <span class="text-xs text-rose-600 line-clamp-1 mt-0.5 font-mono">
-                                    tests\e2e\test_pedido_atacado.py:154: in test_acesso_concorrente_mesmo_pedido_duas_instancias
+                                    tests\e2e\test_pedido_atacado.py:204: in test_acesso_concorrente_mesmo_pedido_duas_instancias
                                 </span>
                                 
                             </div>
@@ -299,24 +299,24 @@
 
                         <td class="px-6 py-4 whitespace-nowrap">
                             
-                            <span class="px-2.5 py-0.5 text-xs font-semibold rounded-md bg-red-50 text-red-700 border border-red-200">
-                                🗄️ Firebird DB
+                            <span class="px-2.5 py-0.5 text-xs font-semibold rounded-md bg-purple-50 text-purple-700 border border-purple-200">
+                                🏷️ Regra/Dados
                             </span>
                             
                         </td>
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            0.10s
+                            7.65s
                         </td>
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            01/10/2026 12:29:33
+                            01/10/2026 12:32:31
                         </td>
 
                         <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
                             
-                            <button onclick="toggleDetails(741)" class="font-semibold text-rose-600 hover:text-rose-800 bg-rose-50 hover:bg-rose-100 border border-rose-200 px-3 py-1 rounded-lg transition-colors">
-                                🔍 Erro & Passos (3)
+                            <button onclick="toggleDetails(742)" class="font-semibold text-rose-600 hover:text-rose-800 bg-rose-50 hover:bg-rose-100 border border-rose-200 px-3 py-1 rounded-lg transition-colors">
+                                🔍 Erro & Passos (7)
                             </button>
                             
                         </td>
@@ -324,36 +324,64 @@
 
                     <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
                     
-                    <tr id="details-741" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800">
+                    <tr id="details-742" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800">
                         <td colspan="7" class="p-6 space-y-5">
                             
                             <div>
                                 <div class="flex items-center gap-2 mb-3">
                                     <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md">
-                                        🧭 Linha do Tempo E2E (3 passos)
+                                        🧭 Linha do Tempo E2E (7 passos)
                                     </span>
                                     <span class="text-xs text-slate-400 font-medium">Valida o mecanismo de concorrência e bloqueio de registros do SGO entre duas instâncias.</span>
                                 </div>
                                 <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto">
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">12:29:18</span>
+                                        <span class="text-slate-500 shrink-0">12:32:08</span>
                                         
                                         <span class="text-slate-300">🔹 Iniciando cenário: test_acesso_concorrente_mesmo_pedido_duas_instancias</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">12:29:32</span>
+                                        <span class="text-slate-500 shrink-0">12:32:21</span>
                                         
                                         <span class="text-slate-300">🔹 Verificando tela de NFE...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">12:29:33</span>
+                                        <span class="text-slate-500 shrink-0">12:32:23</span>
                                         
-                                        <span class="text-rose-400 font-semibold">❌ Falha detectada [Database]: tests\e2e\test_pedido_atacado.py:154: in test_acesso_concorrente_mesmo_pedido_duas_instancias</span>
+                                        <span class="text-slate-300">🔹 Aguardando Interface...</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">12:32:24</span>
+                                        
+                                        <span class="text-slate-300">🔹 Abrindo Pedidos de Cliente...</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">12:32:27</span>
+                                        
+                                        <span class="text-slate-300">🔹 Consultando Pedido ID 610836...</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">12:32:28</span>
+                                        
+                                        <span class="text-slate-300">🔹 Preencheu Win32 [CLASS:TNumberEdit; INSTANCE:1] = '610836'</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">12:32:31</span>
+                                        
+                                        <span class="text-rose-400 font-semibold">❌ Falha detectada [Assertion]: tests\e2e\test_pedido_atacado.py:204: in test_acesso_concorrente_mesmo_pedido_duas_instancias</span>
                                         
                                     </div>
                                     
@@ -366,22 +394,18 @@
                                 <div class="flex items-center justify-between mb-3">
                                     <div class="flex items-center gap-2">
                                         <span class="px-2.5 py-0.5 text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 rounded-md">
-                                            Stacktrace da Falha (#741)
+                                            Stacktrace da Falha (#742)
                                         </span>
                                     </div>
-                                    <button onclick="copyErrorText('error-content-741')" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-lg border border-slate-700 transition-colors flex items-center gap-1.5">
+                                    <button onclick="copyErrorText('error-content-742')" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-lg border border-slate-700 transition-colors flex items-center gap-1.5">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
                                         Copiar Stacktrace
                                     </button>
                                 </div>
-                                <pre id="error-content-741" class="text-xs bg-slate-950 p-4 rounded-xl overflow-x-auto text-rose-300 leading-relaxed border border-slate-800/80">tests\e2e\test_pedido_atacado.py:154: in test_acesso_concorrente_mesmo_pedido_duas_instancias
-    cur.execute(
-venv\Lib\site-packages\fdb\fbcore.py:3698: in execute
-    self._ps = PreparedStatement(operation, self, True)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-venv\Lib\site-packages\fdb\fbcore.py:2313: in __init__
-    raise exception_from_status(DatabaseError, self._isc_status,
-E   fdb.fbcore.DatabaseError: ('Error while preparing SQL statement:\n- SQLCODE: -204\n- Dynamic SQL Error\n- SQL error code = -204\n- Table unknown\n- TPPED\n- At line 1, column 46', -204, 335544569)</pre>
+                                <pre id="error-content-742" class="text-xs bg-slate-950 p-4 rounded-xl overflow-x-auto text-rose-300 leading-relaxed border border-slate-800/80">tests\e2e\test_pedido_atacado.py:204: in test_acesso_concorrente_mesmo_pedido_duas_instancias
+    assert consultou, f"Falha ao consultar o pedido ID {id_pedido} na Instância 1."
+           ^^^^^^^^^
+E   AssertionError: Falha ao consultar o pedido ID 610836 na Instância 1.</pre>
                             </div>
                             
                         </td>
@@ -458,9 +482,9 @@ E   fdb.fbcore.DatabaseError: ('Error while preparing SQL statement:\n- SQLCODE:
     });
 
     // 2. Trend History Chart (from SQLite)
-    const trendLabels = ["30/09 18:55", "30/09 19:09", "30/09 19:10", "01/10 09:48", "01/10 09:57", "01/10 10:02", "01/10 10:09", "01/10 10:13", "01/10 10:36", "01/10 12:29"];
-    const trendPassed = [0, 0, 1, 0, 0, 0, 1, 7, 8, 0];
-    const trendFailed = [1, 1, 0, 1, 1, 1, 0, 1, 0, 1];
+    const trendLabels = ["30/09 19:09", "30/09 19:10", "01/10 09:48", "01/10 09:57", "01/10 10:02", "01/10 10:09", "01/10 10:13", "01/10 10:36", "01/10 12:29", "01/10 12:32"];
+    const trendPassed = [0, 1, 0, 0, 0, 1, 7, 8, 0, 0];
+    const trendFailed = [1, 0, 1, 1, 1, 0, 1, 0, 1, 1];
     const trendSkipped = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
     const ctxTrend = document.getElementById('trendChart').getContext('2d');
