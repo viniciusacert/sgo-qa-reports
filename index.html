@@ -60,7 +60,7 @@
         <div class="flex flex-wrap items-center gap-3 no-print w-full md:w-auto justify-start md:justify-end">
             <div class="text-left md:text-right bg-slate-50 px-4 py-2 rounded-xl border border-slate-200/80">
                 <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Gerado em</p>
-                <p class="text-sm font-bold text-slate-700">01/10/2026 13:07:06</p>
+                <p class="text-sm font-bold text-slate-700">01/10/2026 15:54:39</p>
             </div>
             
             <button onclick="exportTableToCSV()" class="inline-flex items-center gap-2 px-4 py-2.5 bg-white hover:bg-slate-50 text-slate-700 font-semibold text-sm rounded-xl border border-slate-200 shadow-sm transition-all hover:shadow">
@@ -82,8 +82,8 @@
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow">
             <div>
                 <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Total de Testes</p>
-                <p class="text-3xl font-extrabold text-slate-900 mt-1">2</p>
-                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600">136.8s</span></p>
+                <p class="text-3xl font-extrabold text-slate-900 mt-1">1</p>
+                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600">34.8s</span></p>
             </div>
             <div class="p-3.5 rounded-xl bg-blue-50 text-blue-600 border border-blue-100">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
@@ -94,7 +94,7 @@
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow border-l-4 border-l-emerald-500">
             <div>
                 <p class="text-xs font-semibold text-emerald-700 uppercase tracking-wider">Aprovados</p>
-                <p class="text-3xl font-extrabold text-emerald-600 mt-1">2</p>
+                <p class="text-3xl font-extrabold text-emerald-600 mt-1">1</p>
                 <p class="text-xs text-emerald-600/80 mt-1 font-medium">
                     100.0% do total
                 </p>
@@ -140,7 +140,7 @@
                     <span class="text-3xl font-extrabold text-emerald-600">
                         100.0%
                     </span>
-                    <span class="text-xs text-slate-400 font-medium">Média: 68.39s</span>
+                    <span class="text-xs text-slate-400 font-medium">Média: 34.82s</span>
                 </div>
             </div>
             <!-- Mini Progress Bar -->
@@ -166,7 +166,7 @@
             <div class="grid grid-cols-3 gap-2 mt-4 pt-4 border-t border-slate-100 text-center">
                 <div class="p-2 rounded-lg bg-emerald-50">
                     <p class="text-[11px] font-semibold text-emerald-800">Passou</p>
-                    <p class="text-base font-bold text-emerald-600">2</p>
+                    <p class="text-base font-bold text-emerald-600">1</p>
                 </div>
                 <div class="p-2 rounded-lg bg-rose-50">
                     <p class="text-[11px] font-semibold text-rose-800">Falhou</p>
@@ -211,7 +211,7 @@
                 <div>
                     <h2 class="text-lg font-bold text-slate-900">Detalhamento dos Cenários de Teste</h2>
                     <p class="text-sm text-slate-500 mt-0.5" id="records-counter">
-                        Exibindo todos os <span class="font-bold text-slate-700">2</span> testes executados.
+                        Exibindo todos os <span class="font-bold text-slate-700">1</span> testes executados.
                     </p>
                 </div>
 
@@ -229,11 +229,11 @@
                     <div class="inline-flex rounded-xl p-1 bg-slate-100 border border-slate-200 text-xs font-semibold">
                         <button onclick="filterStatus('ALL')" id="btn-filter-ALL" 
                             class="filter-btn active px-3 py-1.5 rounded-lg transition-all bg-white text-slate-900 shadow-sm">
-                            Todos (2)
+                            Todos (1)
                         </button>
                         <button onclick="filterStatus('PASSED')" id="btn-filter-PASSED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-emerald-700 transition-all">
-                            ✅ Passou (2)
+                            ✅ Passou (1)
                         </button>
                         <button onclick="filterStatus('FAILED')" id="btn-filter-FAILED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-rose-700 transition-all">
@@ -267,18 +267,18 @@
                     
                     <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
                         data-status="PASSED" 
-                        data-name="valida a inclusão completa de um pedido de atacado até a persistência no banco."
+                        data-name="valida o tratamento de concorrência e detecção de deadlock/lock na tabela pedid."
                         data-triage=""
-                        data-id="747">
+                        data-id="749">
                         
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400" title="ID Banco: #747">
+                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400" title="ID Banco: #749">
                             #01
                         </td>
                         
                         <td class="px-6 py-4">
                             <div class="flex flex-col">
                                 <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Valida a inclusão completa de um pedido de atacado até a persistência no banco.
+                                    Valida o tratamento de concorrência e detecção de Deadlock/Lock na tabela PEDID.
                                 </span>
                                 
                             </div>
@@ -300,17 +300,17 @@
                         </td>
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            76.52s
+                            34.82s
                         </td>
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            01/10/2026 13:06:01
+                            01/10/2026 15:54:37
                         </td>
 
                         <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
                             
-                            <button onclick="toggleDetails(747)" class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1 rounded-lg transition-colors">
-                                🧭 Passos (21)
+                            <button onclick="toggleDetails(749)" class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1 rounded-lg transition-colors">
+                                🧭 Passos (22)
                             </button>
                             
                         </td>
@@ -318,381 +318,167 @@
 
                     <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
                     
-                    <tr id="details-747" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800">
+                    <tr id="details-749" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800">
                         <td colspan="7" class="p-6 space-y-5">
                             
                             <div>
                                 <div class="flex items-center gap-2 mb-3">
                                     <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md">
-                                        🧭 Linha do Tempo E2E (21 passos)
+                                        🧭 Linha do Tempo E2E (22 passos)
                                     </span>
-                                    <span class="text-xs text-slate-400 font-medium">Valida a inclusão completa de um pedido de atacado até a persistência no banco.</span>
+                                    <span class="text-xs text-slate-400 font-medium">Valida o tratamento de concorrência e detecção de Deadlock/Lock na tabela PEDID.</span>
                                 </div>
                                 <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto">
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:04:30</span>
+                                        <span class="text-slate-500 shrink-0">15:53:42</span>
                                         
-                                        <span class="text-slate-300">🔹 Iniciando cenário: test_inclusao_pedido_atacado</span>
+                                        <span class="text-slate-300">🔹 Iniciando cenário: test_deadlock_tabela_pedid</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:04:44</span>
+                                        <span class="text-slate-500 shrink-0">15:54:01</span>
                                         
                                         <span class="text-slate-300">🔹 Verificando tela de NFE...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:04:45</span>
+                                        <span class="text-slate-500 shrink-0">15:54:02</span>
                                         
                                         <span class="text-slate-300">🔹 Aguardando Interface...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:04:46</span>
+                                        <span class="text-slate-500 shrink-0">15:54:03</span>
                                         
                                         <span class="text-slate-300">🔹 Acessando menu Comercial...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:04:46</span>
+                                        <span class="text-slate-500 shrink-0">15:54:03</span>
                                         
                                         <span class="text-slate-300">🔹 Clique visual: Menu Comercial</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:04:47</span>
+                                        <span class="text-slate-500 shrink-0">15:54:05</span>
                                         
                                         <span class="text-slate-300">🔹 Clique visual: Opção Pedido de Cliente</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:04:49</span>
+                                        <span class="text-slate-500 shrink-0">15:54:07</span>
                                         
                                         <span class="text-slate-300">🔹 Aguardando tela...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:04:51</span>
-                                        
-                                        <span class="text-slate-300">🔹 Clicando Incluir...</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:04:51</span>
-                                        
-                                        <span class="text-slate-300">🔹 Clique visual: Botão Incluir na barra superior</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:04:55</span>
-                                        
-                                        <span class="text-slate-300">🔹 Aguardando liberação (OCR)...</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:05:10</span>
-                                        
-                                        <span class="text-slate-300">🔹 Preenchendo Cabeçalho...</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:05:18</span>
-                                        
-                                        <span class="text-slate-300">🔹 Preenchendo Produto...</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:05:18</span>
-                                        
-                                        <span class="text-slate-300">🔹 Clique visual: Primeira célula sob a coluna Produto na grade</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:05:26</span>
-                                        
-                                        <span class="text-slate-300">🔹 Aguardando Cálculo SGO...</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:05:34</span>
-                                        
-                                        <span class="text-slate-300">🔹 Escaneando Tela (WinOCR)...</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:05:38</span>
-                                        
-                                        <span class="text-slate-300">🔹 Salvando Pedido...</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:05:38</span>
-                                        
-                                        <span class="text-slate-300">🔹 Clique visual: Botão OK com check verde</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:06:01</span>
-                                        
-                                        <span class="text-emerald-400 font-semibold">✅ Registro auditado (ID do Pedido (Banco): 610847)</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:06:01</span>
-                                        
-                                        <span class="text-emerald-400 font-semibold">✅ Registro auditado (Nº do Pedido SGO: 508892.000)</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:06:01</span>
-                                        
-                                        <span class="text-emerald-400 font-semibold">✅ Registro auditado (Valor Total: R$ 360.00)</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:06:01</span>
-                                        
-                                        <span class="text-emerald-400 font-semibold">✅ Cenário concluído e validado com sucesso!</span>
-                                        
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            
-
-                            
-                        </td>
-                    </tr>
-                    
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-name="valida o mecanismo de concorrência e bloqueio de registros do sgo entre duas instâncias."
-                        data-triage=""
-                        data-id="748">
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400" title="ID Banco: #748">
-                            #02
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Valida o mecanismo de concorrência e bloqueio de registros do SGO entre duas instâncias.
-                                </span>
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            60.25s
-                        </td>
-                        
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            01/10/2026 13:07:04
-                        </td>
-
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                            
-                            <button onclick="toggleDetails(748)" class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1 rounded-lg transition-colors">
-                                🧭 Passos (21)
-                            </button>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
-                    
-                    <tr id="details-748" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800">
-                        <td colspan="7" class="p-6 space-y-5">
-                            
-                            <div>
-                                <div class="flex items-center gap-2 mb-3">
-                                    <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md">
-                                        🧭 Linha do Tempo E2E (21 passos)
-                                    </span>
-                                    <span class="text-xs text-slate-400 font-medium">Valida o mecanismo de concorrência e bloqueio de registros do SGO entre duas instâncias.</span>
-                                </div>
-                                <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto">
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:06:03</span>
-                                        
-                                        <span class="text-slate-300">🔹 Iniciando cenário: test_acesso_concorrente_mesmo_pedido_duas_instancias</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:06:04</span>
-                                        
-                                        <span class="text-slate-300">🔹 Aguardando Interface...</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:06:05</span>
-                                        
-                                        <span class="text-slate-300">🔹 Acessando menu Comercial...</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:06:05</span>
-                                        
-                                        <span class="text-slate-300">🔹 Clique visual: Menu Comercial</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:06:06</span>
-                                        
-                                        <span class="text-slate-300">🔹 Clique visual: Opção Pedido de Cliente</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:06:08</span>
-                                        
-                                        <span class="text-slate-300">🔹 Aguardando tela...</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:06:09</span>
+                                        <span class="text-slate-500 shrink-0">15:54:08</span>
                                         
                                         <span class="text-slate-300">🔹 Consultando Pedido ID 610847...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:06:14</span>
+                                        <span class="text-slate-500 shrink-0">15:54:17</span>
                                         
                                         <span class="text-slate-300">🔹 Iniciando modo de Alteração do Pedido...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:06:14</span>
+                                        <span class="text-slate-500 shrink-0">15:54:17</span>
                                         
                                         <span class="text-slate-300">🔹 Clique visual: Botão Alterar Pedido</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:06:31</span>
+                                        <span class="text-slate-500 shrink-0">15:54:20</span>
                                         
-                                        <span class="text-slate-300">🔹 Clique visual: Menu Comercial</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:06:33</span>
-                                        
-                                        <span class="text-slate-300">🔹 Clique visual: Opção Pedido de Cliente</span>
+                                        <span class="text-slate-300">🔹 Preenchendo Ordem Compra: 'DEADLOCK QA'...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:06:50</span>
+                                        <span class="text-slate-500 shrink-0">15:54:22</span>
                                         
-                                        <span class="text-slate-300">🔹 Preenchendo Ordem Compra: 'ACESSO DUPLO'...</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:06:51</span>
-                                        
-                                        <span class="text-slate-300">🔹 Preencheu Win32 [CLASS:TDBEdit; INSTANCE:49] = 'ACESSO DUPLO'</span>
+                                        <span class="text-slate-300">🔹 Preencheu Win32 [CLASS:TDBEdit; INSTANCE:49] = 'DEADLOCK QA'</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:06:51</span>
+                                        <span class="text-slate-500 shrink-0">15:54:22</span>
+                                        
+                                        <span class="text-slate-300">🔹 Clique visual: btn_ok_salvar_pedido</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">15:54:29</span>
                                         
                                         <span class="text-slate-300">🔹 Salvando Alteração do Pedido...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:06:51</span>
+                                        <span class="text-slate-500 shrink-0">15:54:32</span>
                                         
                                         <span class="text-slate-300">🔹 Clique visual: Botão OK Salvar</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:07:04</span>
+                                        <span class="text-slate-500 shrink-0">15:54:37</span>
                                         
                                         <span class="text-emerald-400 font-semibold">✅ Registro auditado (ID do Pedido: 610847 (Nº 508892.000))</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:07:04</span>
+                                        <span class="text-slate-500 shrink-0">15:54:37</span>
                                         
-                                        <span class="text-emerald-400 font-semibold">✅ Registro auditado (1. Trava Concorrência (Instância 1): RESERVAPEDIDO ativada ao acionar Alt+A (Rotina='ALTERAR PEDIDO CLIENTE', Usuário='10059'))</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:07:04</span>
-                                        
-                                        <span class="text-emerald-400 font-semibold">✅ Registro auditado (2. Bloqueio Concorrente (Instância 2): Disparou popup impeditivo: 'Sistema Gerencial de Atacado/Laboratório óptico O Pedido com ID Pedido [610847) está em processo de Alteração pelo Usuário: AZEVEDO Data: 01/10/2026 - Hora: 13:06 Verifique!')</span>
+                                        <span class="text-emerald-400 font-semibold">✅ Registro auditado (Teste de Concorrência: Deadlock Tabela PEDID Tratado com Sucesso)</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:07:04</span>
+                                        <span class="text-slate-500 shrink-0">15:54:37</span>
                                         
-                                        <span class="text-emerald-400 font-semibold">✅ Registro auditado (3. Persistência Final (Instância 1): Ordem de Compra atualizada para 'ACESSO DUPLO' com sucesso)</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:07:04</span>
-                                        
-                                        <span class="text-emerald-400 font-semibold">✅ Registro auditado (4. Liberação Transacional (Firebird): Trava RESERVAPEDIDO liberada com sucesso (0 registros residuais))</span>
+                                        <span class="text-emerald-400 font-semibold">✅ Registro auditado (1. Lock Exclusivo (Python): UPDATE PEDID sem commit executado para ID 610847)</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">13:07:04</span>
+                                        <span class="text-slate-500 shrink-0">15:54:37</span>
+                                        
+                                        <span class="text-emerald-400 font-semibold">✅ Registro auditado (2. Conflito Concorrente (SGO): Disparou exceção de Deadlock / Lock Conflict ao tentar salvar)</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">15:54:37</span>
+                                        
+                                        <span class="text-emerald-400 font-semibold">✅ Registro auditado (3. Resolução (Rollback Python): Transação fantasma liberada e alteração salva com sucesso)</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">15:54:37</span>
+                                        
+                                        <span class="text-emerald-400 font-semibold">✅ Registro auditado (4. Persistência Final: PEDORDEMCOMPRA='DEADLOCK QA', RESERVAPEDIDO=0)</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">15:54:37</span>
                                         
                                         <span class="text-emerald-400 font-semibold">✅ Cenário concluído e validado com sucesso!</span>
                                         
@@ -736,7 +522,7 @@
     Chart.defaults.font.family = "'Plus Jakarta Sans', sans-serif";
     Chart.defaults.color = '#64748b';
 
-    const passedCount = 2;
+    const passedCount = 1;
     const failedCount = 0;
     const skippedCount = 0;
 
@@ -777,9 +563,9 @@
     });
 
     // 2. Trend History Chart (from SQLite)
-    const trendLabels = ["01/10 10:09", "01/10 10:13", "01/10 10:36", "01/10 12:29", "01/10 12:32", "01/10 12:37", "01/10 12:40", "01/10 12:46", "01/10 13:01", "01/10 13:04"];
-    const trendPassed = [1, 7, 8, 0, 0, 0, 0, 0, 1, 2];
-    const trendFailed = [0, 1, 0, 1, 1, 1, 1, 1, 0, 0];
+    const trendLabels = ["01/10 10:13", "01/10 10:36", "01/10 12:29", "01/10 12:32", "01/10 12:37", "01/10 12:40", "01/10 12:46", "01/10 13:01", "01/10 13:04", "01/10 15:53"];
+    const trendPassed = [7, 8, 0, 0, 0, 0, 0, 1, 2, 1];
+    const trendFailed = [1, 0, 1, 1, 1, 1, 1, 0, 0, 0];
     const trendSkipped = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
     const ctxTrend = document.getElementById('trendChart').getContext('2d');
@@ -881,7 +667,7 @@
         });
 
         // Update Counter
-        const total = 2;
+        const total = 1;
         const counterElem = document.getElementById('records-counter');
         if (counterElem) {
             if (visibleCount === total) {
