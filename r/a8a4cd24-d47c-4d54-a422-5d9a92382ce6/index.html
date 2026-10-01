@@ -47,8 +47,11 @@
             <div>
                 <div class="flex items-center gap-2 flex-wrap">
                     <h1 class="text-2xl font-extrabold text-slate-900 tracking-tight">SGO QA — Telemetria de Testes</h1>
-                    <span class="px-2.5 py-0.5 text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-full">v2607.1.1000.20</span>
+                    <span class="px-2.5 py-0.5 text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-full">v2607.1.1000.249</span>
                     <span class="px-2.5 py-0.5 text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-200 rounded-full">LABSP QA TRUNK</span>
+                    
+                    <span class="px-2.5 py-0.5 text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200 rounded-full">👤 AZEVEDO @ Vinicius-Azevedo</span>
+                    
                 </div>
                 <p class="text-sm text-slate-500 mt-1">Dashboard Executivo de Qualidade Contínua e Rastreabilidade E2E</p>
             </div>
@@ -57,7 +60,7 @@
         <div class="flex flex-wrap items-center gap-3 no-print w-full md:w-auto justify-start md:justify-end">
             <div class="text-left md:text-right bg-slate-50 px-4 py-2 rounded-xl border border-slate-200/80">
                 <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Gerado em</p>
-                <p class="text-sm font-bold text-slate-700">24/09/2026 17:49:45</p>
+                <p class="text-sm font-bold text-slate-700">01/10/2026 16:02:02</p>
             </div>
             
             <button onclick="exportTableToCSV()" class="inline-flex items-center gap-2 px-4 py-2.5 bg-white hover:bg-slate-50 text-slate-700 font-semibold text-sm rounded-xl border border-slate-200 shadow-sm transition-all hover:shadow">
@@ -80,7 +83,7 @@
             <div>
                 <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Total de Testes</p>
                 <p class="text-3xl font-extrabold text-slate-900 mt-1">1</p>
-                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600">36.5s</span></p>
+                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600">26.2s</span></p>
             </div>
             <div class="p-3.5 rounded-xl bg-blue-50 text-blue-600 border border-blue-100">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
@@ -137,7 +140,7 @@
                     <span class="text-3xl font-extrabold text-rose-600">
                         0.0%
                     </span>
-                    <span class="text-xs text-slate-400 font-medium">Média: 36.53s</span>
+                    <span class="text-xs text-slate-400 font-medium">Média: 26.20s</span>
                 </div>
             </div>
             <!-- Mini Progress Bar -->
@@ -264,22 +267,22 @@
                     
                     <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
                         data-status="FAILED" 
-                        data-name="valida a visualização em tela, impressão em pdf e controle no banco de um pedido de laboratório."
+                        data-name="valida o tratamento de concorrência e detecção de deadlock/lock na tabela pedid."
                         data-triage="assertion"
-                        data-id="568">
+                        data-id="750">
                         
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400">
-                            #568
+                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400" title="ID Banco: #750">
+                            #01
                         </td>
                         
                         <td class="px-6 py-4">
                             <div class="flex flex-col">
                                 <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Valida a visualização em tela, impressão em PDF e controle no banco de um pedido de laboratório.
+                                    Valida o tratamento de concorrência e detecção de Deadlock/Lock na tabela PEDID.
                                 </span>
                                 
                                 <span class="text-xs text-rose-600 line-clamp-1 mt-0.5 font-mono">
-                                    tests\e2e\test_pedido_laboratorio.py:213: in test_impressao_pedido_laboratorio
+                                    tests\e2e\test_pedido_atacado.py:499: in test_deadlock_tabela_pedid
                                 </span>
                                 
                             </div>
@@ -303,41 +306,157 @@
                         </td>
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            36.53s
+                            26.20s
                         </td>
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            24/09/2026 17:49:39
+                            01/10/2026 16:02:00
                         </td>
 
                         <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
                             
-                            <button onclick="toggleDetails(568)" class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 px-3 py-1 rounded-lg transition-colors">
-                                Ver Erro
+                            <button onclick="toggleDetails(750)" class="font-semibold text-rose-600 hover:text-rose-800 bg-rose-50 hover:bg-rose-100 border border-rose-200 px-3 py-1 rounded-lg transition-colors">
+                                🔍 Erro & Passos (14)
                             </button>
                             
                         </td>
                     </tr>
 
-                    <!-- Expandable Details Row for Errors -->
+                    <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
                     
-                    <tr id="details-568" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800">
-                        <td colspan="7" class="p-6">
-                            <div class="flex items-center justify-between mb-3">
-                                <div class="flex items-center gap-2">
-                                    <span class="px-2.5 py-0.5 text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 rounded-md">
-                                        Falha Detectada (#568)
+                    <tr id="details-750" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800">
+                        <td colspan="7" class="p-6 space-y-5">
+                            
+                            <div>
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md">
+                                        🧭 Linha do Tempo E2E (14 passos)
                                     </span>
-                                    <span class="text-xs text-slate-400 font-medium">Valida a visualização em tela, impressão em PDF e controle no banco de um pedido de laboratório.</span>
+                                    <span class="text-xs text-slate-400 font-medium">Valida o tratamento de concorrência e detecção de Deadlock/Lock na tabela PEDID.</span>
                                 </div>
-                                <button onclick="copyErrorText('error-content-568')" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-lg border border-slate-700 transition-colors flex items-center gap-1.5">
-                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                                    Copiar Stacktrace
-                                </button>
+                                <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto">
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">16:01:18</span>
+                                        
+                                        <span class="text-slate-300">🔹 Iniciando cenário: test_deadlock_tabela_pedid</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">16:01:32</span>
+                                        
+                                        <span class="text-slate-300">🔹 Verificando tela de NFE...</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">16:01:33</span>
+                                        
+                                        <span class="text-slate-300">🔹 Aguardando Interface...</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">16:01:34</span>
+                                        
+                                        <span class="text-slate-300">🔹 Acessando menu Comercial...</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">16:01:34</span>
+                                        
+                                        <span class="text-slate-300">🔹 Clique visual: Menu Comercial</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">16:01:36</span>
+                                        
+                                        <span class="text-slate-300">🔹 Clique visual: Opção Pedido de Cliente</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">16:01:38</span>
+                                        
+                                        <span class="text-slate-300">🔹 Aguardando tela...</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">16:01:39</span>
+                                        
+                                        <span class="text-slate-300">🔹 Consultando Pedido ID 610847...</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">16:01:46</span>
+                                        
+                                        <span class="text-slate-300">🔹 Iniciando modo de Alteração do Pedido...</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">16:01:47</span>
+                                        
+                                        <span class="text-slate-300">🔹 Clique visual: Botão Alterar Pedido</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">16:01:49</span>
+                                        
+                                        <span class="text-slate-300">🔹 Preenchendo Ordem Compra: 'DEADLOCK QA'...</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">16:01:50</span>
+                                        
+                                        <span class="text-slate-300">🔹 Preencheu Win32 [CLASS:TDBEdit; INSTANCE:49] = 'DEADLOCK QA'</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">16:01:51</span>
+                                        
+                                        <span class="text-slate-300">🔹 Clique visual: btn_ok_salvar_pedido</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">16:02:00</span>
+                                        
+                                        <span class="text-rose-400 font-semibold">❌ Falha detectada [Assertion]: tests\e2e\test_pedido_atacado.py:499: in test_deadlock_tabela_pedid</span>
+                                        
+                                    </div>
+                                    
+                                </div>
                             </div>
-                            <pre id="error-content-568" class="text-xs bg-slate-950 p-4 rounded-xl overflow-x-auto text-rose-300 leading-relaxed border border-slate-800/80">tests\e2e\test_pedido_laboratorio.py:213: in test_impressao_pedido_laboratorio
-    assert not resultado_imp["erro_detectado"], (
-E   AssertionError: Erro detectado ao tentar visualizar a impressão do pedido 610821: Popup de alerta bloqueou a impressão ( [#32770]): O Sistema Gerencial de Atacado/Laboratório Óptico - TESTE | Cadastros Comercial | Expedição Faturamento Compras | Fiscais | Nota Fiscal Eletrônica | Utilitários | Ajuda | O Pedidos de Clientes | $êlterar | Emissão | 24/09/2028 | Pedido | ID Pedido | 000 | Eechar | Laboratório | principal Cl utros Dados Adicionai | O Impressão de Pedidos | Cliente | Origem Captação | Eechar | Finalidade | Código | 000 | D.T I CÁLCULO MANUAL | < Sem JitBox > | Pedidos Relacionados | ntvega Hr Entrega Saída | 8 CITICAS OZEVEDD | Atendente - Vendedor | 443 BRUNO INACID FARIA | Erodutos Serviços Itens da Pro | Pedid | Selecionar área | Produto | Descrição | VS DIGITA | CORTE RE | Valore | Sistema Gerencial de Atacado/Laboratório Óptico X | Pedido </pre>
+                            
+
+                            
+                            <div>
+                                <div class="flex items-center justify-between mb-3">
+                                    <div class="flex items-center gap-2">
+                                        <span class="px-2.5 py-0.5 text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 rounded-md">
+                                            Stacktrace da Falha (#750)
+                                        </span>
+                                    </div>
+                                    <button onclick="copyErrorText('error-content-750')" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-lg border border-slate-700 transition-colors flex items-center gap-1.5">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                                        Copiar Stacktrace
+                                    </button>
+                                </div>
+                                <pre id="error-content-750" class="text-xs bg-slate-950 p-4 rounded-xl overflow-x-auto text-rose-300 leading-relaxed border border-slate-800/80">tests\e2e\test_pedido_atacado.py:499: in test_deadlock_tabela_pedid
+    assert erro_detectado, (
+           ^^^^^^^^^^^^^^
+E   AssertionError: Falso Positivo Evitado: O popup de Deadlock/Conflito de concorrência NÃO apareceu no SGO! Conteúdo capturado: ''</pre>
+                            </div>
+                            
                         </td>
                     </tr>
                     
@@ -412,9 +531,9 @@ E   AssertionError: Erro detectado ao tentar visualizar a impressão do pedido 6
     });
 
     // 2. Trend History Chart (from SQLite)
-    const trendLabels = ["24/09 12:21", "24/09 12:25", "24/09 12:29", "24/09 15:46", "24/09 16:20", "24/09 16:39", "24/09 16:49", "24/09 17:18", "24/09 17:27", "24/09 17:48"];
-    const trendPassed = [1, 1, 0, 1, 1, 0, 1, 0, 1, 0];
-    const trendFailed = [0, 0, 1, 0, 0, 1, 0, 0, 0, 1];
+    const trendLabels = ["01/10 10:36", "01/10 12:29", "01/10 12:32", "01/10 12:37", "01/10 12:40", "01/10 12:46", "01/10 13:01", "01/10 13:04", "01/10 15:53", "01/10 16:01"];
+    const trendPassed = [8, 0, 0, 0, 0, 0, 1, 2, 1, 0];
+    const trendFailed = [0, 1, 1, 1, 1, 1, 0, 0, 0, 1];
     const trendSkipped = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
     const ctxTrend = document.getElementById('trendChart').getContext('2d');
