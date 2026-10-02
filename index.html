@@ -60,7 +60,7 @@
         <div class="flex flex-wrap items-center gap-3 no-print w-full md:w-auto justify-start md:justify-end">
             <div class="text-left md:text-right bg-slate-50 px-4 py-2 rounded-xl border border-slate-200/80">
                 <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Gerado em</p>
-                <p class="text-sm font-bold text-slate-700">02/10/2026 18:47:57</p>
+                <p class="text-sm font-bold text-slate-700">02/10/2026 18:49:19</p>
             </div>
             
             <button onclick="exportTableToCSV()" class="inline-flex items-center gap-2 px-4 py-2.5 bg-white hover:bg-slate-50 text-slate-700 font-semibold text-sm rounded-xl border border-slate-200 shadow-sm transition-all hover:shadow">
@@ -83,7 +83,7 @@
             <div>
                 <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Total de Testes</p>
                 <p class="text-3xl font-extrabold text-slate-900 mt-1">1</p>
-                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600">26.3s</span></p>
+                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600">5.2s</span></p>
             </div>
             <div class="p-3.5 rounded-xl bg-blue-50 text-blue-600 border border-blue-100">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
@@ -140,7 +140,7 @@
                     <span class="text-3xl font-extrabold text-rose-600">
                         0.0%
                     </span>
-                    <span class="text-xs text-slate-400 font-medium">Média: 26.28s</span>
+                    <span class="text-xs text-slate-400 font-medium">Média: 5.19s</span>
                 </div>
             </div>
             <!-- Mini Progress Bar -->
@@ -269,9 +269,9 @@
                         data-status="FAILED" 
                         data-name="valida a aprovação de pedidos de laboratório via tela dedicada (filtro de pedidos sem aprovação)"
                         data-triage="unknown"
-                        data-id="812">
+                        data-id="813">
                         
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400" title="ID Banco: #812">
+                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400" title="ID Banco: #813">
                             #01
                         </td>
                         
@@ -282,7 +282,7 @@
                                 </span>
                                 
                                 <span class="text-xs text-rose-600 line-clamp-1 mt-0.5 font-mono">
-                                    tests\conftest.py:157: in _fixture_dinamica
+                                    tests\e2e\test_pedido_laboratorio.py:299: in test_aprovacao_pedido_laboratorio_tela_dedicada
                                 </span>
                                 
                             </div>
@@ -306,17 +306,17 @@
                         </td>
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            26.28s
+                            5.19s
                         </td>
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            02/10/2026 18:47:54
+                            02/10/2026 18:49:06
                         </td>
 
                         <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
                             
-                            <button onclick="toggleDetails(812)" class="font-semibold text-rose-600 hover:text-rose-800 bg-rose-50 hover:bg-rose-100 border border-rose-200 px-3 py-1 rounded-lg transition-colors">
-                                🔍 Erro & Passos (4)
+                            <button onclick="toggleDetails(813)" class="font-semibold text-rose-600 hover:text-rose-800 bg-rose-50 hover:bg-rose-100 border border-rose-200 px-3 py-1 rounded-lg transition-colors">
+                                🔍 Erro & Passos (8)
                             </button>
                             
                         </td>
@@ -324,43 +324,71 @@
 
                     <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
                     
-                    <tr id="details-812" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800">
+                    <tr id="details-813" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800">
                         <td colspan="7" class="p-6 space-y-5">
                             
                             <div>
                                 <div class="flex items-center gap-2 mb-3">
                                     <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md">
-                                        🧭 Linha do Tempo E2E (4 passos)
+                                        🧭 Linha do Tempo E2E (8 passos)
                                     </span>
                                     <span class="text-xs text-slate-400 font-medium">Valida a aprovação de pedidos de laboratório via tela dedicada (Filtro de Pedidos Sem Aprovação)</span>
                                 </div>
                                 <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto">
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">18:47:28</span>
+                                        <span class="text-slate-500 shrink-0">18:48:35</span>
                                         
                                         <span class="text-slate-300">🔹 Iniciando cenário: test_aprovacao_pedido_laboratorio_tela_dedicada</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">18:47:45</span>
+                                        <span class="text-slate-500 shrink-0">18:48:51</span>
                                         
                                         <span class="text-slate-300">🔹 Verificando tela de NFE...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">18:47:54</span>
+                                        <span class="text-slate-500 shrink-0">18:49:00</span>
                                         
                                         <span class="text-slate-300">🔹 Clicou botão Win32 'OK'</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">18:47:54</span>
+                                        <span class="text-slate-500 shrink-0">18:49:00</span>
                                         
-                                        <span class="text-rose-400 font-semibold">❌ Falha detectada [Unknown]: tests\conftest.py:157: in _fixture_dinamica</span>
+                                        <span class="text-slate-300">🔹 Aguardando Interface...</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">18:49:02</span>
+                                        
+                                        <span class="text-slate-300">🔹 Clicou botão Win32 'OK'</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">18:49:05</span>
+                                        
+                                        <span class="text-slate-300">🔹 Acessando menu Comercial...</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">18:49:05</span>
+                                        
+                                        <span class="text-slate-300">🔹 Clique visual: Menu Comercial</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">18:49:06</span>
+                                        
+                                        <span class="text-rose-400 font-semibold">❌ Falha detectada [Unknown]: tests\e2e\test_pedido_laboratorio.py:299: in test_aprovacao_pedido_laboratorio_tela_dedicada</span>
                                         
                                     </div>
                                     
@@ -373,23 +401,29 @@
                                 <div class="flex items-center justify-between mb-3">
                                     <div class="flex items-center gap-2">
                                         <span class="px-2.5 py-0.5 text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 rounded-md">
-                                            Stacktrace da Falha (#812)
+                                            Stacktrace da Falha (#813)
                                         </span>
                                     </div>
-                                    <button onclick="copyErrorText('error-content-812')" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-lg border border-slate-700 transition-colors flex items-center gap-1.5">
+                                    <button onclick="copyErrorText('error-content-813')" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-lg border border-slate-700 transition-colors flex items-center gap-1.5">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
                                         Copiar Stacktrace
                                     </button>
                                 </div>
-                                <pre id="error-content-812" class="text-xs bg-slate-950 p-4 rounded-xl overflow-x-auto text-rose-300 leading-relaxed border border-slate-800/80">tests\conftest.py:157: in _fixture_dinamica
-    modulo = importlib.import_module(f"src.pages.{mod_name}")
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-C:\Users\vinicius.azevedo\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py:90: in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-src\pages\pedidos_sem_aprovacao_page.py:15: in <module>
-    from src.core.win32_utils import (
-E   ImportError: cannot import name 'preencher_campo_win32' from 'src.core.win32_utils' (C:\DEV_QA\sgo_tests\src\core\win32_utils.py)</pre>
+                                <pre id="error-content-813" class="text-xs bg-slate-950 p-4 rounded-xl overflow-x-auto text-rose-300 leading-relaxed border border-slate-800/80">tests\e2e\test_pedido_laboratorio.py:299: in test_aprovacao_pedido_laboratorio_tela_dedicada
+    abriu = pedido_laboratorio_page.abrir_tela_via_mouse(main_page)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\pages\pedido_laboratorio_page.py:47: in abrir_tela_via_mouse
+    achou_comercial = self.clicar_elemento("menus/comercial", "Menu Comercial", timeout=15)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\core\base_page.py:88: in clicar_elemento
+    return self.executor.find_and_click(screen_key, description, timeout, offset_x=offset_x, offset_y=offset_y)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\agents\executor_agent.py:61: in find_and_click
+    coords = self._fast_track(screen_key)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\agents\executor_agent.py:164: in _fast_track
+    screenshot_path = self.capture.capture_full_screen()
+            </pre>
                             </div>
                             
                         </td>
@@ -466,9 +500,9 @@ E   ImportError: cannot import name 'preencher_campo_win32' from 'src.core.win32
     });
 
     // 2. Trend History Chart (from SQLite)
-    const trendLabels = ["01/10 16:39", "01/10 17:08", "01/10 17:19", "01/10 17:23", "01/10 17:25", "01/10 17:33", "01/10 18:00", "01/10 18:08", "01/10 19:25", "02/10 18:47"];
-    const trendPassed = [0, 1, 0, 1, 8, 3, 2, 1, 39, 0];
-    const trendFailed = [1, 0, 1, 0, 0, 0, 1, 0, 2, 1];
+    const trendLabels = ["01/10 17:08", "01/10 17:19", "01/10 17:23", "01/10 17:25", "01/10 17:33", "01/10 18:00", "01/10 18:08", "01/10 19:25", "02/10 18:47", "02/10 18:48"];
+    const trendPassed = [1, 0, 1, 8, 3, 2, 1, 39, 0, 0];
+    const trendFailed = [0, 1, 0, 0, 0, 1, 0, 2, 1, 1];
     const trendSkipped = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
     const ctxTrend = document.getElementById('trendChart').getContext('2d');
