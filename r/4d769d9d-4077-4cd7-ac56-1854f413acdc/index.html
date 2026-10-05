@@ -19,17 +19,207 @@
         code, pre {
             font-family: 'JetBrains Mono', monospace;
         }
-        @media print {
-            .no-print { display: none !important; }
-            body { background: white !important; }
-            .shadow-sm, .shadow-md { box-shadow: none !important; }
-            .border { border-color: #cbd5e1 !important; }
-        }
+
         /* Custom scrollbar */
         ::-webkit-scrollbar { width: 6px; height: 6px; }
         ::-webkit-scrollbar-track { background: #f1f5f9; }
         ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+        /* ==========================================================================
+           MOTOR DE IMPRESSÃO PROFISSIONAL A4 (RETRATO & PAISAGEM)
+           ========================================================================== */
+        @media print {
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+
+            .no-print, .no-print * {
+                display: none !important;
+            }
+
+            html, body {
+                background: #ffffff !important;
+                background-color: #ffffff !important;
+                color: #0f172a !important;
+                font-size: 11px !important;
+                width: 100% !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+            .container {
+                max-width: 100% !important;
+                width: 100% !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+
+            /* Cabeçalho Compacto */
+            header {
+                padding: 10px 14px !important;
+                margin-bottom: 10px !important;
+                border-radius: 8px !important;
+                border: 1px solid #cbd5e1 !important;
+                box-shadow: none !important;
+                background: #ffffff !important;
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+            }
+            header h1 {
+                font-size: 16px !important;
+            }
+
+            /* Grid dos 5 KPIs lado a lado sem quebra */
+            .kpi-grid {
+                display: grid !important;
+                grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+                gap: 8px !important;
+                margin-bottom: 10px !important;
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+            }
+            .kpi-card {
+                padding: 8px 10px !important;
+                border-radius: 8px !important;
+                border: 1px solid #e2e8f0 !important;
+                box-shadow: none !important;
+                background: #ffffff !important;
+            }
+            .kpi-card p.text-3xl {
+                font-size: 18px !important;
+                line-height: 1.2 !important;
+            }
+            .kpi-card svg {
+                width: 16px !important;
+                height: 16px !important;
+            }
+
+            /* Gráficos Analíticos */
+            .charts-row {
+                display: grid !important;
+                grid-template-columns: 1fr 2fr !important;
+                gap: 10px !important;
+                margin-bottom: 12px !important;
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+            }
+            .charts-row > div {
+                padding: 10px 12px !important;
+                border-radius: 8px !important;
+                border: 1px solid #e2e8f0 !important;
+                box-shadow: none !important;
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+            }
+            .charts-row canvas {
+                max-height: 160px !important;
+            }
+
+            /* Tabela de Cenários */
+            .table-section {
+                border: 1px solid #cbd5e1 !important;
+                border-radius: 8px !important;
+                box-shadow: none !important;
+                overflow: visible !important;
+            }
+            .table-header-bar {
+                padding: 8px 12px !important;
+                border-bottom: 1px solid #e2e8f0 !important;
+                background: #ffffff !important;
+            }
+            table {
+                width: 100% !important;
+                font-size: 10.5px !important;
+                border-collapse: collapse !important;
+            }
+            thead {
+                display: table-header-group !important; /* Repete o cabeçalho no topo de cada folha A4 */
+            }
+            thead th {
+                padding: 6px 8px !important;
+                background-color: #f1f5f9 !important;
+                color: #334155 !important;
+                font-size: 9.5px !important;
+                border-bottom: 1.5px solid #cbd5e1 !important;
+            }
+            tbody tr.test-row {
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+                border-bottom: 1px solid #f1f5f9 !important;
+            }
+            tbody tr.test-row td {
+                padding: 5px 8px !important;
+                vertical-align: middle !important;
+            }
+
+            /* Oculta coluna interativa de Ação (botão expandir) */
+            .col-acao {
+                display: none !important;
+            }
+
+            /* Linhas de detalhes quando abertas */
+            tr.details-row {
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+            }
+            tr.details-row td {
+                padding: 8px !important;
+                background-color: #f8fafc !important;
+                font-size: 9.5px !important;
+            }
+
+            /* Rodapé */
+            footer {
+                margin-top: 12px !important;
+                padding: 8px 0 !important;
+                border-top: 1px solid #cbd5e1 !important;
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+                font-size: 9px !important;
+            }
+        }
+
+        /* Ajustes finos quando em Retrato (Portrait) */
+        @media print and (orientation: portrait) {
+            .charts-row {
+                grid-template-columns: 1fr 1fr !important;
+            }
+            .charts-row canvas {
+                max-height: 130px !important;
+            }
+            table {
+                font-size: 9.5px !important;
+            }
+            thead th {
+                font-size: 9px !important;
+                padding: 4px 6px !important;
+            }
+            tbody tr.test-row td {
+                padding: 4px 6px !important;
+            }
+        }
+
+        /* Ajustes finos quando em Paisagem (Landscape) */
+        @media print and (orientation: landscape) {
+            .charts-row {
+                grid-template-columns: 1fr 2fr !important;
+            }
+            .charts-row canvas {
+                max-height: 170px !important;
+            }
+            table {
+                font-size: 10.5px !important;
+            }
+            thead th {
+                padding: 6px 10px !important;
+            }
+            tbody tr.test-row td {
+                padding: 6px 10px !important;
+            }
+        }
     </style>
 </head>
 <body class="text-slate-800 antialiased min-h-screen bg-slate-50/50">
@@ -47,10 +237,40 @@
             <div>
                 <div class="flex items-center gap-2 flex-wrap">
                     <h1 class="text-2xl font-extrabold text-slate-900 tracking-tight">SGO QA — Telemetria de Testes</h1>
-                    <span class="px-2.5 py-0.5 text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-full">v2607.1.1000.20</span>
-                    <span class="px-2.5 py-0.5 text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-200 rounded-full">LABSP QA TRUNK</span>
                     
-                    <span class="px-2.5 py-0.5 text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200 rounded-full">👤 AZEVEDO @ Vinicius-Azevedo</span>
+                    <!-- Badge SGO.exe -->
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-full cursor-help transition-all hover:bg-indigo-100 hover:shadow-sm" 
+                          title="Executável Principal do Sistema (SGO.exe)&#10;• Versão Completa: 2607.1.1000.249&#10;• Build Jenkins: 249&#10;• Modificado em: 30/09/2026 12:00">
+                        <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
+                        <span class="font-bold text-indigo-900/60 text-[11px] uppercase tracking-wider">SGO</span>
+                        <span>v2607 b249</span>
+                    </span>
+
+                    <!-- Badge ImpRel.dll -->
+                    
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200 rounded-full cursor-help transition-all hover:bg-amber-100 hover:shadow-sm" 
+                          title="Módulo de Relatórios e Impressões (ImpRel.dll)&#10;• Nome do Produto / Cliente: ImpRel&#10;• Versão Completa: 2607.1.1000.6110&#10;• Build Jenkins: 6110&#10;• Modificado em: 29/09/2026 17:07">
+                        <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+                        <span class="font-bold text-amber-900/60 text-[11px] uppercase tracking-wider">ImpRel</span>
+                        <span>v2607 b6110</span>
+                    </span>
+                    
+
+                    <!-- Badge Banco Firebird -->
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-200 rounded-full cursor-help transition-all hover:bg-slate-200 hover:shadow-sm" 
+                          title="Banco de Dados Firebird (.fb)&#10;• Base Ativa: AUTOMACAO_QA">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                        <span class="font-bold text-slate-500 text-[11px] uppercase tracking-wider">BD</span>
+                        <span>AUTOMACAO_QA</span>
+                    </span>
+
+                    <!-- Badge Analista / Estação -->
+                    
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200 rounded-full cursor-help transition-all hover:bg-emerald-100 hover:shadow-sm" 
+                          title="Estação de Trabalho e Usuário Executor">
+                        <span>👤</span>
+                        <span>AZEVEDO @ Vinicius-Azevedo</span>
+                    </span>
                     
                 </div>
                 <p class="text-sm text-slate-500 mt-1">Dashboard Executivo de Qualidade Contínua e Rastreabilidade E2E</p>
@@ -60,30 +280,31 @@
         <div class="flex flex-wrap items-center gap-3 no-print w-full md:w-auto justify-start md:justify-end">
             <div class="text-left md:text-right bg-slate-50 px-4 py-2 rounded-xl border border-slate-200/80">
                 <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Gerado em</p>
-                <p class="text-sm font-bold text-slate-700">30/09/2026 11:09:13</p>
+                <p class="text-sm font-bold text-slate-700">05/10/2026 14:13:01</p>
             </div>
             
-            <button onclick="exportTableToCSV()" class="inline-flex items-center gap-2 px-4 py-2.5 bg-white hover:bg-slate-50 text-slate-700 font-semibold text-sm rounded-xl border border-slate-200 shadow-sm transition-all hover:shadow">
-                <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            <button onclick="exportTableToCSV()" class="inline-flex items-center gap-2 px-3.5 py-2 bg-white hover:bg-slate-50 text-slate-700 font-semibold text-xs rounded-xl border border-slate-200 shadow-sm transition-all hover:shadow" title="Exportar dados para planilha Excel / CSV">
+                <svg class="w-3.5 h-3.5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                 Exportar CSV
             </button>
             
-            <button onclick="window.print()" class="inline-flex items-center gap-2 px-4 py-2.5 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm rounded-xl shadow-sm transition-all hover:shadow-md">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+            <!-- Botão Imprimir / PDF com Escolha de Orientação -->
+            <button onclick="abrirModalImpressao()" class="inline-flex items-center gap-2 px-3.5 py-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs rounded-xl shadow-sm transition-all hover:shadow-md" title="Imprimir relatório em folha A4 (Escolher Paisagem ou Retrato)">
+                <svg class="w-3.5 h-3.5 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
                 Imprimir / PDF
             </button>
         </div>
     </header>
 
     <!-- KPI Cards Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-8 kpi-grid">
         
         <!-- Total Tests -->
-        <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow">
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow kpi-card">
             <div>
                 <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Total de Testes</p>
                 <p class="text-3xl font-extrabold text-slate-900 mt-1">1</p>
-                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600">190.0s</span></p>
+                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600" title="Tempo total: 135.5s">2min 16s</span></p>
             </div>
             <div class="p-3.5 rounded-xl bg-blue-50 text-blue-600 border border-blue-100">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
@@ -91,12 +312,12 @@
         </div>
 
         <!-- Passed (Green) -->
-        <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow border-l-4 border-l-emerald-500">
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow border-l-4 border-l-emerald-500 kpi-card">
             <div>
                 <p class="text-xs font-semibold text-emerald-700 uppercase tracking-wider">Aprovados</p>
-                <p class="text-3xl font-extrabold text-emerald-600 mt-1">0</p>
+                <p class="text-3xl font-extrabold text-emerald-600 mt-1">1</p>
                 <p class="text-xs text-emerald-600/80 mt-1 font-medium">
-                    0.0% do total
+                    100.0% do total
                 </p>
             </div>
             <div class="p-3.5 rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-100">
@@ -105,12 +326,12 @@
         </div>
 
         <!-- Failed (Red) -->
-        <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow border-l-4 border-l-rose-500">
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow border-l-4 border-l-rose-500 kpi-card">
             <div>
                 <p class="text-xs font-semibold text-rose-700 uppercase tracking-wider">Falhas</p>
-                <p class="text-3xl font-extrabold text-rose-600 mt-1">1</p>
+                <p class="text-3xl font-extrabold text-rose-600 mt-1">0</p>
                 <p class="text-xs text-rose-600/80 mt-1 font-medium">
-                    100.0% do total
+                    0.0% do total
                 </p>
             </div>
             <div class="p-3.5 rounded-xl bg-rose-50 text-rose-600 border border-rose-100">
@@ -119,7 +340,7 @@
         </div>
 
         <!-- Skipped (Yellow) -->
-        <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow border-l-4 border-l-amber-500">
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow border-l-4 border-l-amber-500 kpi-card">
             <div>
                 <p class="text-xs font-semibold text-amber-700 uppercase tracking-wider">Pulados</p>
                 <p class="text-3xl font-extrabold text-amber-600 mt-1">0</p>
@@ -133,26 +354,26 @@
         </div>
 
         <!-- Success Rate & Speed -->
-        <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between hover:shadow-md transition-shadow">
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between hover:shadow-md transition-shadow kpi-card">
             <div>
                 <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Taxa de Sucesso</p>
                 <div class="flex items-baseline gap-2 mt-1">
-                    <span class="text-3xl font-extrabold text-rose-600">
-                        0.0%
+                    <span class="text-3xl font-extrabold text-emerald-600">
+                        100.0%
                     </span>
-                    <span class="text-xs text-slate-400 font-medium">Média: 190.03s</span>
+                    <span class="text-xs text-slate-400 font-medium">Média: 2min 16s</span>
                 </div>
             </div>
             <!-- Mini Progress Bar -->
             <div class="w-full bg-slate-100 rounded-full h-2 mt-3 overflow-hidden">
-                <div class="bg-rose-500 h-2 rounded-full transition-all duration-500" style="width: 0.0%"></div>
+                <div class="bg-emerald-500 h-2 rounded-full transition-all duration-500" style="width: 100.0%"></div>
             </div>
         </div>
 
     </div>
 
     <!-- Charts & Analytics Row -->
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8 charts-row">
         
         <!-- Donut Chart -->
         <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between">
@@ -166,11 +387,11 @@
             <div class="grid grid-cols-3 gap-2 mt-4 pt-4 border-t border-slate-100 text-center">
                 <div class="p-2 rounded-lg bg-emerald-50">
                     <p class="text-[11px] font-semibold text-emerald-800">Passou</p>
-                    <p class="text-base font-bold text-emerald-600">0</p>
+                    <p class="text-base font-bold text-emerald-600">1</p>
                 </div>
                 <div class="p-2 rounded-lg bg-rose-50">
                     <p class="text-[11px] font-semibold text-rose-800">Falhou</p>
-                    <p class="text-base font-bold text-rose-600">1</p>
+                    <p class="text-base font-bold text-rose-600">0</p>
                 </div>
                 <div class="p-2 rounded-lg bg-amber-50">
                     <p class="text-[11px] font-semibold text-amber-800">Pulado</p>
@@ -216,7 +437,7 @@
                 </div>
 
                 <!-- Filters Control Group -->
-                <div class="flex flex-wrap items-center gap-3">
+                <div class="flex flex-wrap items-center gap-3 no-print">
                     
                     <!-- Search Input -->
                     <div class="relative min-w-[240px]">
@@ -233,11 +454,11 @@
                         </button>
                         <button onclick="filterStatus('PASSED')" id="btn-filter-PASSED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-emerald-700 transition-all">
-                            ✅ Passou (0)
+                            ✅ Passou (1)
                         </button>
                         <button onclick="filterStatus('FAILED')" id="btn-filter-FAILED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-rose-700 transition-all">
-                            ❌ Falhou (1)
+                            ❌ Falhou (0)
                         </button>
                         <button onclick="filterStatus('SKIPPED')" id="btn-filter-SKIPPED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-amber-700 transition-all">
@@ -260,63 +481,64 @@
                         <th scope="col" class="px-6 py-3.5 text-xs font-bold text-slate-500 uppercase tracking-wider w-36">Causa-Raiz</th>
                         <th scope="col" class="px-6 py-3.5 text-xs font-bold text-slate-500 uppercase tracking-wider w-28">Tempo</th>
                         <th scope="col" class="px-6 py-3.5 text-xs font-bold text-slate-500 uppercase tracking-wider w-44">Data/Hora</th>
-                        <th scope="col" class="px-6 py-3.5 text-xs font-bold text-slate-500 uppercase tracking-wider w-24 text-right">Ação</th>
+                        <th scope="col" class="px-6 py-3.5 text-xs font-bold text-slate-500 uppercase tracking-wider w-24 text-right col-acao">Ação</th>
                     </tr>
                 </thead>
                 <tbody class="bg-white divide-y divide-slate-100 font-normal text-sm" id="test-tbody">
                     
                     <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="FAILED" 
-                        data-name="valida o fluxo completo de alteração de um pedido de laboratório pós-impressão"
-                        data-triage="assertion"
-                        data-id="701">
+                        data-status="PASSED" 
+                        data-name="valida a inclusão completa e o sla de tempo de gravação do pedido de laboratório no firebird"
+                        data-triage=""
+                        data-id="866">
                         
-                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400" title="ID Banco: #701">
+                        <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400" title="ID Banco: #866">
                             #01
                         </td>
                         
                         <td class="px-6 py-4">
                             <div class="flex flex-col">
-                                <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
-                                    Valida o fluxo completo de alteração de um pedido de laboratório pós-impressão
-                                </span>
-                                
-                                <span class="text-xs text-rose-600 line-clamp-1 mt-0.5 font-mono">
-                                    tests\e2e\test_pedido_laboratorio.py:729: in test_alteracao_pedido_laboratorio
-                                </span>
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span class="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
+                                        Valida a inclusão completa e o SLA de tempo de gravação do Pedido de Laboratório no Firebird
+                                    </span>
+                                    
+                                    <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200" title="Métrica de Desempenho e SLA no Banco Firebird (Jira QAI-19604)">
+                                        ⏱️ SLA Gravação: 29.06s (Meta ≤ 7.0s)
+                                    </span>
+                                    
+                                </div>
                                 
                             </div>
                         </td>
                         
                         <td class="px-6 py-4 whitespace-nowrap">
                             
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span>
-                                Falhou
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                                Passou
                             </span>
                             
                         </td>
 
                         <td class="px-6 py-4 whitespace-nowrap">
                             
-                            <span class="px-2.5 py-0.5 text-xs font-semibold rounded-md bg-purple-50 text-purple-700 border border-purple-200">
-                                🏷️ Regra/Dados
-                            </span>
+                            <span class="text-xs text-slate-400 font-medium">—</span>
                             
                         </td>
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-600">
-                            190.03s
+                            2min 16s
                         </td>
                         
                         <td class="px-6 py-4 whitespace-nowrap text-xs text-slate-500 font-medium">
-                            30/09/2026 11:09:11
+                            05/10/2026 14:12:58
                         </td>
 
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
+                        <td class="px-6 py-4 whitespace-nowrap text-right text-xs col-acao">
                             
-                            <button onclick="toggleDetails(701)" class="font-semibold text-rose-600 hover:text-rose-800 bg-rose-50 hover:bg-rose-100 border border-rose-200 px-3 py-1 rounded-lg transition-colors">
-                                🔍 Erro & Passos (39)
+                            <button onclick="toggleDetails(866)" class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1 rounded-lg transition-colors">
+                                🧭 Passos (46)
                             </button>
                             
                         </td>
@@ -324,288 +546,337 @@
 
                     <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
                     
-                    <tr id="details-701" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800">
+                    <tr id="details-866" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800">
                         <td colspan="7" class="p-6 space-y-5">
                             
                             <div>
                                 <div class="flex items-center gap-2 mb-3">
                                     <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md">
-                                        🧭 Linha do Tempo E2E (39 passos)
+                                        🧭 Linha do Tempo E2E (46 passos)
                                     </span>
-                                    <span class="text-xs text-slate-400 font-medium">Valida o fluxo completo de alteração de um pedido de laboratório pós-impressão</span>
+                                    <span class="text-xs text-slate-400 font-medium">Valida a inclusão completa e o SLA de tempo de gravação do Pedido de Laboratório no Firebird</span>
                                 </div>
                                 <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto">
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:05:43</span>
+                                        <span class="text-slate-500 shrink-0">14:10:23</span>
                                         
-                                        <span class="text-slate-300">🔹 Iniciando cenário: test_alteracao_pedido_laboratorio</span>
+                                        <span class="text-slate-300">🔹 Iniciando cenário: test_inclusao_pedido_laboratorio</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:05:59</span>
+                                        <span class="text-slate-500 shrink-0">14:10:42</span>
                                         
                                         <span class="text-slate-300">🔹 Verificando tela de NFE...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:07</span>
+                                        <span class="text-slate-500 shrink-0">14:10:42</span>
                                         
                                         <span class="text-slate-300">🔹 Aguardando Interface...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:08</span>
+                                        <span class="text-slate-500 shrink-0">14:10:43</span>
                                         
                                         <span class="text-slate-300">🔹 Acessando menu Comercial...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:08</span>
+                                        <span class="text-slate-500 shrink-0">14:10:43</span>
                                         
                                         <span class="text-slate-300">🔹 Clique visual: Menu Comercial</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:09</span>
+                                        <span class="text-slate-500 shrink-0">14:10:45</span>
                                         
                                         <span class="text-slate-300">🔹 Clique visual: Opção Pedido de Cliente</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:11</span>
+                                        <span class="text-slate-500 shrink-0">14:10:46</span>
                                         
                                         <span class="text-slate-300">🔹 Aguardando tela...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:13</span>
+                                        <span class="text-slate-500 shrink-0">14:10:48</span>
                                         
-                                        <span class="text-slate-300">🔹 Consultando Pedido ID 610842...</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:16</span>
-                                        
-                                        <span class="text-slate-300">🔹 Retirando marca de Pedido Impresso...</span>
+                                        <span class="text-slate-300">🔹 Clicando em Incluir (Alt+I)...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:16</span>
+                                        <span class="text-slate-500 shrink-0">14:10:53</span>
                                         
-                                        <span class="text-slate-300">🔹 Clique visual: Botão Rotinas da Tela</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:21</span>
-                                        
-                                        <span class="text-slate-300">🔹 Clique visual: Opção Retirar a marca do Ped. impresso</span>
+                                        <span class="text-slate-300">🔹 Clique visual: Botão Incluir</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:23</span>
+                                        <span class="text-slate-500 shrink-0">14:10:55</span>
                                         
-                                        <span class="text-slate-300">🔹 Confirmando retirada da marca (Yes)...</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:23</span>
-                                        
-                                        <span class="text-slate-300">🔹 Clicou botão Win32 'Yes'</span>
+                                        <span class="text-slate-300">🔹 Aguardando Inclusão (Win32)...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:25</span>
+                                        <span class="text-slate-500 shrink-0">14:11:00</span>
                                         
-                                        <span class="text-slate-300">🔹 Clicando em Alterar Pedido...</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:25</span>
-                                        
-                                        <span class="text-slate-300">🔹 Clique visual: Botão Alterar Pedido</span>
+                                        <span class="text-slate-300">🔹 Preenchendo Cabeçalho...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:28</span>
+                                        <span class="text-slate-500 shrink-0">14:11:06</span>
                                         
-                                        <span class="text-slate-300">🔹 Excluindo item PMT01 da grade...</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:28</span>
-                                        
-                                        <span class="text-slate-300">🔹 Clique visual: Primeira célula da grade de produtos</span>
+                                        <span class="text-slate-300">🔹 Preenchendo receita...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:31</span>
+                                        <span class="text-slate-500 shrink-0">14:11:06</span>
                                         
-                                        <span class="text-slate-300">🔹 Clicou botão Win32 'OK'</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:32</span>
-                                        
-                                        <span class="text-slate-300">🔹 Aba Arquivo da Armação: Corte Não e Remover...</span>
+                                        <span class="text-slate-300">🔹 Clique visual: Campo Esférico (Grau de Longe)</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:33</span>
+                                        <span class="text-slate-500 shrink-0">14:11:18</span>
                                         
-                                        <span class="text-slate-300">🔹 Clique visual: Aba Arquivo da Armação</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:35</span>
-                                        
-                                        <span class="text-slate-300">🔹 Selecionando Corte: Não...</span>
+                                        <span class="text-slate-300">🔹 Inserindo linha e aguardando...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:35</span>
-                                        
-                                        <span class="text-slate-300">🔹 Clique visual: Opção Sim do Corte</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:37</span>
-                                        
-                                        <span class="text-slate-300">🔹 Removendo Arquivo da Armação...</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:37</span>
-                                        
-                                        <span class="text-slate-300">🔹 Clique visual: Botão Remover Arquivo da Armação</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:42</span>
-                                        
-                                        <span class="text-slate-300">🔹 Preenchendo medidas da armação na Receita...</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:42</span>
-                                        
-                                        <span class="text-slate-300">🔹 Acessando aba Receita...</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:42</span>
-                                        
-                                        <span class="text-slate-300">🔹 Clique visual: Aba Receita</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:44</span>
-                                        
-                                        <span class="text-slate-300">🔹 Clicou controle Win32 [CLASS:TDBEdit; INSTANCE:11]</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:48</span>
-                                        
-                                        <span class="text-slate-300">🔹 Clicando OK (aguardando Sugestão de Produtos)...</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:48</span>
-                                        
-                                        <span class="text-slate-300">🔹 Clique visual: Botão OK (dispara Sugestão)</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:50</span>
+                                        <span class="text-slate-500 shrink-0">14:11:21</span>
                                         
                                         <span class="text-slate-300">🔹 Aguardando sugestão (Pode demorar)...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:51</span>
+                                        <span class="text-slate-500 shrink-0">14:11:34</span>
                                         
                                         <span class="text-slate-300">🔹 Confirmando sugestao...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:06:51</span>
+                                        <span class="text-slate-500 shrink-0">14:11:34</span>
                                         
                                         <span class="text-slate-300">🔹 Clique visual: Botão OK na Sugestão</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:07:10</span>
+                                        <span class="text-slate-500 shrink-0">14:11:34</span>
+                                        
+                                        <span class="text-slate-300">🔹 Preenchendo Observacoes...</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:11:35</span>
+                                        
+                                        <span class="text-slate-300">🔹 Clique visual: Aba Obs</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:11:37</span>
+                                        
+                                        <span class="text-slate-300">🔹 Clique visual: Campo Observação 1</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:11:44</span>
+                                        
+                                        <span class="text-slate-300">🔹 Acessando Arquivo da Armação...</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:11:44</span>
+                                        
+                                        <span class="text-slate-300">🔹 Clique visual: Aba Arquivo da Armação</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:11:47</span>
+                                        
+                                        <span class="text-slate-300">🔹 Clicando em Importar...</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:11:47</span>
+                                        
+                                        <span class="text-slate-300">🔹 Clique visual: Botão Importar</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:11:50</span>
+                                        
+                                        <span class="text-slate-300">🔹 Preenchendo caminho na janela Abrir...</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:11:54</span>
+                                        
+                                        <span class="text-slate-300">🔹 Confirmando leitura da receita...</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:11:57</span>
+                                        
+                                        <span class="text-slate-300">🔹 Selecionando Corte: Sim...</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:11:57</span>
+                                        
+                                        <span class="text-slate-300">🔹 Clique visual: Opção Sim do Corte</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:11:59</span>
+                                        
+                                        <span class="text-slate-300">🔹 Preenchendo Paciente: AZEVEDO...</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:11:59</span>
+                                        
+                                        <span class="text-slate-300">🔹 Clique visual: Aba Complemento( Receita )</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:12:00</span>
+                                        
+                                        <span class="text-slate-300">🔹 Clique visual: Coluna Código do Complemento</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:12:05</span>
+                                        
+                                        <span class="text-slate-300">🔹 Preenchendo Captação...</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:12:06</span>
+                                        
+                                        <span class="text-slate-300">🔹 Clique visual: Campo Tipo de Pedido</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:12:13</span>
                                         
                                         <span class="text-slate-300">🔹 Salvando Pedido Lab...</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:07:10</span>
-                                        
-                                        <span class="text-slate-300">🔹 Clique visual: Botão OK na Sugestão</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:07:18</span>
+                                        <span class="text-slate-500 shrink-0">14:12:13</span>
                                         
                                         <span class="text-slate-300">🔹 Clique visual: Botão OK com check verde</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:07:38</span>
+                                        <span class="text-slate-500 shrink-0">14:12:58</span>
                                         
-                                        <span class="text-slate-300">🔹 Clique visual: Botão OK na Sugestão</span>
-                                        
-                                    </div>
-                                    
-                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:07:45</span>
-                                        
-                                        <span class="text-slate-300">🔹 Clique visual: Botão OK com check verde</span>
+                                        <span class="text-emerald-400 font-semibold">✅ Registro auditado (ID do Pedido (Banco): 610868)</span>
                                         
                                     </div>
                                     
                                     <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
-                                        <span class="text-slate-500 shrink-0">11:09:11</span>
+                                        <span class="text-slate-500 shrink-0">14:12:58</span>
                                         
-                                        <span class="text-rose-400 font-semibold">❌ Falha detectada [Assertion]: tests\e2e\test_pedido_laboratorio.py:729: in test_alteracao_pedido_laboratorio</span>
+                                        <span class="text-emerald-400 font-semibold">✅ Registro auditado (Nº do Pedido SGO: 508913.000)</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:12:58</span>
+                                        
+                                        <span class="text-emerald-400 font-semibold">✅ Registro auditado (Valor Total: R$ 220.00)</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:12:58</span>
+                                        
+                                        <span class="text-emerald-400 font-semibold">✅ Registro auditado (Arquivo VCA: arq_receita_teste.VCA)</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:12:58</span>
+                                        
+                                        <span class="text-emerald-400 font-semibold">✅ Registro auditado (Corte Remoto: Sim (S))</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:12:58</span>
+                                        
+                                        <span class="text-emerald-400 font-semibold">✅ Registro auditado (Medidas VCA: MVA: 40 | MHA: 51 | DMA: 53.8 | Ponte: 20 | DPA: 71)</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:12:58</span>
+                                        
+                                        <span class="text-emerald-400 font-semibold">✅ Registro auditado (Paciente: AZEVEDO (Tipo 0))</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:12:58</span>
+                                        
+                                        <span class="text-emerald-400 font-semibold">✅ Registro auditado (Tempo Gravacao (s): 29.06s)</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:12:58</span>
+                                        
+                                        <span class="text-emerald-400 font-semibold">✅ Registro auditado (SLA Maximo (s): 7.0s)</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:12:58</span>
+                                        
+                                        <span class="text-emerald-400 font-semibold">✅ Registro auditado (Status Desempenho: ACIMA DO SLA)</span>
+                                        
+                                    </div>
+                                    
+                                    <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0">
+                                        <span class="text-slate-500 shrink-0">14:12:58</span>
+                                        
+                                        <span class="text-emerald-400 font-semibold">✅ Cenário concluído e validado com sucesso!</span>
                                         
                                     </div>
                                     
@@ -613,24 +884,6 @@
                             </div>
                             
 
-                            
-                            <div>
-                                <div class="flex items-center justify-between mb-3">
-                                    <div class="flex items-center gap-2">
-                                        <span class="px-2.5 py-0.5 text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 rounded-md">
-                                            Stacktrace da Falha (#701)
-                                        </span>
-                                    </div>
-                                    <button onclick="copyErrorText('error-content-701')" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-lg border border-slate-700 transition-colors flex items-center gap-1.5">
-                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                                        Copiar Stacktrace
-                                    </button>
-                                </div>
-                                <pre id="error-content-701" class="text-xs bg-slate-950 p-4 rounded-xl overflow-x-auto text-rose-300 leading-relaxed border border-slate-800/80">tests\e2e\test_pedido_laboratorio.py:729: in test_alteracao_pedido_laboratorio
-    assert valor_pos == valor_esperado_pos, (
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-E   AssertionError: Valor Total divergente após alteração! Esperado: R$ 190.00, Encontrado: R$ 220.00</pre>
-                            </div>
                             
                         </td>
                     </tr>
@@ -653,10 +906,76 @@ E   AssertionError: Valor Total divergente após alteração! Esperado: R$ 190.0
     </div>
 
     <!-- Footer -->
-    <footer class="mt-8 text-center text-xs text-slate-400 py-4">
-        SGO QA Automation Framework • Gerado via Pytest + Jinja2 Telemetry • LABSP QA
+    <footer class="mt-12 text-center text-xs text-slate-400 py-6 border-t border-slate-200/60 flex flex-col items-center gap-1.5">
+        <p class="font-medium text-slate-600">
+            SGO Automation Framework • <span class="font-semibold text-slate-700">Engenharia de Qualidade de Software (QA)</span> • Grupo Acert
+        </p>
+        <p class="text-[11px] text-slate-400">
+            Telemetria Contínua E2E • Motor Pytest + Win32 Native • Base Ativa: <span class="font-semibold text-slate-500">AUTOMACAO_QA</span>
+        </p>
     </footer>
 
+</div>
+
+<!-- Modal Seleção de Formato de Impressão A4 (no-print) -->
+<div id="modal-impressao" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm no-print" onclick="fecharModalImpressaoPorFora(event)">
+    <div class="bg-white rounded-3xl shadow-2xl border border-slate-200/90 max-w-md w-full p-6 transform transition-all" onclick="event.stopPropagation()">
+        
+        <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-2xl bg-slate-100 flex items-center justify-center text-slate-700 shadow-sm border border-slate-200/60">
+                    <svg class="w-5 h-5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+                </div>
+                <div>
+                    <h3 class="text-base font-bold text-slate-900">Impressão em Folha A4</h3>
+                    <p class="text-xs text-slate-500">Qual orientação você prefere?</p>
+                </div>
+            </div>
+            <button onclick="fecharModalImpressao()" class="text-slate-400 hover:text-slate-600 p-1.5 rounded-xl hover:bg-slate-100 transition-colors" title="Fechar (Esc)">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+        </div>
+
+        <div class="grid grid-cols-1 gap-3 py-5">
+            
+            <!-- Opção Paisagem (Horizontal) -->
+            <button onclick="escolherImpressao('landscape')" class="text-left p-4 rounded-2xl border-2 border-amber-300/80 bg-amber-50/50 hover:bg-amber-100/60 hover:border-amber-400 shadow-sm hover:shadow transition-all flex items-start gap-4 group">
+                <div class="w-11 h-11 rounded-xl bg-amber-100 group-hover:bg-amber-200 flex items-center justify-center text-amber-700 shrink-0 border border-amber-300 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+                </div>
+                <div class="flex-1">
+                    <div class="flex items-center justify-between">
+                        <span class="font-extrabold text-slate-900 text-sm group-hover:text-amber-900 transition-colors">🖨️ A4 Paisagem (Horizontal)</span>
+                        <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-amber-200 text-amber-900 border border-amber-300">Recomendado</span>
+                    </div>
+                    <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                        Ideal para tabelas largas de testes, leitura panorâmica e melhor aproveitamento do espaço.
+                    </p>
+                </div>
+            </button>
+
+            <!-- Opção Retrato (Vertical) -->
+            <button onclick="escolherImpressao('portrait')" class="text-left p-4 rounded-2xl border border-slate-200 bg-white hover:bg-indigo-50/40 hover:border-indigo-300 shadow-sm hover:shadow transition-all flex items-start gap-4 group">
+                <div class="w-11 h-11 rounded-xl bg-indigo-50 group-hover:bg-indigo-100 flex items-center justify-center text-indigo-600 shrink-0 border border-indigo-200 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                </div>
+                <div class="flex-1">
+                    <span class="font-bold text-slate-800 text-sm group-hover:text-indigo-900 transition-colors">📄 A4 Retrato (Vertical)</span>
+                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                        Formato clássico de documento vertical para visualizações convencionais.
+                    </p>
+                </div>
+            </button>
+
+        </div>
+
+        <div class="pt-3 border-t border-slate-100 flex justify-end">
+            <button onclick="fecharModalImpressao()" class="px-4 py-2 text-xs font-semibold text-slate-500 hover:text-slate-800 rounded-xl hover:bg-slate-100 transition-colors">
+                Cancelar
+            </button>
+        </div>
+
+    </div>
 </div>
 
 <!-- Client-side Scripts -->
@@ -665,8 +984,8 @@ E   AssertionError: Valor Total divergente após alteração! Esperado: R$ 190.0
     Chart.defaults.font.family = "'Plus Jakarta Sans', sans-serif";
     Chart.defaults.color = '#64748b';
 
-    const passedCount = 0;
-    const failedCount = 1;
+    const passedCount = 1;
+    const failedCount = 0;
     const skippedCount = 0;
 
     // 1. Donut Results Chart
@@ -706,10 +1025,10 @@ E   AssertionError: Valor Total divergente após alteração! Esperado: R$ 190.0
     });
 
     // 2. Trend History Chart (from SQLite)
-    const trendLabels = ["26/09 19:10", "26/09 19:14", "26/09 19:17", "26/09 19:40", "26/09 19:44", "26/09 20:02", "26/09 20:13", "26/09 20:14", "26/09 20:17", "30/09 11:05"];
-    const trendPassed = [0, 0, 3, 3, 26, 1, 0, 0, 4, 0];
-    const trendFailed = [3, 1, 0, 0, 0, 0, 1, 1, 0, 1];
-    const trendSkipped = [0, 2, 0, 0, 0, 0, 3, 3, 0, 0];
+    const trendLabels = ["05/10 08:33", "05/10 09:04", "05/10 09:36", "05/10 09:57", "05/10 10:16", "05/10 11:04", "05/10 11:08", "05/10 11:30", "05/10 14:09", "05/10 14:10"];
+    const trendPassed = [34, 0, 0, 0, 1, 1, 1, 1, 0, 1];
+    const trendFailed = [9, 0, 1, 1, 0, 0, 0, 0, 0, 0];
+    const trendSkipped = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
     const ctxTrend = document.getElementById('trendChart').getContext('2d');
     new Chart(ctxTrend, {
@@ -871,6 +1190,54 @@ E   AssertionError: Valor Total divergente após alteração! Esperado: R$ 190.0
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
+    }
+
+    // --- Modal e Motor de Impressão A4 (Retrato & Paisagem) ---
+    function abrirModalImpressao() {
+        const modal = document.getElementById('modal-impressao');
+        if (modal) {
+            modal.classList.remove('hidden');
+        }
+    }
+
+    function fecharModalImpressao() {
+        const modal = document.getElementById('modal-impressao');
+        if (modal) {
+            modal.classList.add('hidden');
+        }
+    }
+
+    function fecharModalImpressaoPorFora(e) {
+        if (e.target.id === 'modal-impressao') {
+            fecharModalImpressao();
+        }
+    }
+
+    function escolherImpressao(orientacao) {
+        fecharModalImpressao();
+        imprimirRelatorioA4(orientacao);
+    }
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            fecharModalImpressao();
+        }
+    });
+
+    function imprimirRelatorioA4(orientacao) {
+        const styleId = 'print-a4-orientation-style';
+        let styleTag = document.getElementById(styleId);
+        if (!styleTag) {
+            styleTag = document.createElement('style');
+            styleTag.id = styleId;
+            document.head.appendChild(styleTag);
+        }
+        if (orientacao === 'landscape') {
+            styleTag.innerHTML = '@page { size: A4 landscape !important; margin: 8mm 8mm 8mm 8mm !important; }';
+        } else {
+            styleTag.innerHTML = '@page { size: A4 portrait !important; margin: 8mm 10mm 10mm 10mm !important; }';
+        }
+        setTimeout(() => { window.print(); }, 50);
     }
 </script>
 
