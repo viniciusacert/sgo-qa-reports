@@ -241,10 +241,10 @@
                     <!-- Badge SGO.exe -->
                     
                     <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-full cursor-help transition-all hover:bg-indigo-100 hover:shadow-sm" 
-                          title="Executável Principal do Sistema (SGO.exe)&#10;• Versão Completa: 2607.1.1000.249&#10;• Build Jenkins: 249&#10;• Modificado em: 30/09/2026 12:00">
+                          title="Executável Principal do Sistema (SGO.exe)&#10;• Versão Completa: 2607.1.1000.331&#10;• Build Jenkins: 331&#10;• Modificado em: 12/11/2026 18:30">
                         <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
                         <span class="font-bold text-indigo-900/60 text-[11px] uppercase tracking-wider">SGO</span>
-                        <span>v2607 b249</span>
+                        <span>v2607 b331</span>
                     </span>
                     
 
@@ -285,7 +285,7 @@
         <div class="flex flex-wrap items-center gap-3 no-print w-full md:w-auto justify-start md:justify-end">
             <div class="text-left md:text-right bg-slate-50 px-4 py-2 rounded-xl border border-slate-200/80">
                 <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Gerado em</p>
-                <p class="text-sm font-bold text-slate-700">19/10/2026 15:44:23</p>
+                <p class="text-sm font-bold text-slate-700">16/11/2026 14:43:25</p>
             </div>
             
             <button onclick="exportTableToCSV()" class="inline-flex items-center gap-2 px-3.5 py-2 bg-white hover:bg-slate-50 text-slate-700 font-semibold text-xs rounded-xl border border-slate-200 shadow-sm transition-all hover:shadow" title="Exportar dados para planilha Excel / CSV">
@@ -309,7 +309,7 @@
             <div>
                 <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Total de Testes</p>
                 <p class="text-3xl font-extrabold text-slate-900 mt-1">1</p>
-                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600" title="Tempo total: 198.9s">3min 19s</span></p>
+                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600" title="Tempo total: 0.0s">< 0.01s</span></p>
             </div>
             <div class="p-3.5 rounded-xl bg-blue-50 text-blue-600 border border-blue-100">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
@@ -366,7 +366,7 @@
                     <span class="text-3xl font-extrabold text-emerald-600">
                         100.0%
                     </span>
-                    <span class="text-xs text-slate-400 font-medium">Média: 3min 19s</span>
+                    <span class="text-xs text-slate-400 font-medium">Média: < 0.01s</span>
                 </div>
             </div>
             <!-- Mini Progress Bar -->
@@ -484,10 +484,10 @@
                     <span class="px-1.5 py-0.2 rounded-full text-[10px] bg-white/20 text-white font-bold">1</span>
                 </button>
                 
-                <button onclick="filterModulo('Comercial')" id="btn-mod-Comercial" 
+                <button onclick="filterModulo('Sistema Base')" id="btn-mod-Sistema Base" 
                     class="mod-filter-btn px-2.5 py-1 rounded-lg text-xs font-semibold text-slate-600 hover:text-indigo-700 hover:bg-slate-100 transition-all border border-slate-200/80 flex items-center gap-1.5">
-                    <span>💼 Comercial</span>
-                    <span class="px-1.5 py-0.2 rounded-full text-[10px] font-bold bg-sky-100 text-sky-800">1</span>
+                    <span>🏛️ Sistema Base</span>
+                    <span class="px-1.5 py-0.2 rounded-full text-[10px] font-bold bg-slate-200 text-slate-800">1</span>
                 </button>
                 
             </div>
@@ -512,14 +512,14 @@
                     
                     <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
                         data-status="PASSED" 
-                        data-modulo="comercial"
-                        data-tela="pedido promocional"
-                        data-name="geração de pedido promocional com desconto fixo 50% no firebird [comercial | pedido promocional] geração de pedido promocional com desconto fixo 50% no firebird"
-                        data-metodo="test_gerar_pedido_promocional_desconto_fixo"
+                        data-modulo="sistema base"
+                        data-tela="geral"
+                        data-name="test_ok [sistema base | geral] test_ok"
+                        data-metodo="test_ok"
                         data-triage=""
-                        data-id="875">
+                        data-id="876">
                         
-                        <td class="px-4 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-center" title="ID Banco: #875">
+                        <td class="px-4 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-center" title="ID Banco: #876">
                             #01
                         </td>
                         
@@ -527,23 +527,23 @@
                             <div class="flex flex-col gap-1.5">
                                 <!-- Badges superiores: Módulo, Tela e SLA -->
                                 <div class="flex flex-wrap items-center gap-2">
-                                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-sky-50 text-sky-700 border border-sky-200">
-                                        💼 Comercial
+                                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-slate-100 text-slate-700 border border-slate-200">
+                                        🏛️ Sistema Base
                                     </span>
                                     <span class="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 text-slate-700 border border-slate-200">
-                                        🖥️ Pedido Promocional
+                                        🖥️ Geral
                                     </span>
                                     
                                 </div>
 
                                 <!-- Título Executivo do Cenário -->
                                 <div class="font-semibold text-slate-900 group-hover:text-indigo-600 transition-colors text-[13px] leading-snug">
-                                    Geração de Pedido Promocional com Desconto Fixo 50% no Firebird
+                                    Test_ok
                                 </div>
 
                                 <!-- Monospace Subtitle: Identificador do Método Técnico -->
                                 <div class="flex items-center gap-2 text-[11px] font-mono text-slate-400">
-                                    <span class="truncate" title="Método Pytest">test_gerar_pedido_promocional_desconto_fixo</span>
+                                    <span class="truncate" title="Método Pytest">test_ok</span>
                                 </div>
 
                                 
@@ -566,20 +566,20 @@
                         </td>
                         
                         <td class="px-4 py-4 whitespace-nowrap text-center text-xs font-mono font-medium text-slate-600">
-                            3min 19s
+                            < 0.01s
                         </td>
                         
                         <td class="px-4 py-4 whitespace-nowrap text-center text-xs text-slate-500 font-medium">
-                            19/10/2026 15:44:20
+                            16/11/2026 14:43:25
                         </td>
 
                         <td class="px-4 py-4 whitespace-nowrap text-right text-xs col-acao">
                             
-                            <button id="btn-toggle-875" onclick="toggleDetails(875)" 
-                                data-orig-html="🧭 Passos (43)" 
+                            <button id="btn-toggle-876" onclick="toggleDetails(876)" 
+                                data-orig-html="🧭 Passos (2)" 
                                 data-orig-class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors"
                                 class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors">
-                                🧭 Passos (43)
+                                🧭 Passos (2)
                             </button>
                             
                         </td>
@@ -587,7 +587,7 @@
 
                     <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
                     
-                    <tr id="details-875" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
+                    <tr id="details-876" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
                         <td colspan="7" class="p-0 border-y border-slate-800 max-w-0">
                             <div class="p-6 space-y-5 bg-slate-900 text-slate-100 w-full overflow-hidden">
                                 
@@ -597,9 +597,9 @@
                                         <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md shrink-0">
                                             🧭 Linha do Tempo & Diagnóstico
                                         </span>
-                                        <span class="text-xs text-slate-400 font-medium truncate">#875 — Geração de Pedido Promocional com Desconto Fixo 50% no Firebird</span>
+                                        <span class="text-xs text-slate-400 font-medium truncate">#876 — Test_ok</span>
                                     </div>
-                                    <button onclick="toggleDetails(875)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
+                                    <button onclick="toggleDetails(876)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                                         <span>✕ Fechar</span>
                                     </button>
@@ -609,308 +609,21 @@
                                 <div>
                                     <div class="flex items-center gap-2 mb-3">
                                         <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md">
-                                            Linha do Tempo E2E (43 passos)
+                                            Linha do Tempo E2E (2 passos)
                                         </span>
-                                        <span class="text-xs text-slate-400 font-mono">[Comercial | Pedido Promocional] Geração de Pedido Promocional com Desconto Fixo 50% no Firebird</span>
+                                        <span class="text-xs text-slate-400 font-mono">[Sistema Base | Geral] Test_ok</span>
                                     </div>
                                     <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto w-full">
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:40:39</span>
+                                            <span class="text-slate-500 shrink-0 select-none">14:43:25</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_gerar_pedido_promocional_desconto_fixo</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:40:53</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Verificando tela de NFE...</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_ok</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:41:19</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Instância 2: Abrindo Pedidos de Clientes...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:41:27</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Menu Comercial</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:41:29</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Opção Pedido de Cliente</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:41:36</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando em Incluir (Alt+I)...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:41:37</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão Incluir</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:41:38</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Aguardando Inclusão (Win32)...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:41:42</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Cabeçalho...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:41:49</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo receita...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:41:49</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Campo Esférico (Grau de Longe)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:42:02</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Inserindo linha e aguardando...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:42:04</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Abrindo Sugestão e selecionando PMT02...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:42:26</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Captação...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:42:26</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TDBEdit; INSTANCE:61] = '1'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:42:26</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Salvando Pedido Lab...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:42:26</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão OK com check verde</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:43:11</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Pedido 1 (Original) #610964 gravado com sucesso no SGO (Total: R$ 228.00)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:43:11</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Abrindo Rotina -> Gerar Pedido Promocional...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:43:11</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão Rotinas</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:43:13</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Submenu Gerar Pedido Promocional</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:43:21</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Rotina 'Gerar Pedido Promocional' acionada com Promoção ID #71</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:43:21</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Selecionando promoção 71...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:43:22</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TNumberEdit; INSTANCE:1] = '71'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:43:23</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicou botão Win32 'Ok'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:43:23</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Aguardando geração do Pedido Promocional...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:43:40</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Captação...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:43:40</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TDBEdit; INSTANCE:61] = '1'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:43:41</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Salvando Pedido Lab...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:43:41</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão OK com check verde</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:43:45</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Salvando Pedido Lab...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:43:45</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão OK com check verde</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:44:13</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Pedido 2 (Promocional) #610965 gravado com sucesso no SGO (Total: R$ 114.00)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:44:13</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Fechando tela de Pedidos...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:44:20</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Auditoria Firebird [PEDIDPROMO]: Vínculo confirmado (Original #610964 ➔ Promocional #610965 | Promo #71)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:44:20</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Auditoria Firebird [PDPRD]: Lente P12498 com 50.0% desc (Líq: R$ 47.50) e Serviço PMT02 com 50.0% desc (Líq: R$ 9.50)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:44:20</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Auditoria Firebird [PEDID]: Totais confirmados (Original: R$ 228.00 | Promocional: R$ 114.00 — 50% Desconto)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:44:20</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (ID Pedido Original: 610964)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:44:20</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (ID Pedido Promocional: 610965)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:44:20</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Total Pedido Original: R$ 228.00)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:44:20</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Total Pedido Promocional: R$ 114.00)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:44:20</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Regra Auditada: Desconto Fixo 50%)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">15:44:20</span>
+                                            <span class="text-slate-500 shrink-0 select-none">14:43:25</span>
                                             
                                             <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Cenário concluído e validado com sucesso!</span>
                                             
@@ -924,7 +637,7 @@
 
                                 <!-- Bottom Close Button -->
                                 <div class="flex justify-end pt-2 border-t border-slate-800/80">
-                                    <button onclick="toggleDetails(875)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
+                                    <button onclick="toggleDetails(876)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                                         <span>✕ Fechar Detalhes</span>
                                     </button>
@@ -1071,10 +784,10 @@
     });
 
     // 2. Trend History Chart (from SQLite)
-    const trendLabels = ["05/10 11:04", "05/10 11:08", "05/10 11:30", "05/10 14:09", "05/10 14:10", "16/10 15:50", "16/10 15:53", "16/10 15:55", "19/10 14:19", "19/10 15:40"];
-    const trendPassed = [1, 1, 1, 0, 1, 0, 0, 3, 4, 1];
-    const trendFailed = [0, 0, 0, 0, 0, 0, 1, 0, 0, 0];
-    const trendSkipped = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    const trendLabels = ["19/10 14:19", "19/10 15:40", "16/11 14:42", "16/11 14:43"];
+    const trendPassed = [4, 1, 0, 1];
+    const trendFailed = [0, 0, 0, 0];
+    const trendSkipped = [0, 0, 0, 0];
 
     const ctxTrend = document.getElementById('trendChart').getContext('2d');
     new Chart(ctxTrend, {
