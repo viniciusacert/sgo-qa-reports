@@ -241,20 +241,24 @@
                     <!-- Badge SGO.exe -->
                     
                     <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-full cursor-help transition-all hover:bg-indigo-100 hover:shadow-sm" 
-                          title="Executável Principal do Sistema (SGO.exe)&#10;• Versão Completa: 2607.1.1000.331&#10;• Build Jenkins: 331&#10;• Modificado em: 12/11/2026 18:30">
+                          title="Executável Principal do Sistema (SGO.exe)&#10;• Versão Completa: 2607.1.1000.351&#10;• Build Jenkins: 351&#10;• Modificado em: 23/11/2026 10:23">
                         <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
                         <span class="font-bold text-indigo-900/60 text-[11px] uppercase tracking-wider">SGO</span>
-                        <span>v2607 b331</span>
+                        <span>v2607 b351</span>
                     </span>
                     
 
                     <!-- Badge ImpRel.dll -->
                     
-                    <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200 rounded-full cursor-help transition-all hover:bg-amber-100 hover:shadow-sm" 
-                          title="Módulo de Relatórios e Impressões (ImpRel.dll)&#10;• Nome do Produto / Cliente: ImpRel&#10;• Versão Completa: 2607.1.1000.6110&#10;• Build Jenkins: 6110&#10;• Modificado em: 29/09/2026 17:07">
-                        <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+                    
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold bg-amber-100 text-amber-900 border-amber-300 ring-1 ring-amber-400/40 rounded-full cursor-help transition-all hover:bg-amber-100 hover:shadow-sm" 
+                          title="Módulo de Relatórios e Impressões (ImpRel.dll)&#10;• Nome do Produto / Cliente: ImpRel (⚠️ Esperado: Acert)&#10;• Versão Completa: 2607.1.1000.6433&#10;• Build Jenkins: 6433&#10;• Modificado em: 23/11/2026 14:49&#10;• OBS: Nome do Produto no PE diverge da empresa esperada. Abrir tarefa para DEV ajustá-lo no Delphi.">
+                        <span class="w-2 h-2 rounded-full bg-amber-600 animate-pulse"></span>
                         <span class="font-bold text-amber-900/60 text-[11px] uppercase tracking-wider">ImpRel</span>
-                        <span>v2607 b6110</span>
+                        <span>v2607 b6433</span>
+                        
+                        <span class="text-[10px] px-1.5 py-0.5 bg-amber-200/90 text-amber-950 rounded font-semibold ml-0.5" title="Produto: ImpRel (Esperado: Acert)">⚠️ ImpRel</span>
+                        
                     </span>
                     
 
@@ -285,7 +289,7 @@
         <div class="flex flex-wrap items-center gap-3 no-print w-full md:w-auto justify-start md:justify-end">
             <div class="text-left md:text-right bg-slate-50 px-4 py-2 rounded-xl border border-slate-200/80">
                 <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Gerado em</p>
-                <p class="text-sm font-bold text-slate-700">16/11/2026 14:43:25</p>
+                <p class="text-sm font-bold text-slate-700">23/11/2026 14:49:59</p>
             </div>
             
             <button onclick="exportTableToCSV()" class="inline-flex items-center gap-2 px-3.5 py-2 bg-white hover:bg-slate-50 text-slate-700 font-semibold text-xs rounded-xl border border-slate-200 shadow-sm transition-all hover:shadow" title="Exportar dados para planilha Excel / CSV">
@@ -309,7 +313,7 @@
             <div>
                 <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Total de Testes</p>
                 <p class="text-3xl font-extrabold text-slate-900 mt-1">1</p>
-                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600" title="Tempo total: 0.0s">< 0.01s</span></p>
+                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600" title="Tempo total: 14.6s">14.6s</span></p>
             </div>
             <div class="p-3.5 rounded-xl bg-blue-50 text-blue-600 border border-blue-100">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
@@ -366,7 +370,7 @@
                     <span class="text-3xl font-extrabold text-emerald-600">
                         100.0%
                     </span>
-                    <span class="text-xs text-slate-400 font-medium">Média: < 0.01s</span>
+                    <span class="text-xs text-slate-400 font-medium">Média: 14.6s</span>
                 </div>
             </div>
             <!-- Mini Progress Bar -->
@@ -484,10 +488,10 @@
                     <span class="px-1.5 py-0.2 rounded-full text-[10px] bg-white/20 text-white font-bold">1</span>
                 </button>
                 
-                <button onclick="filterModulo('Sistema Base')" id="btn-mod-Sistema Base" 
+                <button onclick="filterModulo('Expedição')" id="btn-mod-Expedição" 
                     class="mod-filter-btn px-2.5 py-1 rounded-lg text-xs font-semibold text-slate-600 hover:text-indigo-700 hover:bg-slate-100 transition-all border border-slate-200/80 flex items-center gap-1.5">
-                    <span>🏛️ Sistema Base</span>
-                    <span class="px-1.5 py-0.2 rounded-full text-[10px] font-bold bg-slate-200 text-slate-800">1</span>
+                    <span>🚚 Expedição</span>
+                    <span class="px-1.5 py-0.2 rounded-full text-[10px] font-bold bg-purple-100 text-purple-800">1</span>
                 </button>
                 
             </div>
@@ -512,14 +516,14 @@
                     
                     <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
                         data-status="PASSED" 
-                        data-modulo="sistema base"
-                        data-tela="geral"
-                        data-name="test_ok [sistema base | geral] test_ok"
-                        data-metodo="test_ok"
+                        data-modulo="expedição"
+                        data-tela="romaneio"
+                        data-name="emissão e impressão de romaneio de carga para pedido expedido [expedição | romaneio] emissão e impressão de romaneio de carga para pedido expedido"
+                        data-metodo="test_visualizar_e_imprimir_relatorio_romaneio"
                         data-triage=""
-                        data-id="876">
+                        data-id="877">
                         
-                        <td class="px-4 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-center" title="ID Banco: #876">
+                        <td class="px-4 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-center" title="ID Banco: #877">
                             #01
                         </td>
                         
@@ -527,23 +531,23 @@
                             <div class="flex flex-col gap-1.5">
                                 <!-- Badges superiores: Módulo, Tela e SLA -->
                                 <div class="flex flex-wrap items-center gap-2">
-                                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-slate-100 text-slate-700 border border-slate-200">
-                                        🏛️ Sistema Base
+                                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-purple-50 text-purple-700 border border-purple-200">
+                                        🚚 Expedição
                                     </span>
                                     <span class="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 text-slate-700 border border-slate-200">
-                                        🖥️ Geral
+                                        🖥️ Romaneio
                                     </span>
                                     
                                 </div>
 
                                 <!-- Título Executivo do Cenário -->
                                 <div class="font-semibold text-slate-900 group-hover:text-indigo-600 transition-colors text-[13px] leading-snug">
-                                    Test_ok
+                                    Emissão e impressão de romaneio de carga para pedido expedido
                                 </div>
 
                                 <!-- Monospace Subtitle: Identificador do Método Técnico -->
                                 <div class="flex items-center gap-2 text-[11px] font-mono text-slate-400">
-                                    <span class="truncate" title="Método Pytest">test_ok</span>
+                                    <span class="truncate" title="Método Pytest">test_visualizar_e_imprimir_relatorio_romaneio</span>
                                 </div>
 
                                 
@@ -566,20 +570,20 @@
                         </td>
                         
                         <td class="px-4 py-4 whitespace-nowrap text-center text-xs font-mono font-medium text-slate-600">
-                            < 0.01s
+                            14.62s
                         </td>
                         
                         <td class="px-4 py-4 whitespace-nowrap text-center text-xs text-slate-500 font-medium">
-                            16/11/2026 14:43:25
+                            23/11/2026 14:49:59
                         </td>
 
                         <td class="px-4 py-4 whitespace-nowrap text-right text-xs col-acao">
                             
-                            <button id="btn-toggle-876" onclick="toggleDetails(876)" 
-                                data-orig-html="🧭 Passos (2)" 
+                            <button id="btn-toggle-877" onclick="toggleDetails(877)" 
+                                data-orig-html="🧭 Passos (17)" 
                                 data-orig-class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors"
                                 class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors">
-                                🧭 Passos (2)
+                                🧭 Passos (17)
                             </button>
                             
                         </td>
@@ -587,7 +591,7 @@
 
                     <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
                     
-                    <tr id="details-876" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
+                    <tr id="details-877" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
                         <td colspan="7" class="p-0 border-y border-slate-800 max-w-0">
                             <div class="p-6 space-y-5 bg-slate-900 text-slate-100 w-full overflow-hidden">
                                 
@@ -597,9 +601,9 @@
                                         <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md shrink-0">
                                             🧭 Linha do Tempo & Diagnóstico
                                         </span>
-                                        <span class="text-xs text-slate-400 font-medium truncate">#876 — Test_ok</span>
+                                        <span class="text-xs text-slate-400 font-medium truncate">#877 — Emissão e impressão de romaneio de carga para pedido expedido</span>
                                     </div>
-                                    <button onclick="toggleDetails(876)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
+                                    <button onclick="toggleDetails(877)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                                         <span>✕ Fechar</span>
                                     </button>
@@ -609,21 +613,126 @@
                                 <div>
                                     <div class="flex items-center gap-2 mb-3">
                                         <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md">
-                                            Linha do Tempo E2E (2 passos)
+                                            Linha do Tempo E2E (17 passos)
                                         </span>
-                                        <span class="text-xs text-slate-400 font-mono">[Sistema Base | Geral] Test_ok</span>
+                                        <span class="text-xs text-slate-400 font-mono">[Expedição | Romaneio] Emissão e impressão de romaneio de carga para pedido expedido</span>
                                     </div>
                                     <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto w-full">
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">14:43:25</span>
+                                            <span class="text-slate-500 shrink-0 select-none">14:49:25</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_ok</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_visualizar_e_imprimir_relatorio_romaneio</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">14:43:25</span>
+                                            <span class="text-slate-500 shrink-0 select-none">14:49:43</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Verificando tela de NFE...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">14:49:44</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Tela NFE fechada com sucesso</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">14:49:45</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Abrindo tela 'Relatório de Romaneio'...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">14:49:46</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Tela 'Relatório de Romaneio' aberta com sucesso!</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">14:49:46</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Data Inicial: 01/10/2026...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">14:49:48</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Data Final: 02/11/2026...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">14:49:49</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Marcando opção 'Imprime os Pedidos'...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">14:49:50</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Acionando Visualizar na Toolbar...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">14:49:52</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Relatório do Romaneio exibido com sucesso na tela!</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">14:49:53</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Acionando Imprimir na Toolbar...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">14:49:54</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Diálogo Salvar Como detectado! Preenchendo 'relatorio_romaneio_14_49_45.pdf'...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">14:49:59</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Periodo Emissao: 01/10/2026 a 02/11/2026)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">14:49:59</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Imprime Pedidos: True)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">14:49:59</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Arquivo Salvo: relatorio_romaneio_14_49_45.pdf)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">14:49:59</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Status Relatorio: Exibido e Salvo com Sucesso)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">14:49:59</span>
                                             
                                             <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Cenário concluído e validado com sucesso!</span>
                                             
@@ -637,7 +746,7 @@
 
                                 <!-- Bottom Close Button -->
                                 <div class="flex justify-end pt-2 border-t border-slate-800/80">
-                                    <button onclick="toggleDetails(876)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
+                                    <button onclick="toggleDetails(877)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                                         <span>✕ Fechar Detalhes</span>
                                     </button>
@@ -784,10 +893,10 @@
     });
 
     // 2. Trend History Chart (from SQLite)
-    const trendLabels = ["19/10 14:19", "19/10 15:40", "16/11 14:42", "16/11 14:43"];
-    const trendPassed = [4, 1, 0, 1];
-    const trendFailed = [0, 0, 0, 0];
-    const trendSkipped = [0, 0, 0, 0];
+    const trendLabels = ["16/11 14:42", "16/11 14:43", "23/11 14:49"];
+    const trendPassed = [0, 1, 1];
+    const trendFailed = [0, 0, 0];
+    const trendSkipped = [0, 0, 0];
 
     const ctxTrend = document.getElementById('trendChart').getContext('2d');
     new Chart(ctxTrend, {
