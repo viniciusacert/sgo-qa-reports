@@ -289,7 +289,7 @@
         <div class="flex flex-wrap items-center gap-3 no-print w-full md:w-auto justify-start md:justify-end">
             <div class="text-left md:text-right bg-slate-50 px-4 py-2 rounded-xl border border-slate-200/80">
                 <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Gerado em</p>
-                <p class="text-sm font-bold text-slate-700">23/11/2026 16:01:23</p>
+                <p class="text-sm font-bold text-slate-700">23/11/2026 16:02:55</p>
             </div>
             
             <button onclick="exportTableToCSV()" class="inline-flex items-center gap-2 px-3.5 py-2 bg-white hover:bg-slate-50 text-slate-700 font-semibold text-xs rounded-xl border border-slate-200 shadow-sm transition-all hover:shadow" title="Exportar dados para planilha Excel / CSV">
@@ -313,7 +313,7 @@
             <div>
                 <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Total de Testes</p>
                 <p class="text-3xl font-extrabold text-slate-900 mt-1">2</p>
-                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600" title="Tempo total: 18.4s">18.4s</span></p>
+                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600" title="Tempo total: 21.6s">21.6s</span></p>
             </div>
             <div class="p-3.5 rounded-xl bg-blue-50 text-blue-600 border border-blue-100">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
@@ -324,9 +324,9 @@
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow border-l-4 border-l-emerald-500 kpi-card">
             <div>
                 <p class="text-xs font-semibold text-emerald-700 uppercase tracking-wider">Aprovados</p>
-                <p class="text-3xl font-extrabold text-emerald-600 mt-1">0</p>
+                <p class="text-3xl font-extrabold text-emerald-600 mt-1">2</p>
                 <p class="text-xs text-emerald-600/80 mt-1 font-medium">
-                    0.0% do total
+                    100.0% do total
                 </p>
             </div>
             <div class="p-3.5 rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-100">
@@ -338,9 +338,9 @@
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow border-l-4 border-l-rose-500 kpi-card">
             <div>
                 <p class="text-xs font-semibold text-rose-700 uppercase tracking-wider">Falhas</p>
-                <p class="text-3xl font-extrabold text-rose-600 mt-1">2</p>
+                <p class="text-3xl font-extrabold text-rose-600 mt-1">0</p>
                 <p class="text-xs text-rose-600/80 mt-1 font-medium">
-                    100.0% do total
+                    0.0% do total
                 </p>
             </div>
             <div class="p-3.5 rounded-xl bg-rose-50 text-rose-600 border border-rose-100">
@@ -367,15 +367,15 @@
             <div>
                 <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Taxa de Sucesso</p>
                 <div class="flex items-baseline gap-2 mt-1">
-                    <span class="text-3xl font-extrabold text-rose-600">
-                        0.0%
+                    <span class="text-3xl font-extrabold text-emerald-600">
+                        100.0%
                     </span>
-                    <span class="text-xs text-slate-400 font-medium">Média: 9.21s</span>
+                    <span class="text-xs text-slate-400 font-medium">Média: 10.8s</span>
                 </div>
             </div>
             <!-- Mini Progress Bar -->
             <div class="w-full bg-slate-100 rounded-full h-2 mt-3 overflow-hidden">
-                <div class="bg-rose-500 h-2 rounded-full transition-all duration-500" style="width: 0.0%"></div>
+                <div class="bg-emerald-500 h-2 rounded-full transition-all duration-500" style="width: 100.0%"></div>
             </div>
         </div>
 
@@ -396,11 +396,11 @@
             <div class="grid grid-cols-3 gap-2 mt-4 pt-4 border-t border-slate-100 text-center">
                 <div class="p-2 rounded-lg bg-emerald-50">
                     <p class="text-[11px] font-semibold text-emerald-800">Passou</p>
-                    <p class="text-base font-bold text-emerald-600">0</p>
+                    <p class="text-base font-bold text-emerald-600">2</p>
                 </div>
                 <div class="p-2 rounded-lg bg-rose-50">
                     <p class="text-[11px] font-semibold text-rose-800">Falhou</p>
-                    <p class="text-base font-bold text-rose-600">2</p>
+                    <p class="text-base font-bold text-rose-600">0</p>
                 </div>
                 <div class="p-2 rounded-lg bg-amber-50">
                     <p class="text-[11px] font-semibold text-amber-800">Pulado</p>
@@ -463,11 +463,11 @@
                         </button>
                         <button onclick="filterStatus('PASSED')" id="btn-filter-PASSED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-emerald-700 transition-all">
-                            ✅ Passou (0)
+                            ✅ Passou (2)
                         </button>
                         <button onclick="filterStatus('FAILED')" id="btn-filter-FAILED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-rose-700 transition-all">
-                            ❌ Falhou (2)
+                            ❌ Falhou (0)
                         </button>
                         <button onclick="filterStatus('SKIPPED')" id="btn-filter-SKIPPED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-amber-700 transition-all">
@@ -515,15 +515,15 @@
                 <tbody class="bg-white divide-y divide-slate-100 font-normal text-sm" id="test-tbody">
                     
                     <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="FAILED" 
+                        data-status="PASSED" 
                         data-modulo="expedição"
                         data-tela="romaneio"
                         data-name="emissão e impressão de romaneio de carga para pedido expedido [expedição | romaneio] emissão e impressão de romaneio de carga para pedido expedido"
                         data-metodo="test_visualizar_relatorio_romaneio"
-                        data-triage="unknown"
-                        data-id="885">
+                        data-triage=""
+                        data-id="887">
                         
-                        <td class="px-4 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-center" title="ID Banco: #885">
+                        <td class="px-4 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-center" title="ID Banco: #887">
                             #01
                         </td>
                         
@@ -551,45 +551,39 @@
                                 </div>
 
                                 
-                                <span class="text-xs text-rose-600 line-clamp-1 mt-0.5 font-mono bg-rose-50/70 px-2 py-0.5 rounded border border-rose-100">
-                                    tests\conftest.py:266: in _fix_sgo
-                                </span>
-                                
                             </div>
                         </td>
                         
                         <td class="px-4 py-4 whitespace-nowrap text-center">
                             
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span>
-                                Falhou
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                                Passou
                             </span>
                             
                         </td>
 
                         <td class="px-4 py-4 whitespace-nowrap text-center">
                             
-                            <span class="px-2.5 py-0.5 text-xs font-semibold rounded-md bg-slate-100 text-slate-600">
-                                Unknown
-                            </span>
+                            <span class="text-xs text-slate-400 font-medium">—</span>
                             
                         </td>
                         
                         <td class="px-4 py-4 whitespace-nowrap text-center text-xs font-mono font-medium text-slate-600">
-                            18.35s
+                            8.69s
                         </td>
                         
                         <td class="px-4 py-4 whitespace-nowrap text-center text-xs text-slate-500 font-medium">
-                            23/11/2026 16:01:23
+                            23/11/2026 16:02:42
                         </td>
 
                         <td class="px-4 py-4 whitespace-nowrap text-right text-xs col-acao">
                             
-                            <button id="btn-toggle-885" onclick="toggleDetails(885)" 
-                                data-orig-html="🔍 Erro & Passos (4)" 
-                                data-orig-class="font-semibold text-rose-600 hover:text-rose-800 bg-rose-50 hover:bg-rose-100 border border-rose-200 px-3 py-1.5 rounded-lg transition-colors"
-                                class="font-semibold text-rose-600 hover:text-rose-800 bg-rose-50 hover:bg-rose-100 border border-rose-200 px-3 py-1.5 rounded-lg transition-colors">
-                                🔍 Erro & Passos (4)
+                            <button id="btn-toggle-887" onclick="toggleDetails(887)" 
+                                data-orig-html="🧭 Passos (15)" 
+                                data-orig-class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors"
+                                class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors">
+                                🧭 Passos (15)
                             </button>
                             
                         </td>
@@ -597,7 +591,7 @@
 
                     <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
                     
-                    <tr id="details-885" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
+                    <tr id="details-887" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
                         <td colspan="7" class="p-0 border-y border-slate-800 max-w-0">
                             <div class="p-6 space-y-5 bg-slate-900 text-slate-100 w-full overflow-hidden">
                                 
@@ -607,9 +601,9 @@
                                         <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md shrink-0">
                                             🧭 Linha do Tempo & Diagnóstico
                                         </span>
-                                        <span class="text-xs text-slate-400 font-medium truncate">#885 — Emissão e impressão de romaneio de carga para pedido expedido</span>
+                                        <span class="text-xs text-slate-400 font-medium truncate">#887 — Emissão e impressão de romaneio de carga para pedido expedido</span>
                                     </div>
-                                    <button onclick="toggleDetails(885)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
+                                    <button onclick="toggleDetails(887)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                                         <span>✕ Fechar</span>
                                     </button>
@@ -619,37 +613,114 @@
                                 <div>
                                     <div class="flex items-center gap-2 mb-3">
                                         <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md">
-                                            Linha do Tempo E2E (4 passos)
+                                            Linha do Tempo E2E (15 passos)
                                         </span>
                                         <span class="text-xs text-slate-400 font-mono">[Expedição | Romaneio] Emissão e impressão de romaneio de carga para pedido expedido</span>
                                     </div>
                                     <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto w-full">
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:01:04</span>
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:15</span>
                                             
                                             <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_visualizar_relatorio_romaneio</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:01:21</span>
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:32</span>
                                             
                                             <span class="text-slate-300 break-words min-w-0">🔹 Verificando tela de NFE...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:01:22</span>
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:33</span>
                                             
                                             <span class="text-slate-300 break-words min-w-0">🔹 Tela NFE fechada com sucesso</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:01:23</span>
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:33</span>
                                             
-                                            <span class="text-rose-400 font-semibold break-words min-w-0">❌ Falha detectada [Unknown]: tests\conftest.py:266: in _fix_sgo</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Abrindo tela 'Relatório de Romaneio'...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:34</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Tela 'Relatório de Romaneio' aberta com sucesso!</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:35</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Data Inicial: 28/10/2026...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:36</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Data Final: 28/10/2026...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:39</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Acionando Visualizar na Toolbar...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:40</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Relatório do Romaneio exibido com sucesso na tela!</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:42</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Periodo Emissao: 28/10/2026 a 28/10/2026)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:42</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Imprime Pedidos: True)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:42</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Qtd Romaneios Firebird: 1)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:42</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Qtd Pedidos Firebird: 6)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:42</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Status Relatorio: Preview Renderizado e Auditado no Firebird com Sucesso)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:42</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Cenário concluído e validado com sucesso!</span>
                                             
                                         </div>
                                         
@@ -658,33 +729,10 @@
                                 
 
                                 
-                                <div>
-                                    <div class="flex items-center justify-between mb-3">
-                                        <div class="flex items-center gap-2">
-                                            <span class="px-2.5 py-0.5 text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 rounded-md">
-                                                Stacktrace da Falha (#885)
-                                            </span>
-                                        </div>
-                                        <button onclick="copyErrorText('error-content-885')" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-lg border border-slate-700 transition-colors flex items-center gap-1.5">
-                                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                                            Copiar Stacktrace
-                                        </button>
-                                    </div>
-                                    <pre id="error-content-885" class="text-xs bg-slate-950 p-4 rounded-xl overflow-x-auto whitespace-pre-wrap break-words leading-relaxed border border-slate-800/80 font-mono text-rose-300 max-h-96 overflow-y-auto w-full">tests\conftest.py:266: in _fix_sgo
-    mod = importlib.import_module(mod_import_path)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-C:\Users\vinicius.azevedo\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py:90: in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-E     File "C:\DEV_QA\sgo_tests\src\pages\sgo\expedicao\relatorios\relatorio_romaneio_page.py", line 407
-E       time.sleep(0.2)
-E   IndentationError: unexpected indent</pre>
-                                </div>
-                                
 
                                 <!-- Bottom Close Button -->
                                 <div class="flex justify-end pt-2 border-t border-slate-800/80">
-                                    <button onclick="toggleDetails(885)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
+                                    <button onclick="toggleDetails(887)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                                         <span>✕ Fechar Detalhes</span>
                                     </button>
@@ -696,15 +744,15 @@ E   IndentationError: unexpected indent</pre>
                     
                     
                     <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="FAILED" 
+                        data-status="PASSED" 
                         data-modulo="expedição"
                         data-tela="romaneio"
                         data-name="emissão e impressão de romaneio de carga para pedido expedido [expedição | romaneio] emissão e impressão de romaneio de carga para pedido expedido"
                         data-metodo="test_imprimir_relatorio_romaneio"
-                        data-triage="unknown"
-                        data-id="886">
+                        data-triage=""
+                        data-id="888">
                         
-                        <td class="px-4 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-center" title="ID Banco: #886">
+                        <td class="px-4 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-center" title="ID Banco: #888">
                             #02
                         </td>
                         
@@ -732,45 +780,39 @@ E   IndentationError: unexpected indent</pre>
                                 </div>
 
                                 
-                                <span class="text-xs text-rose-600 line-clamp-1 mt-0.5 font-mono bg-rose-50/70 px-2 py-0.5 rounded border border-rose-100">
-                                    tests\conftest.py:266: in _fix_sgo
-                                </span>
-                                
                             </div>
                         </td>
                         
                         <td class="px-4 py-4 whitespace-nowrap text-center">
                             
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span>
-                                Falhou
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                                Passou
                             </span>
                             
                         </td>
 
                         <td class="px-4 py-4 whitespace-nowrap text-center">
                             
-                            <span class="px-2.5 py-0.5 text-xs font-semibold rounded-md bg-slate-100 text-slate-600">
-                                Unknown
-                            </span>
+                            <span class="text-xs text-slate-400 font-medium">—</span>
                             
                         </td>
                         
                         <td class="px-4 py-4 whitespace-nowrap text-center text-xs font-mono font-medium text-slate-600">
-                            0.07s
+                            12.88s
                         </td>
                         
                         <td class="px-4 py-4 whitespace-nowrap text-center text-xs text-slate-500 font-medium">
-                            23/11/2026 16:01:23
+                            23/11/2026 16:02:55
                         </td>
 
                         <td class="px-4 py-4 whitespace-nowrap text-right text-xs col-acao">
                             
-                            <button id="btn-toggle-886" onclick="toggleDetails(886)" 
-                                data-orig-html="🔍 Erro & Passos (2)" 
-                                data-orig-class="font-semibold text-rose-600 hover:text-rose-800 bg-rose-50 hover:bg-rose-100 border border-rose-200 px-3 py-1.5 rounded-lg transition-colors"
-                                class="font-semibold text-rose-600 hover:text-rose-800 bg-rose-50 hover:bg-rose-100 border border-rose-200 px-3 py-1.5 rounded-lg transition-colors">
-                                🔍 Erro & Passos (2)
+                            <button id="btn-toggle-888" onclick="toggleDetails(888)" 
+                                data-orig-html="🧭 Passos (15)" 
+                                data-orig-class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors"
+                                class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors">
+                                🧭 Passos (15)
                             </button>
                             
                         </td>
@@ -778,7 +820,7 @@ E   IndentationError: unexpected indent</pre>
 
                     <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
                     
-                    <tr id="details-886" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
+                    <tr id="details-888" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
                         <td colspan="7" class="p-0 border-y border-slate-800 max-w-0">
                             <div class="p-6 space-y-5 bg-slate-900 text-slate-100 w-full overflow-hidden">
                                 
@@ -788,9 +830,9 @@ E   IndentationError: unexpected indent</pre>
                                         <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md shrink-0">
                                             🧭 Linha do Tempo & Diagnóstico
                                         </span>
-                                        <span class="text-xs text-slate-400 font-medium truncate">#886 — Emissão e impressão de romaneio de carga para pedido expedido</span>
+                                        <span class="text-xs text-slate-400 font-medium truncate">#888 — Emissão e impressão de romaneio de carga para pedido expedido</span>
                                     </div>
-                                    <button onclick="toggleDetails(886)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
+                                    <button onclick="toggleDetails(888)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                                         <span>✕ Fechar</span>
                                     </button>
@@ -800,23 +842,114 @@ E   IndentationError: unexpected indent</pre>
                                 <div>
                                     <div class="flex items-center gap-2 mb-3">
                                         <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md">
-                                            Linha do Tempo E2E (2 passos)
+                                            Linha do Tempo E2E (15 passos)
                                         </span>
                                         <span class="text-xs text-slate-400 font-mono">[Expedição | Romaneio] Emissão e impressão de romaneio de carga para pedido expedido</span>
                                     </div>
                                     <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto w-full">
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:01:23</span>
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:42</span>
                                             
                                             <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_imprimir_relatorio_romaneio</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:01:23</span>
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:42</span>
                                             
-                                            <span class="text-rose-400 font-semibold break-words min-w-0">❌ Falha detectada [Unknown]: tests\conftest.py:266: in _fix_sgo</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Abrindo tela 'Relatório de Romaneio'...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:43</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Tela 'Relatório de Romaneio' aberta com sucesso!</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:44</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Data Inicial: 28/10/2026...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:45</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Data Final: 28/10/2026...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:47</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Acionando Imprimir na Toolbar...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:49</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Diálogo Salvar Como detectado! Preenchendo 'relatorio_romaneio_16_02_42.pdf'...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:55</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Periodo Emissao: 28/10/2026 a 28/10/2026)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:55</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Imprime Pedidos: True)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:55</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Arquivo Salvo: relatorio_romaneio_16_02_42.pdf)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:55</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Tamanho PDF (Bytes): 178934)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:55</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Qtd Romaneios Firebird: 1)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:55</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Qtd Pedidos Firebird: 6)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:55</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Status Relatorio: PDF Gerado e Auditado no Firebird com Sucesso)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">16:02:55</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Cenário concluído e validado com sucesso!</span>
                                             
                                         </div>
                                         
@@ -825,33 +958,10 @@ E   IndentationError: unexpected indent</pre>
                                 
 
                                 
-                                <div>
-                                    <div class="flex items-center justify-between mb-3">
-                                        <div class="flex items-center gap-2">
-                                            <span class="px-2.5 py-0.5 text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 rounded-md">
-                                                Stacktrace da Falha (#886)
-                                            </span>
-                                        </div>
-                                        <button onclick="copyErrorText('error-content-886')" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-lg border border-slate-700 transition-colors flex items-center gap-1.5">
-                                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                                            Copiar Stacktrace
-                                        </button>
-                                    </div>
-                                    <pre id="error-content-886" class="text-xs bg-slate-950 p-4 rounded-xl overflow-x-auto whitespace-pre-wrap break-words leading-relaxed border border-slate-800/80 font-mono text-rose-300 max-h-96 overflow-y-auto w-full">tests\conftest.py:266: in _fix_sgo
-    mod = importlib.import_module(mod_import_path)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-C:\Users\vinicius.azevedo\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py:90: in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-E     File "C:\DEV_QA\sgo_tests\src\pages\sgo\expedicao\relatorios\relatorio_romaneio_page.py", line 407
-E       time.sleep(0.2)
-E   IndentationError: unexpected indent</pre>
-                                </div>
-                                
 
                                 <!-- Bottom Close Button -->
                                 <div class="flex justify-end pt-2 border-t border-slate-800/80">
-                                    <button onclick="toggleDetails(886)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
+                                    <button onclick="toggleDetails(888)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                                         <span>✕ Fechar Detalhes</span>
                                     </button>
@@ -957,8 +1067,8 @@ E   IndentationError: unexpected indent</pre>
     Chart.defaults.font.family = "'Plus Jakarta Sans', sans-serif";
     Chart.defaults.color = '#64748b';
 
-    const passedCount = 0;
-    const failedCount = 2;
+    const passedCount = 2;
+    const failedCount = 0;
     const skippedCount = 0;
 
     // 1. Donut Results Chart
@@ -998,9 +1108,9 @@ E   IndentationError: unexpected indent</pre>
     });
 
     // 2. Trend History Chart (from SQLite)
-    const trendLabels = ["16/11 14:42", "16/11 14:43", "23/11 14:49", "23/11 14:52", "23/11 15:01", "23/11 15:04", "23/11 15:11", "23/11 15:31", "23/11 15:54", "23/11 16:01"];
-    const trendPassed = [0, 1, 1, 1, 0, 0, 0, 0, 1, 0];
-    const trendFailed = [0, 0, 0, 0, 1, 1, 1, 1, 1, 2];
+    const trendLabels = ["16/11 14:43", "23/11 14:49", "23/11 14:52", "23/11 15:01", "23/11 15:04", "23/11 15:11", "23/11 15:31", "23/11 15:54", "23/11 16:01", "23/11 16:02"];
+    const trendPassed = [1, 1, 1, 0, 0, 0, 0, 1, 0, 2];
+    const trendFailed = [0, 0, 0, 1, 1, 1, 1, 1, 2, 0];
     const trendSkipped = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
     const ctxTrend = document.getElementById('trendChart').getContext('2d');
