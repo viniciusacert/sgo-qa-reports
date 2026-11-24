@@ -289,7 +289,7 @@
         <div class="flex flex-wrap items-center gap-3 no-print w-full md:w-auto justify-start md:justify-end">
             <div class="text-left md:text-right bg-slate-50 px-4 py-2 rounded-xl border border-slate-200/80">
                 <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Gerado em</p>
-                <p class="text-sm font-bold text-slate-700">24/11/2026 16:33:46</p>
+                <p class="text-sm font-bold text-slate-700">24/11/2026 17:29:43</p>
             </div>
             
             <button onclick="exportTableToCSV()" class="inline-flex items-center gap-2 px-3.5 py-2 bg-white hover:bg-slate-50 text-slate-700 font-semibold text-xs rounded-xl border border-slate-200 shadow-sm transition-all hover:shadow" title="Exportar dados para planilha Excel / CSV">
@@ -312,8 +312,8 @@
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow kpi-card">
             <div>
                 <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Total de Testes</p>
-                <p class="text-3xl font-extrabold text-slate-900 mt-1">2</p>
-                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600" title="Tempo total: 149.3s">2min 29s</span></p>
+                <p class="text-3xl font-extrabold text-slate-900 mt-1">1</p>
+                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600" title="Tempo total: 27.4s">27.4s</span></p>
             </div>
             <div class="p-3.5 rounded-xl bg-blue-50 text-blue-600 border border-blue-100">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
@@ -324,7 +324,7 @@
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow border-l-4 border-l-emerald-500 kpi-card">
             <div>
                 <p class="text-xs font-semibold text-emerald-700 uppercase tracking-wider">Aprovados</p>
-                <p class="text-3xl font-extrabold text-emerald-600 mt-1">2</p>
+                <p class="text-3xl font-extrabold text-emerald-600 mt-1">1</p>
                 <p class="text-xs text-emerald-600/80 mt-1 font-medium">
                     100.0% do total
                 </p>
@@ -370,7 +370,7 @@
                     <span class="text-3xl font-extrabold text-emerald-600">
                         100.0%
                     </span>
-                    <span class="text-xs text-slate-400 font-medium">Média: 1min 15s</span>
+                    <span class="text-xs text-slate-400 font-medium">Média: 27.4s</span>
                 </div>
             </div>
             <!-- Mini Progress Bar -->
@@ -396,7 +396,7 @@
             <div class="grid grid-cols-3 gap-2 mt-4 pt-4 border-t border-slate-100 text-center">
                 <div class="p-2 rounded-lg bg-emerald-50">
                     <p class="text-[11px] font-semibold text-emerald-800">Passou</p>
-                    <p class="text-base font-bold text-emerald-600">2</p>
+                    <p class="text-base font-bold text-emerald-600">1</p>
                 </div>
                 <div class="p-2 rounded-lg bg-rose-50">
                     <p class="text-[11px] font-semibold text-rose-800">Falhou</p>
@@ -441,7 +441,7 @@
                 <div>
                     <h2 class="text-lg font-bold text-slate-900">Detalhamento dos Cenários de Teste</h2>
                     <p class="text-sm text-slate-500 mt-0.5" id="records-counter">
-                        Exibindo todos os <span class="font-bold text-slate-700">2</span> testes executados.
+                        Exibindo todos os <span class="font-bold text-slate-700">1</span> testes executados.
                     </p>
                 </div>
 
@@ -459,11 +459,11 @@
                     <div class="inline-flex rounded-xl p-1 bg-slate-100 border border-slate-200 text-xs font-semibold">
                         <button onclick="filterStatus('ALL')" id="btn-filter-ALL" 
                             class="filter-btn active px-3 py-1.5 rounded-lg transition-all bg-white text-slate-900 shadow-sm">
-                            Todos (2)
+                            Todos (1)
                         </button>
                         <button onclick="filterStatus('PASSED')" id="btn-filter-PASSED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-emerald-700 transition-all">
-                            ✅ Passou (2)
+                            ✅ Passou (1)
                         </button>
                         <button onclick="filterStatus('FAILED')" id="btn-filter-FAILED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-rose-700 transition-all">
@@ -485,13 +485,13 @@
                 <button onclick="filterModulo('ALL')" id="btn-mod-ALL" 
                     class="mod-filter-btn active px-2.5 py-1 rounded-lg text-xs font-semibold transition-all bg-indigo-600 text-white shadow-sm flex items-center gap-1.5">
                     <span>Todos os Menus</span>
-                    <span class="px-1.5 py-0.2 rounded-full text-[10px] bg-white/20 text-white font-bold">2</span>
+                    <span class="px-1.5 py-0.2 rounded-full text-[10px] bg-white/20 text-white font-bold">1</span>
                 </button>
                 
                 <button onclick="filterModulo('Expedição')" id="btn-mod-Expedição" 
                     class="mod-filter-btn px-2.5 py-1 rounded-lg text-xs font-semibold text-slate-600 hover:text-indigo-700 hover:bg-slate-100 transition-all border border-slate-200/80 flex items-center gap-1.5">
                     <span>🚚 Expedição</span>
-                    <span class="px-1.5 py-0.2 rounded-full text-[10px] font-bold bg-purple-100 text-purple-800">2</span>
+                    <span class="px-1.5 py-0.2 rounded-full text-[10px] font-bold bg-purple-100 text-purple-800">1</span>
                 </button>
                 
             </div>
@@ -521,9 +521,9 @@
                         data-name="emissão de certificado com auditoria visual winocr, pdf e firebird [expedição | certificado] emissão de certificado com auditoria visual winocr, pdf e firebird"
                         data-metodo="test_imprimir_certificado_com_sucesso"
                         data-triage=""
-                        data-id="944">
+                        data-id="946">
                         
-                        <td class="px-4 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-center" title="ID Banco: #944">
+                        <td class="px-4 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-center" title="ID Banco: #946">
                             #01
                         </td>
                         
@@ -570,16 +570,16 @@
                         </td>
                         
                         <td class="px-4 py-4 whitespace-nowrap text-center text-xs font-mono font-medium text-slate-600">
-                            31.65s
+                            27.39s
                         </td>
                         
                         <td class="px-4 py-4 whitespace-nowrap text-center text-xs text-slate-500 font-medium">
-                            24/11/2026 16:31:42
+                            24/11/2026 17:29:42
                         </td>
 
                         <td class="px-4 py-4 whitespace-nowrap text-right text-xs col-acao">
                             
-                            <button id="btn-toggle-944" onclick="toggleDetails(944)" 
+                            <button id="btn-toggle-946" onclick="toggleDetails(946)" 
                                 data-orig-html="🧭 Passos (24)" 
                                 data-orig-class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors"
                                 class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors">
@@ -591,7 +591,7 @@
 
                     <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
                     
-                    <tr id="details-944" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
+                    <tr id="details-946" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
                         <td colspan="7" class="p-0 border-y border-slate-800 max-w-0">
                             <div class="p-6 space-y-5 bg-slate-900 text-slate-100 w-full overflow-hidden">
                                 
@@ -601,9 +601,9 @@
                                         <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md shrink-0">
                                             🧭 Linha do Tempo & Diagnóstico
                                         </span>
-                                        <span class="text-xs text-slate-400 font-medium truncate">#944 — Emissão de Certificado com Auditoria Visual WinOCR, PDF e Firebird</span>
+                                        <span class="text-xs text-slate-400 font-medium truncate">#946 — Emissão de Certificado com Auditoria Visual WinOCR, PDF e Firebird</span>
                                     </div>
-                                    <button onclick="toggleDetails(944)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
+                                    <button onclick="toggleDetails(946)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                                         <span>✕ Fechar</span>
                                     </button>
@@ -620,168 +620,168 @@
                                     <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto w-full">
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:30:51</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:28:58</span>
                                             
                                             <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_imprimir_certificado_com_sucesso</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:10</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:29:14</span>
                                             
                                             <span class="text-slate-300 break-words min-w-0">🔹 Verificando tela de NFE...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:10</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:29:14</span>
                                             
                                             <span class="text-slate-300 break-words min-w-0">🔹 Tela NFE fechada com sucesso</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:11</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:29:15</span>
                                             
                                             <span class="text-slate-300 break-words min-w-0">🔹 Acessando Menu Expedição...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:11</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:29:15</span>
                                             
                                             <span class="text-slate-300 break-words min-w-0">🔹 Aguardando Interface...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:12</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:29:16</span>
                                             
                                             <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Menu Expedição</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:17</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:29:20</span>
                                             
                                             <span class="text-slate-300 break-words min-w-0">🔹 Consultando Pedido 493438.000 na Expedição...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:21</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:29:24</span>
                                             
                                             <span class="text-slate-300 break-words min-w-0">🔹 Clicando no botão 'Certificado'...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:22</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:29:25</span>
                                             
                                             <span class="text-slate-300 break-words min-w-0">🔹 Clicou botão Win32 'Certificado'</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:23</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:29:25</span>
                                             
                                             <span class="text-slate-300 break-words min-w-0">🔹 Selecionando filtro 'ID Pedido' e informando 595320...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:25</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:29:28</span>
                                             
                                             <span class="text-slate-300 break-words min-w-0">🔹 Visualizando Certificado em Vídeo...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:28</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:29:30</span>
                                             
                                             <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Exibindo Certificado em Vídeo...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:32</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:29:35</span>
                                             
                                             <span class="text-slate-300 break-words min-w-0">🔹 Fechando visualização do Preview...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:33</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:29:35</span>
                                             
                                             <span class="text-slate-300 break-words min-w-0">🔹 Acionando 'Imprimir'...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:41</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:29:41</span>
                                             
                                             <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Certificado impresso em PDF!</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:42</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:29:42</span>
                                             
                                             <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (ID_Pedido: 595320)</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:42</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:29:42</span>
                                             
                                             <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Cod_Pedido: 493438.000)</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:42</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:29:42</span>
                                             
                                             <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Paciente: VINICIUS AZEVEDO)</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:42</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:29:42</span>
                                             
                                             <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Optica: OTICAS QA NOME CERTIFICADO)</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:42</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:29:42</span>
                                             
                                             <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Medico: VILBERTO ALMEIDA JUNIO)</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:42</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:29:42</span>
                                             
                                             <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Auditoria_WinOCR: CONFORME)</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:42</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:29:42</span>
                                             
                                             <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Auditoria_PDF: CONFORME)</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:42</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:29:42</span>
                                             
                                             <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Status_Certificado: CERTIFICADO_AUDITADO_E_HOMOLOGADO)</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:42</span>
+                                            <span class="text-slate-500 shrink-0 select-none">17:29:42</span>
                                             
                                             <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Cenário concluído e validado com sucesso!</span>
                                             
@@ -795,411 +795,7 @@
 
                                 <!-- Bottom Close Button -->
                                 <div class="flex justify-end pt-2 border-t border-slate-800/80">
-                                    <button onclick="toggleDetails(944)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
-                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-                                        <span>✕ Fechar Detalhes</span>
-                                    </button>
-                                </div>
-
-                            </div>
-                        </td>
-                    </tr>
-                    
-                    
-                    <tr class="test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-modulo="expedição"
-                        data-tela="romaneio"
-                        data-name="emissão e impressão de romaneio de carga para pedido expedido [expedição | romaneio] emissão e impressão de romaneio de carga para pedido expedido"
-                        data-metodo="test_gerar_romaneio_com_sucesso"
-                        data-triage=""
-                        data-id="945">
-                        
-                        <td class="px-4 py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-center" title="ID Banco: #945">
-                            #02
-                        </td>
-                        
-                        <td class="px-6 py-4">
-                            <div class="flex flex-col gap-1.5">
-                                <!-- Badges superiores: Módulo, Tela e SLA -->
-                                <div class="flex flex-wrap items-center gap-2">
-                                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-purple-50 text-purple-700 border border-purple-200">
-                                        🚚 Expedição
-                                    </span>
-                                    <span class="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 text-slate-700 border border-slate-200">
-                                        🖥️ Romaneio
-                                    </span>
-                                    
-                                </div>
-
-                                <!-- Título Executivo do Cenário -->
-                                <div class="font-semibold text-slate-900 group-hover:text-indigo-600 transition-colors text-[13px] leading-snug">
-                                    Emissão e Impressão de Romaneio de Carga para Pedido Expedido
-                                </div>
-
-                                <!-- Monospace Subtitle: Identificador do Método Técnico -->
-                                <div class="flex items-center gap-2 text-[11px] font-mono text-slate-400">
-                                    <span class="truncate" title="Método Pytest">test_gerar_romaneio_com_sucesso</span>
-                                </div>
-
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="px-4 py-4 whitespace-nowrap text-center">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="px-4 py-4 whitespace-nowrap text-center">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="px-4 py-4 whitespace-nowrap text-center text-xs font-mono font-medium text-slate-600">
-                            1min 58s
-                        </td>
-                        
-                        <td class="px-4 py-4 whitespace-nowrap text-center text-xs text-slate-500 font-medium">
-                            24/11/2026 16:33:41
-                        </td>
-
-                        <td class="px-4 py-4 whitespace-nowrap text-right text-xs col-acao">
-                            
-                            <button id="btn-toggle-945" onclick="toggleDetails(945)" 
-                                data-orig-html="🧭 Passos (40)" 
-                                data-orig-class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors"
-                                class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors">
-                                🧭 Passos (40)
-                            </button>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
-                    
-                    <tr id="details-945" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
-                        <td colspan="7" class="p-0 border-y border-slate-800 max-w-0">
-                            <div class="p-6 space-y-5 bg-slate-900 text-slate-100 w-full overflow-hidden">
-                                
-                                <!-- Top Close and Context Bar -->
-                                <div class="flex items-center justify-between pb-3 border-b border-slate-800/80 gap-4">
-                                    <div class="flex items-center gap-2 min-w-0">
-                                        <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md shrink-0">
-                                            🧭 Linha do Tempo & Diagnóstico
-                                        </span>
-                                        <span class="text-xs text-slate-400 font-medium truncate">#945 — Emissão e Impressão de Romaneio de Carga para Pedido Expedido</span>
-                                    </div>
-                                    <button onclick="toggleDetails(945)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
-                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-                                        <span>✕ Fechar</span>
-                                    </button>
-                                </div>
-
-                                
-                                <div>
-                                    <div class="flex items-center gap-2 mb-3">
-                                        <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md">
-                                            Linha do Tempo E2E (40 passos)
-                                        </span>
-                                        <span class="text-xs text-slate-400 font-mono">[Expedição | Romaneio] Emissão e Impressão de Romaneio de Carga para Pedido Expedido</span>
-                                    </div>
-                                    <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto w-full">
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:43</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_gerar_romaneio_com_sucesso</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:43</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Aguardando Interface...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:44</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Acessando menu Comercial...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:44</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Menu Comercial</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:46</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Opção Pedido de Cliente</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:48</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Aguardando tela...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:54</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando Incluir...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:54</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão Incluir na barra superior</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:31:56</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Aguardando liberação do pedido (Win32)...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:32:00</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Cabeçalho...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:32:08</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Produto...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:32:15</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Aguardando Cálculo SGO...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:32:21</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Salvando Pedido...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:32:21</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão OK com check verde</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:32:48</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Fechando tela de Pedidos...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:32:48</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Cancelando Edição do Pedido...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:32:49</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão Cancela</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:32:53</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Acessando Menu Expedição...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:32:53</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Aguardando Interface...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:32:54</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Menu Expedição</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:32:56</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Opção Expedição de Pedidos</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:33:02</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Consultando Pedido 509222.000...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:33:07</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Informando quantidades (Entregar Todos)...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:33:09</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Confirmando expedição com OK...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:33:11</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicou botão Win32 'Yes'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:33:14</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Abrindo Pedidos de Clientes...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:33:14</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Aguardando Interface...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:33:15</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Menu Comercial</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:33:19</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Consultando Pedido ID 611238...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:33:21</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Abrindo Relatórios -> Impressão de Romaneio...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:33:25</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Setor: 1...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:33:27</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando em 'Visualizar'...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:33:29</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Fechando Preview...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:33:30</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando em 'Imprimir'...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:33:32</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Diálogo Salvar Como detectado! Preenchendo 'C:\SGO\AUTOMACAO\PedImpresso\romaneio_carga_16_33_31.pdf'...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:33:41</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (ID_Pedido: 611238)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:33:41</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Cod_Pedido: 509222.000)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:33:41</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Setor: 1)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:33:41</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Status_Romaneio: ROMANEIO_IMPRESSO_COM_SUCESSO)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">16:33:41</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Cenário concluído e validado com sucesso!</span>
-                                            
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                
-
-                                
-
-                                <!-- Bottom Close Button -->
-                                <div class="flex justify-end pt-2 border-t border-slate-800/80">
-                                    <button onclick="toggleDetails(945)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
+                                    <button onclick="toggleDetails(946)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                                         <span>✕ Fechar Detalhes</span>
                                     </button>
@@ -1305,7 +901,7 @@
     Chart.defaults.font.family = "'Plus Jakarta Sans', sans-serif";
     Chart.defaults.color = '#64748b';
 
-    const passedCount = 2;
+    const passedCount = 1;
     const failedCount = 0;
     const skippedCount = 0;
 
@@ -1346,9 +942,9 @@
     });
 
     // 2. Trend History Chart (from SQLite)
-    const trendLabels = ["24/11 09:36", "24/11 10:19", "24/11 10:47", "24/11 11:58", "24/11 11:59", "24/11 12:01", "24/11 14:10", "24/11 14:19", "24/11 15:57", "24/11 16:30"];
-    const trendPassed = [1, 1, 0, 0, 0, 1, 1, 1, 34, 2];
-    const trendFailed = [0, 0, 1, 1, 1, 0, 0, 0, 0, 0];
+    const trendLabels = ["24/11 10:19", "24/11 10:47", "24/11 11:58", "24/11 11:59", "24/11 12:01", "24/11 14:10", "24/11 14:19", "24/11 15:57", "24/11 16:30", "24/11 17:28"];
+    const trendPassed = [1, 0, 0, 0, 1, 1, 1, 34, 2, 1];
+    const trendFailed = [0, 1, 1, 1, 0, 0, 0, 0, 0, 0];
     const trendSkipped = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
     const ctxTrend = document.getElementById('trendChart').getContext('2d');
@@ -1474,7 +1070,7 @@
         });
 
         // Update Counter
-        const total = 2;
+        const total = 1;
         const counterElem = document.getElementById('records-counter');
         if (counterElem) {
             if (visibleCount === total) {
