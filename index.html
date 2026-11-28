@@ -289,7 +289,7 @@
         <div class="flex flex-wrap items-center gap-3 no-print w-full md:w-auto justify-start md:justify-end">
             <div class="text-left md:text-right bg-slate-50 px-4 py-2 rounded-xl border border-slate-200/80">
                 <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Gerado em</p>
-                <p class="text-sm font-bold text-slate-700">27/11/2026 21:39:46</p>
+                <p class="text-sm font-bold text-slate-700">27/11/2026 21:40:33</p>
             </div>
             
             <button onclick="exportTableToCSV()" class="inline-flex items-center gap-2 px-3.5 py-2 bg-white hover:bg-slate-50 text-slate-700 font-semibold text-xs rounded-xl border border-slate-200 shadow-sm transition-all hover:shadow" title="Exportar dados para planilha Excel / CSV">
@@ -312,8 +312,8 @@
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow kpi-card">
             <div>
                 <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Total de Testes</p>
-                <p class="text-3xl font-extrabold text-slate-900 mt-1">2</p>
-                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600" title="Tempo total: 25.2s">25.2s</span></p>
+                <p class="text-3xl font-extrabold text-slate-900 mt-1">1</p>
+                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600" title="Tempo total: 15.0s">15.0s</span></p>
             </div>
             <div class="p-3.5 rounded-xl bg-blue-50 text-blue-600 border border-blue-100">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
@@ -326,7 +326,7 @@
                 <p class="text-xs font-semibold text-emerald-700 uppercase tracking-wider">Aprovados</p>
                 <p class="text-3xl font-extrabold text-emerald-600 mt-1">1</p>
                 <p class="text-xs text-emerald-600/80 mt-1 font-medium">
-                    50.0% do total
+                    100.0% do total
                 </p>
             </div>
             <div class="p-3.5 rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-100">
@@ -338,9 +338,9 @@
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow border-l-4 border-l-rose-500 kpi-card">
             <div>
                 <p class="text-xs font-semibold text-rose-700 uppercase tracking-wider">Falhas</p>
-                <p class="text-3xl font-extrabold text-rose-600 mt-1">1</p>
+                <p class="text-3xl font-extrabold text-rose-600 mt-1">0</p>
                 <p class="text-xs text-rose-600/80 mt-1 font-medium">
-                    50.0% do total
+                    0.0% do total
                 </p>
             </div>
             <div class="p-3.5 rounded-xl bg-rose-50 text-rose-600 border border-rose-100">
@@ -367,15 +367,15 @@
             <div>
                 <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Taxa de Sucesso</p>
                 <div class="flex items-baseline gap-2 mt-1">
-                    <span class="text-3xl font-extrabold text-rose-600">
-                        50.0%
+                    <span class="text-3xl font-extrabold text-emerald-600">
+                        100.0%
                     </span>
-                    <span class="text-xs text-slate-400 font-medium">Média: 12.6s</span>
+                    <span class="text-xs text-slate-400 font-medium">Média: 15.0s</span>
                 </div>
             </div>
             <!-- Mini Progress Bar -->
             <div class="w-full bg-slate-100 rounded-full h-2 mt-3 overflow-hidden">
-                <div class="bg-rose-500 h-2 rounded-full transition-all duration-500" style="width: 50.0%"></div>
+                <div class="bg-emerald-500 h-2 rounded-full transition-all duration-500" style="width: 100.0%"></div>
             </div>
         </div>
 
@@ -400,7 +400,7 @@
                 </div>
                 <div class="p-2 rounded-lg bg-rose-50">
                     <p class="text-[11px] font-semibold text-rose-800">Falhou</p>
-                    <p class="text-base font-bold text-rose-600">1</p>
+                    <p class="text-base font-bold text-rose-600">0</p>
                 </div>
                 <div class="p-2 rounded-lg bg-amber-50">
                     <p class="text-[11px] font-semibold text-amber-800">Pulado</p>
@@ -441,7 +441,7 @@
                 <div>
                     <h2 class="text-lg font-bold text-slate-900">Detalhamento dos Cenários de Teste</h2>
                     <p class="text-sm text-slate-500 mt-0.5" id="records-counter">
-                        Exibindo todos os <span class="font-bold text-slate-700">2</span> testes executados.
+                        Exibindo todos os <span class="font-bold text-slate-700">1</span> testes executados.
                     </p>
                 </div>
 
@@ -459,7 +459,7 @@
                     <div class="inline-flex flex-wrap w-full sm:w-auto rounded-xl p-1 bg-slate-100 border border-slate-200 text-xs font-semibold gap-1 sm:gap-0">
                         <button onclick="filterStatus('ALL')" id="btn-filter-ALL" 
                             class="filter-btn active px-3 py-1.5 rounded-lg transition-all bg-white text-slate-900 shadow-sm">
-                            Todos (2)
+                            Todos (1)
                         </button>
                         <button onclick="filterStatus('PASSED')" id="btn-filter-PASSED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-emerald-700 transition-all">
@@ -467,7 +467,7 @@
                         </button>
                         <button onclick="filterStatus('FAILED')" id="btn-filter-FAILED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-rose-700 transition-all">
-                            ❌ Falhou (1)
+                            ❌ Falhou (0)
                         </button>
                         <button onclick="filterStatus('SKIPPED')" id="btn-filter-SKIPPED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-amber-700 transition-all">
@@ -485,19 +485,13 @@
                 <button onclick="filterModulo('ALL')" id="btn-mod-ALL" 
                     class="mod-filter-btn active px-2.5 py-1 rounded-lg text-xs font-semibold transition-all bg-indigo-600 text-white shadow-sm flex items-center gap-1.5">
                     <span>Todos os Menus</span>
-                    <span class="px-1.5 py-0.2 rounded-full text-[10px] bg-white/20 text-white font-bold">2</span>
+                    <span class="px-1.5 py-0.2 rounded-full text-[10px] bg-white/20 text-white font-bold">1</span>
                 </button>
                 
                 <button onclick="filterModulo('Comercial')" id="btn-mod-Comercial" 
                     class="mod-filter-btn px-2.5 py-1 rounded-lg text-xs font-semibold text-slate-600 hover:text-indigo-700 hover:bg-slate-100 transition-all border border-slate-200/80 flex items-center gap-1.5">
                     <span>💼 Comercial</span>
                     <span class="px-1.5 py-0.2 rounded-full text-[10px] font-bold bg-sky-100 text-sky-800">1</span>
-                </button>
-                
-                <button onclick="filterModulo('Estoque')" id="btn-mod-Estoque" 
-                    class="mod-filter-btn px-2.5 py-1 rounded-lg text-xs font-semibold text-slate-600 hover:text-indigo-700 hover:bg-slate-100 transition-all border border-slate-200/80 flex items-center gap-1.5">
-                    <span>📦 Estoque</span>
-                    <span class="px-1.5 py-0.2 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800">1</span>
                 </button>
                 
             </div>
@@ -521,15 +515,15 @@
                 <tbody class="block md:table-row-group bg-white divide-y divide-slate-100 font-normal text-sm" id="test-tbody">
                     
                     <tr class="block md:table-row p-4 md:p-0 test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="FAILED" 
+                        data-status="PASSED" 
                         data-modulo="comercial"
                         data-tela="promoções"
                         data-name="concorrência e isolamento transacional (deadlock promo) [comercial | promoções] concorrência e isolamento transacional (deadlock promo)"
                         data-metodo="test_deadlock_tabela_promo"
-                        data-triage="unknown"
-                        data-id="1891">
+                        data-triage=""
+                        data-id="1893">
                         
-                        <td class="inline-block md:table-cell px-0 py-0 md:px-4 md:py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-left md:text-center mb-1 md:mb-0" title="ID Banco: #1891">
+                        <td class="inline-block md:table-cell px-0 py-0 md:px-4 md:py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-left md:text-center mb-1 md:mb-0" title="ID Banco: #1893">
                             #01
                         </td>
                         
@@ -557,319 +551,6 @@
                                 </div>
 
                                 
-                                <span class="text-xs text-rose-600 line-clamp-1 mt-0.5 font-mono bg-rose-50/70 px-2 py-0.5 rounded border border-rose-100">
-                                    tests\e2e\sgo\comercial\test_cadastro_promocoes.py:981: in test_deadlock_tabela_promo
-                                </span>
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center align-middle">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span>
-                                Falhou
-                            </span>
-                            
-                        </td>
-
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center align-middle">
-                            
-                            <span class="px-2.5 py-0.5 text-xs font-semibold rounded-md bg-slate-100 text-slate-600">
-                                Unknown
-                            </span>
-                            
-                        </td>
-                        
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center text-xs font-mono font-medium text-slate-600 align-middle">
-                            9.99s
-                        </td>
-                        
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center text-xs text-slate-500 font-medium align-middle">
-                            27/11/2026 21:39:31
-                        </td>
-
-                        <td class="block md:table-cell px-0 pt-2 pb-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-right text-xs col-acao">
-                            
-                            <button id="btn-toggle-1891" onclick="toggleDetails(1891)" 
-                                data-orig-html="Falha e evidências"
-                                data-orig-class="font-semibold text-rose-600 hover:text-rose-800 bg-rose-50 hover:bg-rose-100 border border-rose-200 px-3 py-1.5 rounded-lg transition-colors"
-                                class="font-semibold text-rose-600 hover:text-rose-800 bg-rose-50 hover:bg-rose-100 border border-rose-200 px-3 py-1.5 rounded-lg transition-colors">
-                                Falha e evidências
-                            </button>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
-                    
-                    <tr id="details-1891" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
-                        <td colspan="7" class="block md:table-cell p-0 border-y border-slate-800 md:max-w-0 w-full">
-                            <div class="p-6 space-y-5 bg-slate-900 text-slate-100 w-full overflow-hidden">
-                                
-                                <!-- Top Close and Context Bar -->
-                                <div class="flex items-center justify-between pb-3 border-b border-slate-800/80 gap-4">
-                                    <div class="flex items-center gap-2 min-w-0">
-                                        <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md shrink-0">
-                                            Evidências do cenário
-                                        </span>
-                                        <span class="text-xs text-slate-400 font-medium truncate">#1891 — Concorrência e Isolamento Transacional (Deadlock PROMO)</span>
-                                    </div>
-                                    <button onclick="toggleDetails(1891)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
-                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-                                        <span>Fechar</span>
-                                    </button>
-                                </div>
-
-                                
-                                <ul class="list-disc list-inside space-y-1.5 text-sm text-emerald-300 bg-slate-950/60 border border-slate-800/80 rounded-xl p-4">
-                                    
-                                    <li class="list-none text-slate-400">Nenhuma evidência de negócio registrada.</li>
-                                    
-                                </ul>
-                                <details>
-                                    <summary class="cursor-pointer text-sm font-semibold text-slate-300 mb-3">
-                                        Passos técnicos (22)
-                                    </summary>
-                                    <div class="flex items-center gap-2 mb-3">
-                                        <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md">
-                                            Linha do Tempo E2E (22 passos)
-                                        </span>
-                                        <span class="text-xs text-slate-400 font-mono">[Comercial | Promoções] Concorrência e Isolamento Transacional (Deadlock PROMO)</span>
-                                    </div>
-                                    <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto w-full">
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:06</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_deadlock_tabela_promo</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:20</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Verificando tela de NFE...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:20</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Tela NFE fechada com sucesso</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:21</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Aguardando Interface...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:21</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Acessando Menu Comercial...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:21</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Acessando Menu Comercial</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:21</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Abrindo Controle de Promoção...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:21</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Menu Win32 'Comercial > Controle de promo' (ID=77)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:22</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Janela 'Cadastro de Promoções' carregada</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:23</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Digitando código 45 e pressionando Tab...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:23</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Digitando código 45 e Tab</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:24</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Verificando promoção carregada na tela...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:24</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Validando promoção na tela (Componente Win32 / OCR)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:25</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando no botão Alterar...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:25</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando no botão Alterar</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:25</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão Alterar Promoção</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:27</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando no botão OK...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:27</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando no botão OK</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:27</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Cancelando edição...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:27</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Cancelando edição</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:27</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão Cancelar</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:31</span>
-                                            
-                                            <span class="text-rose-400 font-semibold break-words min-w-0">❌ Falha detectada [Unknown]: tests\e2e\sgo\comercial\test_cadastro_promocoes.py:981: in test_deadlock_tabela_promo</span>
-                                            
-                                        </div>
-                                        
-                                    </div>
-                                </details>
-                                
-
-                                
-                                <div>
-                                    <div class="flex items-center justify-between mb-3">
-                                        <div class="flex items-center gap-2">
-                                            <span class="px-2.5 py-0.5 text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 rounded-md">
-                                                Stacktrace da Falha (#1891)
-                                            </span>
-                                        </div>
-                                        <button onclick="copyErrorText('error-content-1891')" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-lg border border-slate-700 transition-colors flex items-center gap-1.5">
-                                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                                            Copiar Stacktrace
-                                        </button>
-                                    </div>
-                                    <pre id="error-content-1891" class="text-xs bg-slate-950 p-4 rounded-xl overflow-x-auto whitespace-pre-wrap break-words leading-relaxed border border-slate-800/80 font-mono text-rose-300 max-h-96 overflow-y-auto w-full">tests\e2e\sgo\comercial\test_cadastro_promocoes.py:981: in test_deadlock_tabela_promo
-    clicou_ok = cadastro_promocoes_page.clicar_ok()
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-src\pages\sgo\comercial\cadastro_promocoes_page.py:660: in clicar_ok
-    rect_tb = win32gui.GetWindowRect(h_tb)
-              ^^^^^^^^
-E   NameError: name 'win32gui' is not defined</pre>
-                                </div>
-                                
-
-                                <!-- Bottom Close Button -->
-                                <div class="flex justify-end pt-2 border-t border-slate-800/80">
-                                    <button onclick="toggleDetails(1891)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
-                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-                                        <span>Fechar Detalhes</span>
-                                    </button>
-                                </div>
-
-                            </div>
-                        </td>
-                    </tr>
-                    
-                    
-                    <tr class="block md:table-row p-4 md:p-0 test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-modulo="estoque"
-                        data-tela="requisição materiais"
-                        data-name="concorrência e isolamento transacional (deadlock requi) [estoque | requisição materiais] concorrência e isolamento transacional (deadlock requi)"
-                        data-metodo="test_deadlock_requisicao_materiais_tabela_requi"
-                        data-triage=""
-                        data-id="1892">
-                        
-                        <td class="inline-block md:table-cell px-0 py-0 md:px-4 md:py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-left md:text-center mb-1 md:mb-0" title="ID Banco: #1892">
-                            #02
-                        </td>
-                        
-                        <td class="block md:table-cell px-0 py-1.5 md:px-6 md:py-4">
-                            <div class="flex flex-col gap-1.5">
-                                <!-- Badges superiores: Módulo, Tela e SLA -->
-                                <div class="flex flex-wrap items-center gap-2">
-                                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
-                                        📦 Estoque
-                                    </span>
-                                    <span class="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 text-slate-700 border border-slate-200">
-                                        🖥️ Requisição Materiais
-                                    </span>
-                                    
-                                </div>
-
-                                <!-- Título Executivo do Cenário -->
-                                <div class="font-semibold text-slate-900 group-hover:text-indigo-600 transition-colors text-[13px] leading-snug">
-                                    Concorrência e Isolamento Transacional (Deadlock REQUI)
-                                </div>
-
-                                <!-- Monospace Subtitle: Identificador do Método Técnico -->
-                                <div class="flex items-center gap-2 text-[11px] font-mono text-slate-400">
-                                    <span class="truncate" title="Método Pytest">test_deadlock_requisicao_materiais_tabela_requi</span>
-                                </div>
-
-                                
                             </div>
                         </td>
                         
@@ -889,16 +570,16 @@ E   NameError: name 'win32gui' is not defined</pre>
                         </td>
                         
                         <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center text-xs font-mono font-medium text-slate-600 align-middle">
-                            15.20s
+                            14.97s
                         </td>
                         
                         <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center text-xs text-slate-500 font-medium align-middle">
-                            27/11/2026 21:39:46
+                            27/11/2026 21:40:32
                         </td>
 
                         <td class="block md:table-cell px-0 pt-2 pb-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-right text-xs col-acao">
                             
-                            <button id="btn-toggle-1892" onclick="toggleDetails(1892)" 
+                            <button id="btn-toggle-1893" onclick="toggleDetails(1893)" 
                                 data-orig-html="Evidências"
                                 data-orig-class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors"
                                 class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors">
@@ -910,7 +591,7 @@ E   NameError: name 'win32gui' is not defined</pre>
 
                     <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
                     
-                    <tr id="details-1892" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
+                    <tr id="details-1893" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
                         <td colspan="7" class="block md:table-cell p-0 border-y border-slate-800 md:max-w-0 w-full">
                             <div class="p-6 space-y-5 bg-slate-900 text-slate-100 w-full overflow-hidden">
                                 
@@ -920,9 +601,9 @@ E   NameError: name 'win32gui' is not defined</pre>
                                         <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md shrink-0">
                                             Evidências do cenário
                                         </span>
-                                        <span class="text-xs text-slate-400 font-medium truncate">#1892 — Concorrência e Isolamento Transacional (Deadlock REQUI)</span>
+                                        <span class="text-xs text-slate-400 font-medium truncate">#1893 — Concorrência e Isolamento Transacional (Deadlock PROMO)</span>
                                     </div>
-                                    <button onclick="toggleDetails(1892)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
+                                    <button onclick="toggleDetails(1893)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                                         <span>Fechar</span>
                                     </button>
@@ -934,196 +615,244 @@ E   NameError: name 'win32gui' is not defined</pre>
                                     
                                     
                                     
-                                    <li class="break-words"><span class="font-semibold text-slate-200">modulo:</span> <span class="text-emerald-300">Estoque - Requisição de Materiais (Deadlock Isolado)</span></li>
+                                    <li class="break-words"><span class="font-semibold text-slate-200">ID Promoção:</span> <span class="text-emerald-300">45</span></li>
                                     
                                     
                                     
                                     
                                     
-                                    <li class="break-words"><span class="font-semibold text-slate-200">id_requisicao_alvo:</span> <span class="text-emerald-300">297128</span></li>
+                                    <li class="break-words"><span class="font-semibold text-slate-200">Teste de Concorrência:</span> <span class="text-emerald-300">Deadlock Tabela PROMO Detectado e Destravado com Sucesso</span></li>
                                     
                                     
                                     
                                     
                                     
-                                    <li class="break-words"><span class="font-semibold text-slate-200">status_deadlock:</span> <span class="text-emerald-300">CONFIRMADO_COM_SUCESSO</span></li>
+                                    <li class="break-words"><span class="font-semibold text-slate-200">Trigger TRG_LOG_PROMO:</span> <span class="text-emerald-300">Desativada durante lock e reativada no teardown</span></li>
                                     
                                     
                                     
                                     
                                     
-                                    <li class="break-words"><span class="font-semibold text-slate-200">janela_fechada:</span> <span class="text-emerald-300">SIM</span></li>
+                                    <li class="break-words"><span class="font-semibold text-slate-200">Disparo de Deadlock:</span> <span class="text-emerald-300">Confirmado na tela do SGO via Win32/OCR</span></li>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <li class="break-words"><span class="font-semibold text-slate-200">Salvamento Final:</span> <span class="text-emerald-300">Salvo com sucesso após liberar o banco</span></li>
                                     
                                     
                                 </ul>
                                 <details>
                                     <summary class="cursor-pointer text-sm font-semibold text-slate-300 mb-3">
-                                        Passos técnicos (23)
+                                        Passos técnicos (29)
                                     </summary>
                                     <div class="flex items-center gap-2 mb-3">
                                         <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md">
-                                            Linha do Tempo E2E (23 passos)
+                                            Linha do Tempo E2E (29 passos)
                                         </span>
-                                        <span class="text-xs text-slate-400 font-mono">[Estoque | Requisição Materiais] Concorrência e Isolamento Transacional (Deadlock REQUI)</span>
+                                        <span class="text-xs text-slate-400 font-mono">[Comercial | Promoções] Concorrência e Isolamento Transacional (Deadlock PROMO)</span>
                                     </div>
                                     <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto w-full">
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:31</span>
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:03</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_deadlock_requisicao_materiais_tabela_requi</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:32</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Acessando Menu Estoque (Alt + S) -> Requisição de Materiais...</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_deadlock_tabela_promo</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:32</span>
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:16</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Passo 1: Menu Estoque -> Requisição de Materiais (Win32)...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:32</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Menu Win32 'Estoque > Requisição de Materiais' (ID=151)</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Verificando tela de NFE...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:32</span>
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:17</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Passo 3: Manutenção (Alt + M na tela de filtro)...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:33</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Janela Requisição de Materiais pronta!</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Tela NFE fechada com sucesso</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:33</span>
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:17</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicou botão Win32 'Fechar'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:33</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Consultando Requisição #297128...</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Aguardando Interface...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:36</span>
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:18</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Acionando modo de alteração (Alt + A)...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:38</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Alterando Observação: 'DEADLOCK QA 1795826378'...</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Acessando Menu Comercial...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:38</span>
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:18</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TDBMemo; INSTANCE:1] = 'DEADLOCK QA 1795826378'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:39</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicou botão Win32 'OK'</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Acessando Menu Comercial</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:40</span>
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:18</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Cancelando edição da requisição (Cancela -> Yes)...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:40</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão Cancela</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Abrindo Controle de Promoção...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:41</span>
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:18</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Popup detectado (TMessageForm), confirmando com Yes...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:42</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicou botão Win32 'Fechar'</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Menu Win32 'Comercial > Controle de promo' (ID=77)</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:44</span>
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:19</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Fechando janela Requisição de Materiais...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:45</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicou botão Win32 'Fechar'</span>
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Janela 'Cadastro de Promoções' carregada</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:46</span>
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:19</span>
                                             
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (modulo: Estoque - Requisição de Materiais (Deadlock Isolado))</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:46</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (id_requisicao_alvo: 297128)</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Digitando código 45 e pressionando Tab...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:46</span>
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:19</span>
                                             
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (status_deadlock: CONFIRMADO_COM_SUCESSO)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:46</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (janela_fechada: SIM)</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Digitando código 45 e Tab</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">21:39:46</span>
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:21</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Verificando promoção carregada na tela...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:21</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Validando promoção na tela (Componente Win32 / OCR)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:22</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando no botão Alterar...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:22</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando no botão Alterar</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:22</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão Alterar Promoção</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:24</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando no botão OK...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:24</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando no botão OK</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:25</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando no botão OK...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:25</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando no botão OK</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:27</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Cancelando edição...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:27</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Cancelando edição</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:28</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão Cancelar</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:32</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (ID Promoção: 45)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:32</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Teste de Concorrência: Deadlock Tabela PROMO Detectado e Destravado com Sucesso)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:32</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Trigger TRG_LOG_PROMO: Desativada durante lock e reativada no teardown)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:32</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Disparo de Deadlock: Confirmado na tela do SGO via Win32/OCR)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:32</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Salvamento Final: Salvo com sucesso após liberar o banco)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">21:40:32</span>
                                             
                                             <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Cenário concluído e validado com sucesso!</span>
                                             
@@ -1137,7 +866,7 @@ E   NameError: name 'win32gui' is not defined</pre>
 
                                 <!-- Bottom Close Button -->
                                 <div class="flex justify-end pt-2 border-t border-slate-800/80">
-                                    <button onclick="toggleDetails(1892)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
+                                    <button onclick="toggleDetails(1893)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                                         <span>Fechar Detalhes</span>
                                     </button>
@@ -1244,7 +973,7 @@ E   NameError: name 'win32gui' is not defined</pre>
     Chart.defaults.color = '#64748b';
 
     const passedCount = 1;
-    const failedCount = 1;
+    const failedCount = 0;
     const skippedCount = 0;
 
     // 1. Donut Results Chart
@@ -1284,9 +1013,9 @@ E   NameError: name 'win32gui' is not defined</pre>
     });
 
     // 2. Trend History Chart (from SQLite)
-    const trendLabels = ["27/11 19:32", "27/11 19:37", "27/11 19:54", "27/11 19:56", "27/11 20:00", "27/11 20:01", "27/11 20:04", "27/11 20:15", "27/11 21:36", "27/11 21:39"];
-    const trendPassed = [5, 16, 4, 5, 0, 3, 2, 154, 1, 1];
-    const trendFailed = [0, 0, 0, 0, 0, 0, 0, 4, 2, 1];
+    const trendLabels = ["27/11 19:37", "27/11 19:54", "27/11 19:56", "27/11 20:00", "27/11 20:01", "27/11 20:04", "27/11 20:15", "27/11 21:36", "27/11 21:39", "27/11 21:40"];
+    const trendPassed = [16, 4, 5, 0, 3, 2, 154, 1, 1, 1];
+    const trendFailed = [0, 0, 0, 0, 0, 0, 4, 2, 1, 0];
     const trendSkipped = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
     const ctxTrend = document.getElementById('trendChart').getContext('2d');
@@ -1412,7 +1141,7 @@ E   NameError: name 'win32gui' is not defined</pre>
         });
 
         // Update Counter
-        const total = 2;
+        const total = 1;
         const counterElem = document.getElementById('records-counter');
         if (counterElem) {
             if (visibleCount === total) {
