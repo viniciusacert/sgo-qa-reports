@@ -289,7 +289,7 @@
         <div class="flex flex-wrap items-center gap-3 no-print w-full md:w-auto justify-start md:justify-end">
             <div class="text-left md:text-right bg-slate-50 px-4 py-2 rounded-xl border border-slate-200/80">
                 <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Gerado em</p>
-                <p class="text-sm font-bold text-slate-700">28/11/2026 11:24:46</p>
+                <p class="text-sm font-bold text-slate-700">28/11/2026 11:44:21</p>
             </div>
             
             <button onclick="exportTableToCSV()" class="inline-flex items-center gap-2 px-3.5 py-2 bg-white hover:bg-slate-50 text-slate-700 font-semibold text-xs rounded-xl border border-slate-200 shadow-sm transition-all hover:shadow" title="Exportar dados para planilha Excel / CSV">
@@ -312,8 +312,8 @@
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow kpi-card">
             <div>
                 <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Total de Testes</p>
-                <p class="text-3xl font-extrabold text-slate-900 mt-1">5</p>
-                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600" title="Tempo total: 157.9s">2min 38s</span></p>
+                <p class="text-3xl font-extrabold text-slate-900 mt-1">3</p>
+                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600" title="Tempo total: 18.0s">18.0s</span></p>
             </div>
             <div class="p-3.5 rounded-xl bg-blue-50 text-blue-600 border border-blue-100">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
@@ -324,7 +324,7 @@
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow border-l-4 border-l-emerald-500 kpi-card">
             <div>
                 <p class="text-xs font-semibold text-emerald-700 uppercase tracking-wider">Aprovados</p>
-                <p class="text-3xl font-extrabold text-emerald-600 mt-1">5</p>
+                <p class="text-3xl font-extrabold text-emerald-600 mt-1">3</p>
                 <p class="text-xs text-emerald-600/80 mt-1 font-medium">
                     100.0% do total
                 </p>
@@ -370,7 +370,7 @@
                     <span class="text-3xl font-extrabold text-emerald-600">
                         100.0%
                     </span>
-                    <span class="text-xs text-slate-400 font-medium">Média: 31.6s</span>
+                    <span class="text-xs text-slate-400 font-medium">Média: 5.99s</span>
                 </div>
             </div>
             <!-- Mini Progress Bar -->
@@ -396,7 +396,7 @@
             <div class="grid grid-cols-3 gap-2 mt-4 pt-4 border-t border-slate-100 text-center">
                 <div class="p-2 rounded-lg bg-emerald-50">
                     <p class="text-[11px] font-semibold text-emerald-800">Passou</p>
-                    <p class="text-base font-bold text-emerald-600">5</p>
+                    <p class="text-base font-bold text-emerald-600">3</p>
                 </div>
                 <div class="p-2 rounded-lg bg-rose-50">
                     <p class="text-[11px] font-semibold text-rose-800">Falhou</p>
@@ -441,7 +441,7 @@
                 <div>
                     <h2 class="text-lg font-bold text-slate-900">Detalhamento dos Cenários de Teste</h2>
                     <p class="text-sm text-slate-500 mt-0.5" id="records-counter">
-                        Exibindo todos os <span class="font-bold text-slate-700">5</span> testes executados.
+                        Exibindo todos os <span class="font-bold text-slate-700">3</span> testes executados.
                     </p>
                 </div>
 
@@ -459,11 +459,11 @@
                     <div class="inline-flex flex-wrap w-full sm:w-auto rounded-xl p-1 bg-slate-100 border border-slate-200 text-xs font-semibold gap-1 sm:gap-0">
                         <button onclick="filterStatus('ALL')" id="btn-filter-ALL" 
                             class="filter-btn active px-3 py-1.5 rounded-lg transition-all bg-white text-slate-900 shadow-sm">
-                            Todos (5)
+                            Todos (3)
                         </button>
                         <button onclick="filterStatus('PASSED')" id="btn-filter-PASSED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-emerald-700 transition-all">
-                            ✅ Passou (5)
+                            ✅ Passou (3)
                         </button>
                         <button onclick="filterStatus('FAILED')" id="btn-filter-FAILED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-rose-700 transition-all">
@@ -485,19 +485,13 @@
                 <button onclick="filterModulo('ALL')" id="btn-mod-ALL" 
                     class="mod-filter-btn active px-2.5 py-1 rounded-lg text-xs font-semibold transition-all bg-indigo-600 text-white shadow-sm flex items-center gap-1.5">
                     <span>Todos os Menus</span>
-                    <span class="px-1.5 py-0.2 rounded-full text-[10px] bg-white/20 text-white font-bold">5</span>
+                    <span class="px-1.5 py-0.2 rounded-full text-[10px] bg-white/20 text-white font-bold">3</span>
                 </button>
                 
-                <button onclick="filterModulo('Compras')" id="btn-mod-Compras" 
+                <button onclick="filterModulo('Cadastros')" id="btn-mod-Cadastros" 
                     class="mod-filter-btn px-2.5 py-1 rounded-lg text-xs font-semibold text-slate-600 hover:text-indigo-700 hover:bg-slate-100 transition-all border border-slate-200/80 flex items-center gap-1.5">
-                    <span>🛒 Compras</span>
-                    <span class="px-1.5 py-0.2 rounded-full text-[10px] font-bold bg-amber-100 text-amber-800">4</span>
-                </button>
-                
-                <button onclick="filterModulo('Estoque')" id="btn-mod-Estoque" 
-                    class="mod-filter-btn px-2.5 py-1 rounded-lg text-xs font-semibold text-slate-600 hover:text-indigo-700 hover:bg-slate-100 transition-all border border-slate-200/80 flex items-center gap-1.5">
-                    <span>📦 Estoque</span>
-                    <span class="px-1.5 py-0.2 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800">1</span>
+                    <span>👥 Cadastros</span>
+                    <span class="px-1.5 py-0.2 rounded-full text-[10px] font-bold bg-indigo-100 text-indigo-800">3</span>
                 </button>
                 
             </div>
@@ -522,14 +516,14 @@
                     
                     <tr class="block md:table-row p-4 md:p-0 test-row hover:bg-slate-50/80 transition-colors group" 
                         data-status="PASSED" 
-                        data-modulo="compras"
-                        data-tela="notas de entrada"
-                        data-name="inclusão manual de nota fiscal de entrada e sua persistência no firebird [compras | notas de entrada] inclusão manual de nota fiscal de entrada e sua persistência no firebird"
-                        data-metodo="test_inclusao_nota_entrada_manual"
+                        data-modulo="cadastros"
+                        data-tela="cidade"
+                        data-name="inclusão de cidade e persistência no firebird [cadastros | cidade] inclusão de cidade e persistência no firebird"
+                        data-metodo="test_inclusao_cidade"
                         data-triage=""
-                        data-id="2186">
+                        data-id="2191">
                         
-                        <td class="inline-block md:table-cell px-0 py-0 md:px-4 md:py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-left md:text-center mb-1 md:mb-0" title="ID Banco: #2186">
+                        <td class="inline-block md:table-cell px-0 py-0 md:px-4 md:py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-left md:text-center mb-1 md:mb-0" title="ID Banco: #2191">
                             #01
                         </td>
                         
@@ -537,23 +531,23 @@
                             <div class="flex flex-col gap-1.5">
                                 <!-- Badges superiores: Módulo, Tela e SLA -->
                                 <div class="flex flex-wrap items-center gap-2">
-                                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-amber-50 text-amber-700 border border-amber-200">
-                                        🛒 Compras
+                                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">
+                                        👥 Cadastros
                                     </span>
                                     <span class="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 text-slate-700 border border-slate-200">
-                                        🖥️ Notas de Entrada
+                                        🖥️ Cidade
                                     </span>
                                     
                                 </div>
 
                                 <!-- Título Executivo do Cenário -->
                                 <div class="font-semibold text-slate-900 group-hover:text-indigo-600 transition-colors text-[13px] leading-snug">
-                                    Inclusão manual de Nota Fiscal de Entrada e sua persistência no Firebird
+                                    Inclusão de Cidade e persistência no Firebird
                                 </div>
 
                                 <!-- Monospace Subtitle: Identificador do Método Técnico -->
                                 <div class="flex items-center gap-2 text-[11px] font-mono text-slate-400">
-                                    <span class="truncate" title="Método Pytest">test_inclusao_nota_entrada_manual</span>
+                                    <span class="truncate" title="Método Pytest">test_inclusao_cidade</span>
                                 </div>
 
                                 
@@ -576,16 +570,16 @@
                         </td>
                         
                         <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center text-xs font-mono font-medium text-slate-600 align-middle">
-                            51.89s
+                            7.13s
                         </td>
                         
                         <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center text-xs text-slate-500 font-medium align-middle">
-                            28/11/2026 11:22:57
+                            28/11/2026 11:44:08
                         </td>
 
                         <td class="block md:table-cell px-0 pt-2 pb-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-right text-xs col-acao">
                             
-                            <button id="btn-toggle-2186" onclick="toggleDetails(2186)" 
+                            <button id="btn-toggle-2191" onclick="toggleDetails(2191)" 
                                 data-orig-html="Evidências"
                                 data-orig-class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors"
                                 class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors">
@@ -597,7 +591,7 @@
 
                     <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
                     
-                    <tr id="details-2186" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
+                    <tr id="details-2191" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
                         <td colspan="7" class="block md:table-cell p-0 border-y border-slate-800 md:max-w-0 w-full">
                             <div class="p-6 space-y-5 bg-slate-900 text-slate-100 w-full overflow-hidden">
                                 
@@ -607,9 +601,9 @@
                                         <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md shrink-0">
                                             Evidências do cenário
                                         </span>
-                                        <span class="text-xs text-slate-400 font-medium truncate">#2186 — Inclusão manual de Nota Fiscal de Entrada e sua persistência no Firebird</span>
+                                        <span class="text-xs text-slate-400 font-medium truncate">#2191 — Inclusão de Cidade e persistência no Firebird</span>
                                     </div>
-                                    <button onclick="toggleDetails(2186)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
+                                    <button onclick="toggleDetails(2191)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                                         <span>Fechar</span>
                                     </button>
@@ -621,188 +615,163 @@
                                     
                                     
                                     
-                                    <li class="break-words"><span class="font-semibold text-slate-200">Nota Incluida:</span> <span class="text-emerald-300">49113</span></li>
+                                    <li class="break-words"><span class="font-semibold text-slate-200">Data Fundação Gravada:</span> <span class="text-emerald-300">2000-01-01 00:00:00</span></li>
                                     
                                     
                                     
                                     
                                     
-                                    <li class="break-words"><span class="font-semibold text-slate-200">Serie:</span> <span class="text-emerald-300">5</span></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li class="break-words"><span class="font-semibold text-slate-200">Fornecedor:</span> <span class="text-emerald-300">1</span></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li class="break-words"><span class="font-semibold text-slate-200">Produto:</span> <span class="text-emerald-300">P10314</span></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li class="break-words"><span class="font-semibold text-slate-200">Qtd Gravada:</span> <span class="text-emerald-300">10.0</span></li>
+                                    <li class="break-words"><span class="font-semibold text-slate-200">ID Cidade Criada:</span> <span class="text-emerald-300">811</span></li>
                                     
                                     
                                 </ul>
                                 <details>
                                     <summary class="cursor-pointer text-sm font-semibold text-slate-300 mb-3">
-                                        Passos técnicos (21)
+                                        Passos técnicos (20)
                                     </summary>
                                     <div class="flex items-center gap-2 mb-3">
                                         <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md">
-                                            Linha do Tempo E2E (21 passos)
+                                            Linha do Tempo E2E (20 passos)
                                         </span>
-                                        <span class="text-xs text-slate-400 font-mono">[Compras | Notas de Entrada] Inclusão manual de Nota Fiscal de Entrada e sua persistência no Firebird</span>
+                                        <span class="text-xs text-slate-400 font-mono">[Cadastros | Cidade] Inclusão de Cidade e persistência no Firebird</span>
                                     </div>
                                     <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto w-full">
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:21:51</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:43:47</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_inclusao_nota_entrada_manual</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_inclusao_cidade</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:22:04</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:01</span>
                                             
                                             <span class="text-slate-300 break-words min-w-0">🔹 Verificando tela de NFE...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:22:05</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:01</span>
                                             
                                             <span class="text-slate-300 break-words min-w-0">🔹 Tela NFE fechada com sucesso</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:22:05</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:01</span>
                                             
                                             <span class="text-slate-300 break-words min-w-0">🔹 Aguardando Interface...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:22:06</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:02</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Abrindo Notas Fiscais de Entrada (Alt + M -> N)...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:22:08</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Notas Fiscais de Entrada aberta com sucesso.</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Abrindo Cadastro de Cidades (Alt + C -> i)...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:22:08</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:03</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando em Incluir (Alt + I)...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:22:09</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Série: 5 | Nota: 49113 | Modelo: 01 | Espécie: 1...</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Menu Win32 'Cadastros > Cidades' (ID=9)</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:22:17</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:03</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Espécie da Nota: 1...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:22:20</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Fornecedor: 1 | End: 1 | Fiscal 1: 1.101 | Transp: 14 | Banco: 341...</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Cadastro de Cidades aberto com sucesso.</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:22:39</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:03</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Inserindo Produto: P10314 (Qtd: 10) na Grade...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:22:45</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Parcela 1 (Dias: 1)...</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Acionando Incluir (Alt + I)...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:22:49</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:03</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Salvando Nota de Entrada...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:22:50</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Espécie da Nota: 1...</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo dados da Cidade...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:22:55</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:04</span>
                                             
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Nota 49113 salva com sucesso no Firebird!</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:22:57</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Nota Incluida: 49113)</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TDBEdit; INSTANCE:11] = '3165206'</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:22:57</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:05</span>
                                             
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Serie: 5)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:22:57</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Fornecedor: 1)</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TDBEdit; INSTANCE:3] = 'SAO THOME DAS LETRAS'</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:22:57</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:05</span>
                                             
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Produto: P10314)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:22:57</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Qtd Gravada: 10.0)</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Dt. Fundação: 01/01/2000...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:22:57</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:06</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TDBEdit; INSTANCE:10] = '01012000'</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:07</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TDBEdit; INSTANCE:9] = '1'</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:07</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TDBEdit; INSTANCE:4] = '100,00'</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:08</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TDBEdit; INSTANCE:7] = '1'</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:08</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Salvando registro de Cidade (Alt + O)...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:08</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Data Fundação Gravada: 2000-01-01 00:00:00)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:08</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (ID Cidade Criada: 811)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:08</span>
                                             
                                             <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Cenário concluído e validado com sucesso!</span>
                                             
@@ -816,7 +785,7 @@
 
                                 <!-- Bottom Close Button -->
                                 <div class="flex justify-end pt-2 border-t border-slate-800/80">
-                                    <button onclick="toggleDetails(2186)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
+                                    <button onclick="toggleDetails(2191)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                                         <span>Fechar Detalhes</span>
                                     </button>
@@ -829,14 +798,14 @@
                     
                     <tr class="block md:table-row p-4 md:p-0 test-row hover:bg-slate-50/80 transition-colors group" 
                         data-status="PASSED" 
-                        data-modulo="compras"
-                        data-tela="notas de entrada"
-                        data-name="alteração da quantidade do item na nota fiscal de entrada [compras | notas de entrada] alteração da quantidade do item na nota fiscal de entrada"
-                        data-metodo="test_alteracao_nota_entrada"
+                        data-modulo="cadastros"
+                        data-tela="cidade"
+                        data-name="alteração de cidade (campo data de fundação) [cadastros | cidade] alteração de cidade (campo data de fundação)"
+                        data-metodo="test_alteracao_cidade"
                         data-triage=""
-                        data-id="2187">
+                        data-id="2192">
                         
-                        <td class="inline-block md:table-cell px-0 py-0 md:px-4 md:py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-left md:text-center mb-1 md:mb-0" title="ID Banco: #2187">
+                        <td class="inline-block md:table-cell px-0 py-0 md:px-4 md:py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-left md:text-center mb-1 md:mb-0" title="ID Banco: #2192">
                             #02
                         </td>
                         
@@ -844,23 +813,23 @@
                             <div class="flex flex-col gap-1.5">
                                 <!-- Badges superiores: Módulo, Tela e SLA -->
                                 <div class="flex flex-wrap items-center gap-2">
-                                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-amber-50 text-amber-700 border border-amber-200">
-                                        🛒 Compras
+                                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">
+                                        👥 Cadastros
                                     </span>
                                     <span class="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 text-slate-700 border border-slate-200">
-                                        🖥️ Notas de Entrada
+                                        🖥️ Cidade
                                     </span>
                                     
                                 </div>
 
                                 <!-- Título Executivo do Cenário -->
                                 <div class="font-semibold text-slate-900 group-hover:text-indigo-600 transition-colors text-[13px] leading-snug">
-                                    Alteração da quantidade do item na Nota Fiscal de Entrada
+                                    Alteração de Cidade (campo Data de Fundação)
                                 </div>
 
                                 <!-- Monospace Subtitle: Identificador do Método Técnico -->
                                 <div class="flex items-center gap-2 text-[11px] font-mono text-slate-400">
-                                    <span class="truncate" title="Método Pytest">test_alteracao_nota_entrada</span>
+                                    <span class="truncate" title="Método Pytest">test_alteracao_cidade</span>
                                 </div>
 
                                 
@@ -883,16 +852,16 @@
                         </td>
                         
                         <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center text-xs font-mono font-medium text-slate-600 align-middle">
-                            23.31s
+                            5.67s
                         </td>
                         
                         <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center text-xs text-slate-500 font-medium align-middle">
-                            28/11/2026 11:23:22
+                            28/11/2026 11:44:15
                         </td>
 
                         <td class="block md:table-cell px-0 pt-2 pb-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-right text-xs col-acao">
                             
-                            <button id="btn-toggle-2187" onclick="toggleDetails(2187)" 
+                            <button id="btn-toggle-2192" onclick="toggleDetails(2192)" 
                                 data-orig-html="Evidências"
                                 data-orig-class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors"
                                 class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors">
@@ -904,7 +873,7 @@
 
                     <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
                     
-                    <tr id="details-2187" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
+                    <tr id="details-2192" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
                         <td colspan="7" class="block md:table-cell p-0 border-y border-slate-800 md:max-w-0 w-full">
                             <div class="p-6 space-y-5 bg-slate-900 text-slate-100 w-full overflow-hidden">
                                 
@@ -914,9 +883,9 @@
                                         <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md shrink-0">
                                             Evidências do cenário
                                         </span>
-                                        <span class="text-xs text-slate-400 font-medium truncate">#2187 — Alteração da quantidade do item na Nota Fiscal de Entrada</span>
+                                        <span class="text-xs text-slate-400 font-medium truncate">#2192 — Alteração de Cidade (campo Data de Fundação)</span>
                                     </div>
-                                    <button onclick="toggleDetails(2187)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
+                                    <button onclick="toggleDetails(2192)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                                         <span>Fechar</span>
                                     </button>
@@ -928,13 +897,7 @@
                                     
                                     
                                     
-                                    <li class="break-words"><span class="font-semibold text-slate-200">Nota Alterada:</span> <span class="text-emerald-300">49113</span></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li class="break-words"><span class="font-semibold text-slate-200">Nova Qtd:</span> <span class="text-emerald-300">3.0</span></li>
+                                    <li class="break-words"><span class="font-semibold text-slate-200">Data Fundação Alterada:</span> <span class="text-emerald-300">1999-01-01 00:00:00</span></li>
                                     
                                     
                                 </ul>
@@ -946,103 +909,103 @@
                                         <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md">
                                             Linha do Tempo E2E (14 passos)
                                         </span>
-                                        <span class="text-xs text-slate-400 font-mono">[Compras | Notas de Entrada] Alteração da quantidade do item na Nota Fiscal de Entrada</span>
+                                        <span class="text-xs text-slate-400 font-mono">[Cadastros | Cidade] Alteração de Cidade (campo Data de Fundação)</span>
                                     </div>
                                     <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto w-full">
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:22:58</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:09</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_alteracao_nota_entrada</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_alteracao_cidade</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:22:58</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:09</span>
                                             
                                             <span class="text-slate-300 break-words min-w-0">🔹 Aguardando Interface...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:22:59</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:10</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Abrindo Notas Fiscais de Entrada (Alt + M -> N)...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:01</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Notas Fiscais de Entrada aberta com sucesso.</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Abrindo Cadastro de Cidades (Alt + C -> i)...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:01</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:11</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Consultando Nota: 49113 (Série: 5)...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:05</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando em Alterar na ToolBar...</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Menu Win32 'Cadastros > Cidades' (ID=9)</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:07</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:11</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Alterando Quantidade do item para 3...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:11</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Parcela 1 (Dias: 1)...</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Cadastro de Cidades aberto com sucesso.</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:14</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:11</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Salvando Nota de Entrada...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:15</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Espécie da Nota: 1...</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Posicionando na Cidade 811 (SAO THOME DAS LETRAS)...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:20</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:12</span>
                                             
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Nota 49113 salva com sucesso no Firebird!</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:22</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Nota Alterada: 49113)</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TNumberEdit; INSTANCE:1] = '811'</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:22</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:13</span>
                                             
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Nova Qtd: 3.0)</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Cidade 'SAO THOME DAS LETRAS' localizada pelo código 811!</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:22</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:13</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando em Alterar (Alt + A)...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:13</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Dt. Fundação: 01/01/1999...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:14</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TDBEdit; INSTANCE:10] = '01011999'</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:14</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Salvando registro de Cidade (Alt + O)...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:15</span>
+                                            
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Data Fundação Alterada: 1999-01-01 00:00:00)</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:15</span>
                                             
                                             <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Cenário concluído e validado com sucesso!</span>
                                             
@@ -1056,7 +1019,7 @@
 
                                 <!-- Bottom Close Button -->
                                 <div class="flex justify-end pt-2 border-t border-slate-800/80">
-                                    <button onclick="toggleDetails(2187)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
+                                    <button onclick="toggleDetails(2192)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                                         <span>Fechar Detalhes</span>
                                     </button>
@@ -1069,14 +1032,14 @@
                     
                     <tr class="block md:table-row p-4 md:p-0 test-row hover:bg-slate-50/80 transition-colors group" 
                         data-status="PASSED" 
-                        data-modulo="compras"
-                        data-tela="notas de entrada"
-                        data-name="exclusão da nota fiscal de entrada e confirmação no banco firebird [compras | notas de entrada] exclusão da nota fiscal de entrada e confirmação no banco firebird"
-                        data-metodo="test_exclusao_nota_entrada"
+                        data-modulo="cadastros"
+                        data-tela="cidade"
+                        data-name="exclusão de cidade e conferência no firebird [cadastros | cidade] exclusão de cidade e conferência no firebird"
+                        data-metodo="test_exclusao_cidade"
                         data-triage=""
-                        data-id="2188">
+                        data-id="2193">
                         
-                        <td class="inline-block md:table-cell px-0 py-0 md:px-4 md:py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-left md:text-center mb-1 md:mb-0" title="ID Banco: #2188">
+                        <td class="inline-block md:table-cell px-0 py-0 md:px-4 md:py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-left md:text-center mb-1 md:mb-0" title="ID Banco: #2193">
                             #03
                         </td>
                         
@@ -1084,23 +1047,23 @@
                             <div class="flex flex-col gap-1.5">
                                 <!-- Badges superiores: Módulo, Tela e SLA -->
                                 <div class="flex flex-wrap items-center gap-2">
-                                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-amber-50 text-amber-700 border border-amber-200">
-                                        🛒 Compras
+                                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">
+                                        👥 Cadastros
                                     </span>
                                     <span class="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 text-slate-700 border border-slate-200">
-                                        🖥️ Notas de Entrada
+                                        🖥️ Cidade
                                     </span>
                                     
                                 </div>
 
                                 <!-- Título Executivo do Cenário -->
                                 <div class="font-semibold text-slate-900 group-hover:text-indigo-600 transition-colors text-[13px] leading-snug">
-                                    Exclusão da Nota Fiscal de Entrada e confirmação no banco Firebird
+                                    Exclusão de Cidade e conferência no Firebird
                                 </div>
 
                                 <!-- Monospace Subtitle: Identificador do Método Técnico -->
                                 <div class="flex items-center gap-2 text-[11px] font-mono text-slate-400">
-                                    <span class="truncate" title="Método Pytest">test_exclusao_nota_entrada</span>
+                                    <span class="truncate" title="Método Pytest">test_exclusao_cidade</span>
                                 </div>
 
                                 
@@ -1123,16 +1086,16 @@
                         </td>
                         
                         <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center text-xs font-mono font-medium text-slate-600 align-middle">
-                            11.81s
+                            5.19s
                         </td>
                         
                         <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center text-xs text-slate-500 font-medium align-middle">
-                            28/11/2026 11:23:35
+                            28/11/2026 11:44:21
                         </td>
 
                         <td class="block md:table-cell px-0 pt-2 pb-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-right text-xs col-acao">
                             
-                            <button id="btn-toggle-2188" onclick="toggleDetails(2188)" 
+                            <button id="btn-toggle-2193" onclick="toggleDetails(2193)" 
                                 data-orig-html="Evidências"
                                 data-orig-class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors"
                                 class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors">
@@ -1144,7 +1107,7 @@
 
                     <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
                     
-                    <tr id="details-2188" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
+                    <tr id="details-2193" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
                         <td colspan="7" class="block md:table-cell p-0 border-y border-slate-800 md:max-w-0 w-full">
                             <div class="p-6 space-y-5 bg-slate-900 text-slate-100 w-full overflow-hidden">
                                 
@@ -1154,9 +1117,9 @@
                                         <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md shrink-0">
                                             Evidências do cenário
                                         </span>
-                                        <span class="text-xs text-slate-400 font-medium truncate">#2188 — Exclusão da Nota Fiscal de Entrada e confirmação no banco Firebird</span>
+                                        <span class="text-xs text-slate-400 font-medium truncate">#2193 — Exclusão de Cidade e conferência no Firebird</span>
                                     </div>
-                                    <button onclick="toggleDetails(2188)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
+                                    <button onclick="toggleDetails(2193)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                                         <span>Fechar</span>
                                     </button>
@@ -1168,351 +1131,108 @@
                                     
                                     
                                     
-                                    <li class="break-words"><span class="font-semibold text-slate-200">Nota Excluida:</span> <span class="text-emerald-300">49113</span></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li class="break-words"><span class="font-semibold text-slate-200">Status Exclusao:</span> <span class="text-emerald-300">Confirmada no Banco</span></li>
+                                    <li class="break-words"><span class="font-semibold text-slate-200">Status Exclusão:</span> <span class="text-emerald-300">Registro removido com sucesso</span></li>
                                     
                                     
                                 </ul>
                                 <details>
                                     <summary class="cursor-pointer text-sm font-semibold text-slate-300 mb-3">
-                                        Passos técnicos (10)
+                                        Passos técnicos (13)
                                     </summary>
                                     <div class="flex items-center gap-2 mb-3">
                                         <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md">
-                                            Linha do Tempo E2E (10 passos)
+                                            Linha do Tempo E2E (13 passos)
                                         </span>
-                                        <span class="text-xs text-slate-400 font-mono">[Compras | Notas de Entrada] Exclusão da Nota Fiscal de Entrada e confirmação no banco Firebird</span>
+                                        <span class="text-xs text-slate-400 font-mono">[Cadastros | Cidade] Exclusão de Cidade e conferência no Firebird</span>
                                     </div>
                                     <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto w-full">
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:23</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:15</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_exclusao_nota_entrada</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_exclusao_cidade</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:23</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:16</span>
                                             
                                             <span class="text-slate-300 break-words min-w-0">🔹 Aguardando Interface...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:24</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:16</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Abrindo Notas Fiscais de Entrada (Alt + M -> N)...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:26</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Notas Fiscais de Entrada aberta com sucesso.</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Abrindo Cadastro de Cidades (Alt + C -> i)...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:26</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:17</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Consultando Nota: 49113 (Série: 5)...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:30</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Excluindo Nota de Entrada (Alt + E)...</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Menu Win32 'Cadastros > Cidades' (ID=9)</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:33</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:17</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Fechando Notas Fiscais de Entrada...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:35</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Nota Excluida: 49113)</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Cadastro de Cidades aberto com sucesso.</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:35</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:17</span>
                                             
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Status Exclusao: Confirmada no Banco)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:35</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Cenário concluído e validado com sucesso!</span>
-                                            
-                                        </div>
-                                        
-                                    </div>
-                                </details>
-                                
-
-                                
-
-                                <!-- Bottom Close Button -->
-                                <div class="flex justify-end pt-2 border-t border-slate-800/80">
-                                    <button onclick="toggleDetails(2188)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
-                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-                                        <span>Fechar Detalhes</span>
-                                    </button>
-                                </div>
-
-                            </div>
-                        </td>
-                    </tr>
-                    
-                    
-                    <tr class="block md:table-row p-4 md:p-0 test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-modulo="compras"
-                        data-tela="notas de entrada"
-                        data-name="concorrência e bloqueio transacional (deadlock na tabela notae) [compras | notas de entrada] concorrência e bloqueio transacional (deadlock na tabela notae)"
-                        data-metodo="test_deadlock_tabela_notae"
-                        data-triage=""
-                        data-id="2189">
-                        
-                        <td class="inline-block md:table-cell px-0 py-0 md:px-4 md:py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-left md:text-center mb-1 md:mb-0" title="ID Banco: #2189">
-                            #04
-                        </td>
-                        
-                        <td class="block md:table-cell px-0 py-1.5 md:px-6 md:py-4">
-                            <div class="flex flex-col gap-1.5">
-                                <!-- Badges superiores: Módulo, Tela e SLA -->
-                                <div class="flex flex-wrap items-center gap-2">
-                                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-amber-50 text-amber-700 border border-amber-200">
-                                        🛒 Compras
-                                    </span>
-                                    <span class="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 text-slate-700 border border-slate-200">
-                                        🖥️ Notas de Entrada
-                                    </span>
-                                    
-                                </div>
-
-                                <!-- Título Executivo do Cenário -->
-                                <div class="font-semibold text-slate-900 group-hover:text-indigo-600 transition-colors text-[13px] leading-snug">
-                                    Concorrência e Bloqueio Transacional (Deadlock na Tabela NOTAE)
-                                </div>
-
-                                <!-- Monospace Subtitle: Identificador do Método Técnico -->
-                                <div class="flex items-center gap-2 text-[11px] font-mono text-slate-400">
-                                    <span class="truncate" title="Método Pytest">test_deadlock_tabela_notae</span>
-                                </div>
-
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center align-middle">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center align-middle">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center text-xs font-mono font-medium text-slate-600 align-middle">
-                            17.86s
-                        </td>
-                        
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center text-xs text-slate-500 font-medium align-middle">
-                            28/11/2026 11:23:53
-                        </td>
-
-                        <td class="block md:table-cell px-0 pt-2 pb-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-right text-xs col-acao">
-                            
-                            <button id="btn-toggle-2189" onclick="toggleDetails(2189)" 
-                                data-orig-html="Evidências"
-                                data-orig-class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors"
-                                class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors">
-                                Evidências
-                            </button>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
-                    
-                    <tr id="details-2189" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
-                        <td colspan="7" class="block md:table-cell p-0 border-y border-slate-800 md:max-w-0 w-full">
-                            <div class="p-6 space-y-5 bg-slate-900 text-slate-100 w-full overflow-hidden">
-                                
-                                <!-- Top Close and Context Bar -->
-                                <div class="flex items-center justify-between pb-3 border-b border-slate-800/80 gap-4">
-                                    <div class="flex items-center gap-2 min-w-0">
-                                        <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md shrink-0">
-                                            Evidências do cenário
-                                        </span>
-                                        <span class="text-xs text-slate-400 font-medium truncate">#2189 — Concorrência e Bloqueio Transacional (Deadlock na Tabela NOTAE)</span>
-                                    </div>
-                                    <button onclick="toggleDetails(2189)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
-                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-                                        <span>Fechar</span>
-                                    </button>
-                                </div>
-
-                                
-                                <ul class="list-disc list-inside space-y-1.5 text-sm text-emerald-300 bg-slate-950/60 border border-slate-800/80 rounded-xl p-4">
-                                    
-                                    
-                                    
-                                    
-                                    <li class="break-words"><span class="font-semibold text-slate-200">Nota Deadlock:</span> <span class="text-emerald-300">278298</span></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li class="break-words"><span class="font-semibold text-slate-200">Serie Deadlock:</span> <span class="text-emerald-300">4</span></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li class="break-words"><span class="font-semibold text-slate-200">NFECODIGO:</span> <span class="text-emerald-300">15398</span></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li class="break-words"><span class="font-semibold text-slate-200">Evidencia Deadlock:</span> <span class="text-emerald-300">C:\DEV_QA\sgo_tests\screenshots\evidencia_deadlock_notae_278298.png</span></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li class="break-words"><span class="font-semibold text-slate-200">Status Deadlock:</span> <span class="text-emerald-300">Exibido com sucesso</span></li>
-                                    
-                                    
-                                </ul>
-                                <details>
-                                    <summary class="cursor-pointer text-sm font-semibold text-slate-300 mb-3">
-                                        Passos técnicos (14)
-                                    </summary>
-                                    <div class="flex items-center gap-2 mb-3">
-                                        <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md">
-                                            Linha do Tempo E2E (14 passos)
-                                        </span>
-                                        <span class="text-xs text-slate-400 font-mono">[Compras | Notas de Entrada] Concorrência e Bloqueio Transacional (Deadlock na Tabela NOTAE)</span>
-                                    </div>
-                                    <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto w-full">
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:35</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_deadlock_tabela_notae</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Posicionando na Cidade 811 (SAO THOME DAS LETRAS)...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:35</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:18</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Aguardando Interface...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:36</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Abrindo Notas Fiscais de Entrada (Alt + M -> N)...</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TNumberEdit; INSTANCE:1] = '811'</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:38</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:19</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Notas Fiscais de Entrada aberta com sucesso.</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:38</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Consultando Nota: 278298 (Série: 4)...</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Cidade 'SAO THOME DAS LETRAS' localizada pelo código 811!</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:43</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:19</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando em Alterar na ToolBar...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:51</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Fechando Notas Fiscais de Entrada...</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando em Excluir (Alt + E)...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:52</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:20</span>
+                                            
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Confirmando popup de exclusão (YES)...</span>
+                                            
+                                        </div>
+                                        
+                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:20</span>
                                             
                                             <span class="text-slate-300 break-words min-w-0">🔹 Clicou botão Win32 'Yes'</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:53</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:21</span>
                                             
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Nota Deadlock: 278298)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:53</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Serie Deadlock: 4)</span>
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Status Exclusão: Registro removido com sucesso)</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:53</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (NFECODIGO: 15398)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:53</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Evidencia Deadlock: C:\DEV_QA\sgo_tests\screenshots\evidencia_deadlock_notae_278298.png)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:53</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Status Deadlock: Exibido com sucesso)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:53</span>
+                                            <span class="text-slate-500 shrink-0 select-none">11:44:21</span>
                                             
                                             <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Cenário concluído e validado com sucesso!</span>
                                             
@@ -1526,773 +1246,7 @@
 
                                 <!-- Bottom Close Button -->
                                 <div class="flex justify-end pt-2 border-t border-slate-800/80">
-                                    <button onclick="toggleDetails(2189)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
-                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-                                        <span>Fechar Detalhes</span>
-                                    </button>
-                                </div>
-
-                            </div>
-                        </td>
-                    </tr>
-                    
-                    
-                    <tr class="block md:table-row p-4 md:p-0 test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-modulo="estoque"
-                        data-tela="replicação de produtos"
-                        data-name="inclusão de chave, replicação de produto e exclusão [estoque | replicação de produtos] inclusão de chave, replicação de produto e exclusão"
-                        data-metodo="test_inclusao_replicacao_e_exclusao_produto"
-                        data-triage=""
-                        data-id="2190">
-                        
-                        <td class="inline-block md:table-cell px-0 py-0 md:px-4 md:py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-left md:text-center mb-1 md:mb-0" title="ID Banco: #2190">
-                            #05
-                        </td>
-                        
-                        <td class="block md:table-cell px-0 py-1.5 md:px-6 md:py-4">
-                            <div class="flex flex-col gap-1.5">
-                                <!-- Badges superiores: Módulo, Tela e SLA -->
-                                <div class="flex flex-wrap items-center gap-2">
-                                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
-                                        📦 Estoque
-                                    </span>
-                                    <span class="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 text-slate-700 border border-slate-200">
-                                        🖥️ Replicação de Produtos
-                                    </span>
-                                    
-                                </div>
-
-                                <!-- Título Executivo do Cenário -->
-                                <div class="font-semibold text-slate-900 group-hover:text-indigo-600 transition-colors text-[13px] leading-snug">
-                                    Inclusão de Chave, replicação de produto e exclusão
-                                </div>
-
-                                <!-- Monospace Subtitle: Identificador do Método Técnico -->
-                                <div class="flex items-center gap-2 text-[11px] font-mono text-slate-400">
-                                    <span class="truncate" title="Método Pytest">test_inclusao_replicacao_e_exclusao_produto</span>
-                                </div>
-
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center align-middle">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center align-middle">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center text-xs font-mono font-medium text-slate-600 align-middle">
-                            53.04s
-                        </td>
-                        
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center text-xs text-slate-500 font-medium align-middle">
-                            28/11/2026 11:24:46
-                        </td>
-
-                        <td class="block md:table-cell px-0 pt-2 pb-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-right text-xs col-acao">
-                            
-                            <button id="btn-toggle-2190" onclick="toggleDetails(2190)" 
-                                data-orig-html="Evidências"
-                                data-orig-class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors"
-                                class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors">
-                                Evidências
-                            </button>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
-                    
-                    <tr id="details-2190" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
-                        <td colspan="7" class="block md:table-cell p-0 border-y border-slate-800 md:max-w-0 w-full">
-                            <div class="p-6 space-y-5 bg-slate-900 text-slate-100 w-full overflow-hidden">
-                                
-                                <!-- Top Close and Context Bar -->
-                                <div class="flex items-center justify-between pb-3 border-b border-slate-800/80 gap-4">
-                                    <div class="flex items-center gap-2 min-w-0">
-                                        <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md shrink-0">
-                                            Evidências do cenário
-                                        </span>
-                                        <span class="text-xs text-slate-400 font-medium truncate">#2190 — Inclusão de Chave, replicação de produto e exclusão</span>
-                                    </div>
-                                    <button onclick="toggleDetails(2190)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
-                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-                                        <span>Fechar</span>
-                                    </button>
-                                </div>
-
-                                
-                                <ul class="list-disc list-inside space-y-1.5 text-sm text-emerald-300 bg-slate-950/60 border border-slate-800/80 rounded-xl p-4">
-                                    
-                                    
-                                    
-                                    
-                                    <li class="break-words"><span class="font-semibold text-slate-200">modulo:</span> <span class="text-emerald-300">Estoque - Replicação de Produtos</span></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li class="break-words"><span class="font-semibold text-slate-200">codigo_matriz:</span> <span class="text-emerald-300">PSGOQA</span></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li class="break-words"><span class="font-semibold text-slate-200">produto_origem:</span> <span class="text-emerald-300">PSGOQA</span></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li class="break-words"><span class="font-semibold text-slate-200">codigo_replica:</span> <span class="text-emerald-300">PCHAVE</span></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li class="break-words"><span class="font-semibold text-slate-200">descricao_replica:</span> <span class="text-emerald-300">TESTE PCHAVE</span></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li class="break-words"><span class="font-semibold text-slate-200">linha_replica:</span> <span class="text-emerald-300">15433</span></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li class="break-words"><span class="font-semibold text-slate-200">status_validacao_inclusao_firebird:</span> <span class="text-emerald-300">APROVADO</span></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li class="break-words"><span class="font-semibold text-slate-200">status_validacao_exclusao_firebird:</span> <span class="text-emerald-300">APROVADO</span></li>
-                                    
-                                    
-                                </ul>
-                                <details>
-                                    <summary class="cursor-pointer text-sm font-semibold text-slate-300 mb-3">
-                                        Passos técnicos (84)
-                                    </summary>
-                                    <div class="flex items-center gap-2 mb-3">
-                                        <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md">
-                                            Linha do Tempo E2E (84 passos)
-                                        </span>
-                                        <span class="text-xs text-slate-400 font-mono">[Estoque | Replicação de Produtos] Inclusão de Chave, replicação de produto e exclusão</span>
-                                    </div>
-                                    <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto w-full">
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:53</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_inclusao_replicacao_e_exclusao_produto</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:53</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Aguardando Interface...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:54</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Acessando Estoque -> Produtos...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:55</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Tela 'Filtrando Dados dos Produtos' aberta!</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:55</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando em Manutenção...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:56</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Tela 'Cadastro de Produtos' pronta em tela!</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:57</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando em Incluir (Alt + I)...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:59</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Código: PSGOQA</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:23:59</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TMaskEdit; INSTANCE:1] = 'PSGOQA'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:00</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Descrição: PSGOQA</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:00</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TDBEdit; INSTANCE:26] = 'PSGOQA'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:00</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Unidade: UN</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:01</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Grupo: Grupo (1)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:01</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TDBEdit; INSTANCE:20] = '1'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:02</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Grupo: Tipo (1)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:02</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TDBEdit; INSTANCE:19] = '1'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:02</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Grupo: Material (1)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:02</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TDBEdit; INSTANCE:18] = '1'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:03</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Grupo: Familia (1)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:03</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TDBEdit; INSTANCE:17] = '1'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:03</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Marca (1)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:03</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TDBEdit; INSTANCE:14] = '1'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:04</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Configurando Tipo de Produto: P</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:04</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TDBLookupComboBox; INSTANCE:21] = 'Produto Chave'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:04</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Selecionando aba 'C.S.C.'...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:05</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo e validando parâmetros da aba C.S.C....</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:12</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Selecionando aba 'Fiscal'...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:13</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Classificação Fiscal: 90014000 + TAB</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:16</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Selecionando aba 'Valores das Lentes'...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:17</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Linha do Produto na aba Valores das Lentes: 15430 + TAB</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:17</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TDBEdit; INSTANCE:25] = '15430'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:18</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Salvando Cadastro de Produtos (Alt + O)...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:19</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Aguardando janela 'Preço e Estoque'...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:19</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Janela 'Preço e Estoque' aberta! Preenchendo Preço de Custo...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:21</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Confirmando Preço e Estoque com OK...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:21</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Fechando janela Preço e Estoque...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:21</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Acessando rotina 'Replicação de cadastro de Produtos'...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:22</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Acessando engrenagem de Rotinas da Tela...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:24</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Selecionando 'Replicação de cadastro de Produtos' no menu popup...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:24</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Janela 'Replicação de Cadastro de Produtos' validada e aberta com sucesso!</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:25</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo campos da Replicação de Produtos...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:25</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Produto Chave de Origem: PSGOQA + TAB</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:25</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TMaskEdit; INSTANCE:1] = 'PSGOQA'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:26</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Código Chave/Fab: PCHAVE</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:26</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TEdit; INSTANCE:3] = 'PCHAVE'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:26</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Descrição: TESTE PCHAVE</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:26</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TEdit; INSTANCE:2] = 'TESTE PCHAVE'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:27</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Linha autopreenchida pelo sistema: '15433'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:27</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Descrição da Linha: 'TESTE PCHAVE'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:27</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TEdit; INSTANCE:4] = 'TESTE PCHAVE'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:28</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Cód. Produto (Linha): PCHAVE</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:28</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TMaskEdit; INSTANCE:2] = 'PCHAVE'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:28</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preço de Custo: 10,00</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:28</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TNumberEdit; INSTANCE:3] = '10,00'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:29</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preço Atacado: 20,00</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:29</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TNumberEdit; INSTANCE:2] = '20,00'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:29</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preço Laboratório: 30,00</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:29</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TNumberEdit; INSTANCE:1] = '30,00'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:30</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Marcando flag 'Linha de Grade'...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:30</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Acionando botão 'Gerar Produtos' via Win32...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:31</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicou controle Win32 [CLASS:TBitBtn; INSTANCE:1]</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:32</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Aguardando popup de sucesso da replicação...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:33</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Popup confirmado com sucesso!</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:33</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Fechando tela Replicação de Produtos (Alt + F)...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:34</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Abrindo tela 'Cadastro de Linhas do Produto'...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:34</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Selecionando aba 'Valores das Lentes'...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:37</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Janela 'Cadastro de Linhas do Produto' aberta com sucesso!</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:37</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Excluindo Linha de Produto '15433'...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:38</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TNumberEdit; INSTANCE:2] = '15433'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:40</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Popup detectado (TMessageForm), confirmando com Yes...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:41</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicou botão Win32 'Fechar'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:42</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Linha de Produto '15433' excluída com sucesso!</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:42</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Fechando tela Cadastro de Linhas do Produto (Alt + F)...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:43</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Fechando tela Cadastro de Produtos...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:46</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicou botão Win32 'Fechar'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:46</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (modulo: Estoque - Replicação de Produtos)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:46</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (codigo_matriz: PSGOQA)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:46</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (produto_origem: PSGOQA)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:46</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (codigo_replica: PCHAVE)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:46</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (descricao_replica: TESTE PCHAVE)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:46</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (linha_replica: 15433)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:46</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (status_validacao_inclusao_firebird: APROVADO)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:46</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (status_validacao_exclusao_firebird: APROVADO)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">11:24:46</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Cenário concluído e validado com sucesso!</span>
-                                            
-                                        </div>
-                                        
-                                    </div>
-                                </details>
-                                
-
-                                
-
-                                <!-- Bottom Close Button -->
-                                <div class="flex justify-end pt-2 border-t border-slate-800/80">
-                                    <button onclick="toggleDetails(2190)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
+                                    <button onclick="toggleDetails(2193)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                                         <span>Fechar Detalhes</span>
                                     </button>
@@ -2398,7 +1352,7 @@
     Chart.defaults.font.family = "'Plus Jakarta Sans', sans-serif";
     Chart.defaults.color = '#64748b';
 
-    const passedCount = 5;
+    const passedCount = 3;
     const failedCount = 0;
     const skippedCount = 0;
 
@@ -2439,9 +1393,9 @@
     });
 
     // 2. Trend History Chart (from SQLite)
-    const trendLabels = ["27/11 23:42", "27/11 23:47", "27/11 23:54", "27/11 23:54", "27/11 23:58", "28/11 11:11", "28/11 11:12", "28/11 11:16", "28/11 11:18", "28/11 11:21"];
-    const trendPassed = [10, 1, 0, 5, 157, 1, 2, 6, 4, 5];
-    const trendFailed = [1, 0, 0, 0, 1, 0, 0, 0, 0, 0];
+    const trendLabels = ["27/11 23:47", "27/11 23:54", "27/11 23:54", "27/11 23:58", "28/11 11:11", "28/11 11:12", "28/11 11:16", "28/11 11:18", "28/11 11:21", "28/11 11:43"];
+    const trendPassed = [1, 0, 5, 157, 1, 2, 6, 4, 5, 3];
+    const trendFailed = [0, 0, 0, 1, 0, 0, 0, 0, 0, 0];
     const trendSkipped = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
     const ctxTrend = document.getElementById('trendChart').getContext('2d');
@@ -2567,7 +1521,7 @@
         });
 
         // Update Counter
-        const total = 5;
+        const total = 3;
         const counterElem = document.getElementById('records-counter');
         if (counterElem) {
             if (visibleCount === total) {
