@@ -264,6 +264,17 @@
 
                     <!-- Badges Multi-App (SGCel, Pacotes, AppServer, CTB) -->
                     
+                    
+                    
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold bg-sky-50 text-sky-700 border border-sky-200 rounded-full cursor-help transition-all hover:bg-sky-100 hover:shadow-sm" 
+                          title="Executável: Pacotes (pacotes)&#10;• Versão Completa: 1.0.0.0&#10;• Build Jenkins: 0&#10;• Modificado em: 27/11/2026 18:54">
+                        <span class="w-2 h-2 rounded-full bg-sky-500"></span>
+                        <span class="font-bold text-sky-900/60 text-[11px] uppercase tracking-wider">Pacotes</span>
+                        <span>v1</span>
+                    </span>
+                    
+                    
+                    
 
                     <!-- Badge Banco Firebird -->
                     <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-200 rounded-full cursor-help transition-all hover:bg-slate-200 hover:shadow-sm" 
@@ -289,7 +300,7 @@
         <div class="flex flex-wrap items-center gap-3 no-print w-full md:w-auto justify-start md:justify-end">
             <div class="text-left md:text-right bg-slate-50 px-4 py-2 rounded-xl border border-slate-200/80">
                 <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Gerado em</p>
-                <p class="text-sm font-bold text-slate-700">27/11/2026 22:23:17</p>
+                <p class="text-sm font-bold text-slate-700">27/11/2026 22:24:05</p>
             </div>
             
             <button onclick="exportTableToCSV()" class="inline-flex items-center gap-2 px-3.5 py-2 bg-white hover:bg-slate-50 text-slate-700 font-semibold text-xs rounded-xl border border-slate-200 shadow-sm transition-all hover:shadow" title="Exportar dados para planilha Excel / CSV">
@@ -312,8 +323,8 @@
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow kpi-card">
             <div>
                 <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Total de Testes</p>
-                <p class="text-3xl font-extrabold text-slate-900 mt-1">4</p>
-                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600" title="Tempo total: 142.2s">2min 22s</span></p>
+                <p class="text-3xl font-extrabold text-slate-900 mt-1">1</p>
+                <p class="text-xs text-slate-400 mt-1">Duração: <span class="font-medium text-slate-600" title="Tempo total: 7.1s">7.14s</span></p>
             </div>
             <div class="p-3.5 rounded-xl bg-blue-50 text-blue-600 border border-blue-100">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
@@ -324,7 +335,7 @@
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between hover:shadow-md transition-shadow border-l-4 border-l-emerald-500 kpi-card">
             <div>
                 <p class="text-xs font-semibold text-emerald-700 uppercase tracking-wider">Aprovados</p>
-                <p class="text-3xl font-extrabold text-emerald-600 mt-1">4</p>
+                <p class="text-3xl font-extrabold text-emerald-600 mt-1">1</p>
                 <p class="text-xs text-emerald-600/80 mt-1 font-medium">
                     100.0% do total
                 </p>
@@ -370,7 +381,7 @@
                     <span class="text-3xl font-extrabold text-emerald-600">
                         100.0%
                     </span>
-                    <span class="text-xs text-slate-400 font-medium">Média: 35.5s</span>
+                    <span class="text-xs text-slate-400 font-medium">Média: 7.14s</span>
                 </div>
             </div>
             <!-- Mini Progress Bar -->
@@ -396,7 +407,7 @@
             <div class="grid grid-cols-3 gap-2 mt-4 pt-4 border-t border-slate-100 text-center">
                 <div class="p-2 rounded-lg bg-emerald-50">
                     <p class="text-[11px] font-semibold text-emerald-800">Passou</p>
-                    <p class="text-base font-bold text-emerald-600">4</p>
+                    <p class="text-base font-bold text-emerald-600">1</p>
                 </div>
                 <div class="p-2 rounded-lg bg-rose-50">
                     <p class="text-[11px] font-semibold text-rose-800">Falhou</p>
@@ -441,7 +452,7 @@
                 <div>
                     <h2 class="text-lg font-bold text-slate-900">Detalhamento dos Cenários de Teste</h2>
                     <p class="text-sm text-slate-500 mt-0.5" id="records-counter">
-                        Exibindo todos os <span class="font-bold text-slate-700">4</span> testes executados.
+                        Exibindo todos os <span class="font-bold text-slate-700">1</span> testes executados.
                     </p>
                 </div>
 
@@ -459,11 +470,11 @@
                     <div class="inline-flex flex-wrap w-full sm:w-auto rounded-xl p-1 bg-slate-100 border border-slate-200 text-xs font-semibold gap-1 sm:gap-0">
                         <button onclick="filterStatus('ALL')" id="btn-filter-ALL" 
                             class="filter-btn active px-3 py-1.5 rounded-lg transition-all bg-white text-slate-900 shadow-sm">
-                            Todos (4)
+                            Todos (1)
                         </button>
                         <button onclick="filterStatus('PASSED')" id="btn-filter-PASSED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-emerald-700 transition-all">
-                            ✅ Passou (4)
+                            ✅ Passou (1)
                         </button>
                         <button onclick="filterStatus('FAILED')" id="btn-filter-FAILED" 
                             class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-rose-700 transition-all">
@@ -485,13 +496,13 @@
                 <button onclick="filterModulo('ALL')" id="btn-mod-ALL" 
                     class="mod-filter-btn active px-2.5 py-1 rounded-lg text-xs font-semibold transition-all bg-indigo-600 text-white shadow-sm flex items-center gap-1.5">
                     <span>Todos os Menus</span>
-                    <span class="px-1.5 py-0.2 rounded-full text-[10px] bg-white/20 text-white font-bold">4</span>
+                    <span class="px-1.5 py-0.2 rounded-full text-[10px] bg-white/20 text-white font-bold">1</span>
                 </button>
                 
-                <button onclick="filterModulo('Cadastros')" id="btn-mod-Cadastros" 
+                <button onclick="filterModulo('Pacotes')" id="btn-mod-Pacotes" 
                     class="mod-filter-btn px-2.5 py-1 rounded-lg text-xs font-semibold text-slate-600 hover:text-indigo-700 hover:bg-slate-100 transition-all border border-slate-200/80 flex items-center gap-1.5">
-                    <span>👥 Cadastros</span>
-                    <span class="px-1.5 py-0.2 rounded-full text-[10px] font-bold bg-indigo-100 text-indigo-800">4</span>
+                    <span>📦 Pacotes</span>
+                    <span class="px-1.5 py-0.2 rounded-full text-[10px] font-bold bg-sky-100 text-sky-800">1</span>
                 </button>
                 
             </div>
@@ -516,14 +527,14 @@
                     
                     <tr class="block md:table-row p-4 md:p-0 test-row hover:bg-slate-50/80 transition-colors group" 
                         data-status="PASSED" 
-                        data-modulo="cadastros"
-                        data-tela="clientes"
-                        data-name="inclusão de cliente/fornecedor com validação no firebird [cadastros | clientes] inclusão de cliente/fornecedor com validação no firebird"
-                        data-metodo="test_inclusao_cliente"
+                        data-modulo="pacotes"
+                        data-tela="comercial"
+                        data-name="concorrência e isolamento transacional (deadlock pctpro) [pacotes | comercial] concorrência e isolamento transacional (deadlock pctpro)"
+                        data-metodo="test_deadlock_pacote_tabela_pctpro"
                         data-triage=""
-                        data-id="1897">
+                        data-id="1901">
                         
-                        <td class="inline-block md:table-cell px-0 py-0 md:px-4 md:py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-left md:text-center mb-1 md:mb-0" title="ID Banco: #1897">
+                        <td class="inline-block md:table-cell px-0 py-0 md:px-4 md:py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-left md:text-center mb-1 md:mb-0" title="ID Banco: #1901">
                             #01
                         </td>
                         
@@ -531,23 +542,23 @@
                             <div class="flex flex-col gap-1.5">
                                 <!-- Badges superiores: Módulo, Tela e SLA -->
                                 <div class="flex flex-wrap items-center gap-2">
-                                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">
-                                        👥 Cadastros
+                                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-sky-50 text-sky-700 border border-sky-200">
+                                        📦 Pacotes
                                     </span>
                                     <span class="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 text-slate-700 border border-slate-200">
-                                        🖥️ Clientes
+                                        🖥️ Comercial
                                     </span>
                                     
                                 </div>
 
                                 <!-- Título Executivo do Cenário -->
                                 <div class="font-semibold text-slate-900 group-hover:text-indigo-600 transition-colors text-[13px] leading-snug">
-                                    Inclusão de Cliente/Fornecedor com validação no Firebird
+                                    Concorrência e Isolamento Transacional (Deadlock PCTPRO)
                                 </div>
 
                                 <!-- Monospace Subtitle: Identificador do Método Técnico -->
                                 <div class="flex items-center gap-2 text-[11px] font-mono text-slate-400">
-                                    <span class="truncate" title="Método Pytest">test_inclusao_cliente</span>
+                                    <span class="truncate" title="Método Pytest">test_deadlock_pacote_tabela_pctpro</span>
                                 </div>
 
                                 
@@ -570,16 +581,16 @@
                         </td>
                         
                         <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center text-xs font-mono font-medium text-slate-600 align-middle">
-                            1min 09s
+                            7.14s
                         </td>
                         
                         <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center text-xs text-slate-500 font-medium align-middle">
-                            27/11/2026 22:22:03
+                            27/11/2026 22:24:05
                         </td>
 
                         <td class="block md:table-cell px-0 pt-2 pb-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-right text-xs col-acao">
                             
-                            <button id="btn-toggle-1897" onclick="toggleDetails(1897)" 
+                            <button id="btn-toggle-1901" onclick="toggleDetails(1901)" 
                                 data-orig-html="Evidências"
                                 data-orig-class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors"
                                 class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors">
@@ -591,7 +602,7 @@
 
                     <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
                     
-                    <tr id="details-1897" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
+                    <tr id="details-1901" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
                         <td colspan="7" class="block md:table-cell p-0 border-y border-slate-800 md:max-w-0 w-full">
                             <div class="p-6 space-y-5 bg-slate-900 text-slate-100 w-full overflow-hidden">
                                 
@@ -601,9 +612,9 @@
                                         <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md shrink-0">
                                             Evidências do cenário
                                         </span>
-                                        <span class="text-xs text-slate-400 font-medium truncate">#1897 — Inclusão de Cliente/Fornecedor com validação no Firebird</span>
+                                        <span class="text-xs text-slate-400 font-medium truncate">#1901 — Concorrência e Isolamento Transacional (Deadlock PCTPRO)</span>
                                     </div>
-                                    <button onclick="toggleDetails(1897)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
+                                    <button onclick="toggleDetails(1901)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                                         <span>Fechar</span>
                                     </button>
@@ -615,310 +626,162 @@
                                     
                                     
                                     
-                                    <li class="break-words"><span class="font-semibold text-slate-200">ID do Cliente (Criado):</span> <span class="text-emerald-300">38</span></li>
+                                    <li class="break-words"><span class="font-semibold text-slate-200">Módulo:</span> <span class="text-emerald-300">Pacotes - Comercial (Deadlock PCTPRO)</span></li>
                                     
                                     
                                     
                                     
                                     
-                                    <li class="break-words"><span class="font-semibold text-slate-200">Razão Social:</span> <span class="text-emerald-300">VINICIUS AZEVEDO QA</span></li>
+                                    <li class="break-words"><span class="font-semibold text-slate-200">ID Pacote Alvo:</span> <span class="text-emerald-300">129</span></li>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <li class="break-words"><span class="font-semibold text-slate-200">Mensagem Deadlock:</span> <span class="text-emerald-300">OK fDtPacotes.PctPro.UpdateQuery:
+Deadlock.
+Deadlock.
+Update conflicts with concurrent update.
+Concurrent transaction number is 5845692.</span></li>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <li class="break-words"><span class="font-semibold text-slate-200">Status:</span> <span class="text-emerald-300">Deadlock Confirmado com Sucesso</span></li>
                                     
                                     
                                 </ul>
                                 <details>
                                     <summary class="cursor-pointer text-sm font-semibold text-slate-300 mb-3">
-                                        Passos técnicos (41)
+                                        Passos técnicos (17)
                                     </summary>
                                     <div class="flex items-center gap-2 mb-3">
                                         <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md">
-                                            Linha do Tempo E2E (41 passos)
+                                            Linha do Tempo E2E (17 passos)
                                         </span>
-                                        <span class="text-xs text-slate-400 font-mono">[Cadastros | Clientes] Inclusão de Cliente/Fornecedor com validação no Firebird</span>
+                                        <span class="text-xs text-slate-400 font-mono">[Pacotes | Comercial] Concorrência e Isolamento Transacional (Deadlock PCTPRO)</span>
                                     </div>
                                     <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto w-full">
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:20:41</span>
+                                            <span class="text-slate-500 shrink-0 select-none">22:23:49</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_inclusao_cliente</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:20:54</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Verificando tela de NFE...</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_deadlock_pacote_tabela_pctpro</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:20:55</span>
+                                            <span class="text-slate-500 shrink-0 select-none">22:23:58</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Tela NFE fechada com sucesso</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:20:55</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Aguardando Interface...</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Abrindo tela Cadastro de Pacotes...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:20:56</span>
+                                            <span class="text-slate-500 shrink-0 select-none">22:23:59</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Acessando Cadastro de Clientes...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:20:58</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando em Manutenção (btManut)...</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Abrindo Comercial -> Pacotes (Win32)...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:20:58</span>
+                                            <span class="text-slate-500 shrink-0 select-none">22:23:59</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão Manutenção</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:04</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando em Incluir...</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Menu Win32 'Comercial > Pacotes' (ID=2)</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:04</span>
+                                            <span class="text-slate-500 shrink-0 select-none">22:24:00</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão Incluir</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:09</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Dados Principais...</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Acionando modo de alteração do Pacote (Alt + A)...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:11</span>
+                                            <span class="text-slate-500 shrink-0 select-none">22:24:00</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Marcando Pessoa Física...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:11</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Checkbox Pessoa Física</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Consultando Pacote 129...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:19</span>
+                                            <span class="text-slate-500 shrink-0 select-none">22:24:00</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Validando preenchimento...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:21</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Acessando Aba: Dados Financeiros</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Preencheu Win32 [CLASS:TNumberEdit; INSTANCE:1] = '129'</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:21</span>
+                                            <span class="text-slate-500 shrink-0 select-none">22:24:02</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Aba Dados Financeiros</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:26</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Validando preenchimento...</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Acionando Salvar (Toolbar OK) para provocar Deadlock...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:28</span>
+                                            <span class="text-slate-500 shrink-0 select-none">22:24:02</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Acessando Aba: Dados Comerciais</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:28</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Aba Dados Comerciais</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Aguardando diálogo de Deadlock aparecer...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:33</span>
+                                            <span class="text-slate-500 shrink-0 select-none">22:24:02</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Validando preenchimento...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:35</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Acessando Aba: Dados Compras</span>
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Diálogo de Deadlock capturado com sucesso! (HWND=4525122)</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:35</span>
+                                            <span class="text-slate-500 shrink-0 select-none">22:24:03</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Aba Dados Compras</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:37</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Marcando 'Parcelar valor do frete'...</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicou botão Win32 'OK'</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:37</span>
+                                            <span class="text-slate-500 shrink-0 select-none">22:24:03</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Checkbox Parcelar Frete</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:39</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Validando preenchimento...</span>
+                                            <span class="text-slate-300 break-words min-w-0">🔹 Cancelando edição e restaurando formulário...</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:41</span>
+                                            <span class="text-slate-500 shrink-0 select-none">22:24:05</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Acessando Aba: Forma de Rateio</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:41</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Aba Forma de Rateio</span>
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Módulo: Pacotes - Comercial (Deadlock PCTPRO))</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:43</span>
+                                            <span class="text-slate-500 shrink-0 select-none">22:24:05</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Marcando como Fornecedor e Salvando...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:43</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Checkbox Fornecedor</span>
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (ID Pacote Alvo: 129)</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:45</span>
+                                            <span class="text-slate-500 shrink-0 select-none">22:24:05</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Log do SGO limpo.</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:45</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão OK (Salvar Cliente)</span>
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Mensagem Deadlock: OK fDtPacotes.PctPro.UpdateQuery:
+Deadlock.
+Deadlock.
+Update conflicts with concurrent update.
+Concurrent transaction number is 5845692.)</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:47</span>
+                                            <span class="text-slate-500 shrink-0 select-none">22:24:05</span>
                                             
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Preenchendo Endereço...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:48</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Aguardando busca do CEP...</span>
+                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Status: Deadlock Confirmado com Sucesso)</span>
                                             
                                         </div>
                                         
                                         <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:54</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Navegando até o Setor...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:58</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Salvando Endereço...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:59</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Log do SGO limpo.</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:21:59</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão OK (Salvar Endereço)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:02</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Fechando telas do Cadastro...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:02</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicou botão Win32 'Fechar'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:03</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (ID do Cliente (Criado): 38)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:03</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Razão Social: VINICIUS AZEVEDO QA)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:03</span>
+                                            <span class="text-slate-500 shrink-0 select-none">22:24:05</span>
                                             
                                             <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Cenário concluído e validado com sucesso!</span>
                                             
@@ -932,931 +795,7 @@
 
                                 <!-- Bottom Close Button -->
                                 <div class="flex justify-end pt-2 border-t border-slate-800/80">
-                                    <button onclick="toggleDetails(1897)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
-                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-                                        <span>Fechar Detalhes</span>
-                                    </button>
-                                </div>
-
-                            </div>
-                        </td>
-                    </tr>
-                    
-                    
-                    <tr class="block md:table-row p-4 md:p-0 test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-modulo="cadastros"
-                        data-tela="clientes"
-                        data-name="alteração de cliente existente com verificação no banco [cadastros | clientes] alteração de cliente existente com verificação no banco"
-                        data-metodo="test_update_cliente"
-                        data-triage=""
-                        data-id="1898">
-                        
-                        <td class="inline-block md:table-cell px-0 py-0 md:px-4 md:py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-left md:text-center mb-1 md:mb-0" title="ID Banco: #1898">
-                            #02
-                        </td>
-                        
-                        <td class="block md:table-cell px-0 py-1.5 md:px-6 md:py-4">
-                            <div class="flex flex-col gap-1.5">
-                                <!-- Badges superiores: Módulo, Tela e SLA -->
-                                <div class="flex flex-wrap items-center gap-2">
-                                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">
-                                        👥 Cadastros
-                                    </span>
-                                    <span class="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 text-slate-700 border border-slate-200">
-                                        🖥️ Clientes
-                                    </span>
-                                    
-                                </div>
-
-                                <!-- Título Executivo do Cenário -->
-                                <div class="font-semibold text-slate-900 group-hover:text-indigo-600 transition-colors text-[13px] leading-snug">
-                                    Alteração de Cliente Existente com verificação no banco
-                                </div>
-
-                                <!-- Monospace Subtitle: Identificador do Método Técnico -->
-                                <div class="flex items-center gap-2 text-[11px] font-mono text-slate-400">
-                                    <span class="truncate" title="Método Pytest">test_update_cliente</span>
-                                </div>
-
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center align-middle">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center align-middle">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center text-xs font-mono font-medium text-slate-600 align-middle">
-                            24.23s
-                        </td>
-                        
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center text-xs text-slate-500 font-medium align-middle">
-                            27/11/2026 22:22:28
-                        </td>
-
-                        <td class="block md:table-cell px-0 pt-2 pb-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-right text-xs col-acao">
-                            
-                            <button id="btn-toggle-1898" onclick="toggleDetails(1898)" 
-                                data-orig-html="Evidências"
-                                data-orig-class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors"
-                                class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors">
-                                Evidências
-                            </button>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
-                    
-                    <tr id="details-1898" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
-                        <td colspan="7" class="block md:table-cell p-0 border-y border-slate-800 md:max-w-0 w-full">
-                            <div class="p-6 space-y-5 bg-slate-900 text-slate-100 w-full overflow-hidden">
-                                
-                                <!-- Top Close and Context Bar -->
-                                <div class="flex items-center justify-between pb-3 border-b border-slate-800/80 gap-4">
-                                    <div class="flex items-center gap-2 min-w-0">
-                                        <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md shrink-0">
-                                            Evidências do cenário
-                                        </span>
-                                        <span class="text-xs text-slate-400 font-medium truncate">#1898 — Alteração de Cliente Existente com verificação no banco</span>
-                                    </div>
-                                    <button onclick="toggleDetails(1898)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
-                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-                                        <span>Fechar</span>
-                                    </button>
-                                </div>
-
-                                
-                                <ul class="list-disc list-inside space-y-1.5 text-sm text-emerald-300 bg-slate-950/60 border border-slate-800/80 rounded-xl p-4">
-                                    
-                                    
-                                    
-                                    
-                                    <li class="break-words"><span class="font-semibold text-slate-200">ID do Cliente (Alterado):</span> <span class="text-emerald-300">38</span></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li class="break-words"><span class="font-semibold text-slate-200">Nova Razão Social:</span> <span class="text-emerald-300">VINICIUS AZEVEDO QA - ATUALIZADO</span></li>
-                                    
-                                    
-                                </ul>
-                                <details>
-                                    <summary class="cursor-pointer text-sm font-semibold text-slate-300 mb-3">
-                                        Passos técnicos (23)
-                                    </summary>
-                                    <div class="flex items-center gap-2 mb-3">
-                                        <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md">
-                                            Linha do Tempo E2E (23 passos)
-                                        </span>
-                                        <span class="text-xs text-slate-400 font-mono">[Cadastros | Clientes] Alteração de Cliente Existente com verificação no banco</span>
-                                    </div>
-                                    <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto w-full">
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:03</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_update_cliente</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:03</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Aguardando Interface...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:04</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Acessando Cadastro de Clientes...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:07</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando em Manutenção (btManut)...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:07</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão Manutenção</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:12</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando em Incluir...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:12</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão Incluir</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:17</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Checkbox Pessoa Física</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:19</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Log do SGO limpo.</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:20</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 CPF Duplicado detectado! Clicando em YES...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:20</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicou botão Win32 'Yes'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:20</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Confirmando consulta do cliente...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:20</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicou botão Win32 'Yes'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:20</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Buscando ID no banco para o CPF 12345678909...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:20</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando em Alterar...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:20</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão Alterar</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:23</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Log do SGO limpo.</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:23</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão OK (Salvar Alteração)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:27</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Fechando telas do Cadastro...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:27</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicou botão Win32 'Fechar'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:28</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (ID do Cliente (Alterado): 38)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:28</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Nova Razão Social: VINICIUS AZEVEDO QA - ATUALIZADO)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:28</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Cenário concluído e validado com sucesso!</span>
-                                            
-                                        </div>
-                                        
-                                    </div>
-                                </details>
-                                
-
-                                
-
-                                <!-- Bottom Close Button -->
-                                <div class="flex justify-end pt-2 border-t border-slate-800/80">
-                                    <button onclick="toggleDetails(1898)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
-                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-                                        <span>Fechar Detalhes</span>
-                                    </button>
-                                </div>
-
-                            </div>
-                        </td>
-                    </tr>
-                    
-                    
-                    <tr class="block md:table-row p-4 md:p-0 test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-modulo="cadastros"
-                        data-tela="clientes"
-                        data-name="concorrência e bloqueio transacional (deadlock clien) [cadastros | clientes] concorrência e bloqueio transacional (deadlock clien)"
-                        data-metodo="test_deadlock_cliente"
-                        data-triage=""
-                        data-id="1899">
-                        
-                        <td class="inline-block md:table-cell px-0 py-0 md:px-4 md:py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-left md:text-center mb-1 md:mb-0" title="ID Banco: #1899">
-                            #03
-                        </td>
-                        
-                        <td class="block md:table-cell px-0 py-1.5 md:px-6 md:py-4">
-                            <div class="flex flex-col gap-1.5">
-                                <!-- Badges superiores: Módulo, Tela e SLA -->
-                                <div class="flex flex-wrap items-center gap-2">
-                                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">
-                                        👥 Cadastros
-                                    </span>
-                                    <span class="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 text-slate-700 border border-slate-200">
-                                        🖥️ Clientes
-                                    </span>
-                                    
-                                </div>
-
-                                <!-- Título Executivo do Cenário -->
-                                <div class="font-semibold text-slate-900 group-hover:text-indigo-600 transition-colors text-[13px] leading-snug">
-                                    Concorrência e Bloqueio Transacional (Deadlock CLIEN)
-                                </div>
-
-                                <!-- Monospace Subtitle: Identificador do Método Técnico -->
-                                <div class="flex items-center gap-2 text-[11px] font-mono text-slate-400">
-                                    <span class="truncate" title="Método Pytest">test_deadlock_cliente</span>
-                                </div>
-
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center align-middle">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center align-middle">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center text-xs font-mono font-medium text-slate-600 align-middle">
-                            28.00s
-                        </td>
-                        
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center text-xs text-slate-500 font-medium align-middle">
-                            27/11/2026 22:22:56
-                        </td>
-
-                        <td class="block md:table-cell px-0 pt-2 pb-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-right text-xs col-acao">
-                            
-                            <button id="btn-toggle-1899" onclick="toggleDetails(1899)" 
-                                data-orig-html="Evidências"
-                                data-orig-class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors"
-                                class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors">
-                                Evidências
-                            </button>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
-                    
-                    <tr id="details-1899" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
-                        <td colspan="7" class="block md:table-cell p-0 border-y border-slate-800 md:max-w-0 w-full">
-                            <div class="p-6 space-y-5 bg-slate-900 text-slate-100 w-full overflow-hidden">
-                                
-                                <!-- Top Close and Context Bar -->
-                                <div class="flex items-center justify-between pb-3 border-b border-slate-800/80 gap-4">
-                                    <div class="flex items-center gap-2 min-w-0">
-                                        <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md shrink-0">
-                                            Evidências do cenário
-                                        </span>
-                                        <span class="text-xs text-slate-400 font-medium truncate">#1899 — Concorrência e Bloqueio Transacional (Deadlock CLIEN)</span>
-                                    </div>
-                                    <button onclick="toggleDetails(1899)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
-                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-                                        <span>Fechar</span>
-                                    </button>
-                                </div>
-
-                                
-                                <ul class="list-disc list-inside space-y-1.5 text-sm text-emerald-300 bg-slate-950/60 border border-slate-800/80 rounded-xl p-4">
-                                    
-                                    
-                                    
-                                    
-                                    <li class="break-words"><span class="font-semibold text-slate-200">Teste de Concorrência:</span> <span class="text-emerald-300">Deadlock Tratado com Sucesso</span></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li class="break-words"><span class="font-semibold text-slate-200">ID do Cliente (Deadlock):</span> <span class="text-emerald-300">38</span></li>
-                                    
-                                    
-                                </ul>
-                                <details>
-                                    <summary class="cursor-pointer text-sm font-semibold text-slate-300 mb-3">
-                                        Passos técnicos (27)
-                                    </summary>
-                                    <div class="flex items-center gap-2 mb-3">
-                                        <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md">
-                                            Linha do Tempo E2E (27 passos)
-                                        </span>
-                                        <span class="text-xs text-slate-400 font-mono">[Cadastros | Clientes] Concorrência e Bloqueio Transacional (Deadlock CLIEN)</span>
-                                    </div>
-                                    <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto w-full">
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:28</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_deadlock_cliente</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:28</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Aguardando Interface...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:28</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Acessando Cadastro de Clientes...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:31</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando em Manutenção (btManut)...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:31</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão Manutenção</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:36</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando em Incluir...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:36</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão Incluir</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:41</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Checkbox Pessoa Física</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:44</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Log do SGO limpo.</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:44</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 CPF Duplicado detectado! Clicando em YES...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:44</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicou botão Win32 'Yes'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:44</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Confirmando consulta do cliente...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:44</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicou botão Win32 'Yes'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:45</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Buscando ID no banco para o CPF 12345678909...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:45</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando em Alterar...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:45</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão Alterar</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:47</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Log do SGO limpo.</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:47</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Tentando salvar com banco travado...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:47</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão OK</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:51</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Log do SGO limpo.</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:51</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Banco liberado! Tentando salvar...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:51</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão OK</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:55</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Fechando telas do Cadastro...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:55</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicou botão Win32 'Fechar'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:56</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (Teste de Concorrência: Deadlock Tratado com Sucesso)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:56</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (ID do Cliente (Deadlock): 38)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:56</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Cenário concluído e validado com sucesso!</span>
-                                            
-                                        </div>
-                                        
-                                    </div>
-                                </details>
-                                
-
-                                
-
-                                <!-- Bottom Close Button -->
-                                <div class="flex justify-end pt-2 border-t border-slate-800/80">
-                                    <button onclick="toggleDetails(1899)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
-                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-                                        <span>Fechar Detalhes</span>
-                                    </button>
-                                </div>
-
-                            </div>
-                        </td>
-                    </tr>
-                    
-                    
-                    <tr class="block md:table-row p-4 md:p-0 test-row hover:bg-slate-50/80 transition-colors group" 
-                        data-status="PASSED" 
-                        data-modulo="cadastros"
-                        data-tela="clientes"
-                        data-name="exclusão de cliente existente e conferência no firebird [cadastros | clientes] exclusão de cliente existente e conferência no firebird"
-                        data-metodo="test_excluir_cliente"
-                        data-triage=""
-                        data-id="1900">
-                        
-                        <td class="inline-block md:table-cell px-0 py-0 md:px-4 md:py-4 whitespace-nowrap text-xs font-mono font-medium text-slate-400 text-left md:text-center mb-1 md:mb-0" title="ID Banco: #1900">
-                            #04
-                        </td>
-                        
-                        <td class="block md:table-cell px-0 py-1.5 md:px-6 md:py-4">
-                            <div class="flex flex-col gap-1.5">
-                                <!-- Badges superiores: Módulo, Tela e SLA -->
-                                <div class="flex flex-wrap items-center gap-2">
-                                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">
-                                        👥 Cadastros
-                                    </span>
-                                    <span class="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 text-slate-700 border border-slate-200">
-                                        🖥️ Clientes
-                                    </span>
-                                    
-                                </div>
-
-                                <!-- Título Executivo do Cenário -->
-                                <div class="font-semibold text-slate-900 group-hover:text-indigo-600 transition-colors text-[13px] leading-snug">
-                                    Exclusão de Cliente Existente e conferência no Firebird
-                                </div>
-
-                                <!-- Monospace Subtitle: Identificador do Método Técnico -->
-                                <div class="flex items-center gap-2 text-[11px] font-mono text-slate-400">
-                                    <span class="truncate" title="Método Pytest">test_excluir_cliente</span>
-                                </div>
-
-                                
-                            </div>
-                        </td>
-                        
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center align-middle">
-                            
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                Passou
-                            </span>
-                            
-                        </td>
-
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center align-middle">
-                            
-                            <span class="text-xs text-slate-400 font-medium">—</span>
-                            
-                        </td>
-                        
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center text-xs font-mono font-medium text-slate-600 align-middle">
-                            21.34s
-                        </td>
-                        
-                        <td class="inline-block md:table-cell px-0 py-1.5 mr-2 md:mr-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-center text-xs text-slate-500 font-medium align-middle">
-                            27/11/2026 22:23:17
-                        </td>
-
-                        <td class="block md:table-cell px-0 pt-2 pb-0 md:px-4 md:py-4 whitespace-nowrap text-left md:text-right text-xs col-acao">
-                            
-                            <button id="btn-toggle-1900" onclick="toggleDetails(1900)" 
-                                data-orig-html="Evidências"
-                                data-orig-class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors"
-                                class="font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-colors">
-                                Evidências
-                            </button>
-                            
-                        </td>
-                    </tr>
-
-                    <!-- Expandable Details Row for Breadcrumbs Timeline & Errors -->
-                    
-                    <tr id="details-1900" class="hidden bg-slate-900 text-slate-100 border-y border-slate-800 details-row">
-                        <td colspan="7" class="block md:table-cell p-0 border-y border-slate-800 md:max-w-0 w-full">
-                            <div class="p-6 space-y-5 bg-slate-900 text-slate-100 w-full overflow-hidden">
-                                
-                                <!-- Top Close and Context Bar -->
-                                <div class="flex items-center justify-between pb-3 border-b border-slate-800/80 gap-4">
-                                    <div class="flex items-center gap-2 min-w-0">
-                                        <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md shrink-0">
-                                            Evidências do cenário
-                                        </span>
-                                        <span class="text-xs text-slate-400 font-medium truncate">#1900 — Exclusão de Cliente Existente e conferência no Firebird</span>
-                                    </div>
-                                    <button onclick="toggleDetails(1900)" class="shrink-0 px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm" title="Fechar painel de detalhes">
-                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-                                        <span>Fechar</span>
-                                    </button>
-                                </div>
-
-                                
-                                <ul class="list-disc list-inside space-y-1.5 text-sm text-emerald-300 bg-slate-950/60 border border-slate-800/80 rounded-xl p-4">
-                                    
-                                    
-                                    
-                                    
-                                    <li class="break-words"><span class="font-semibold text-slate-200">ID do Cliente (Excluído):</span> <span class="text-emerald-300">38</span></li>
-                                    
-                                    
-                                </ul>
-                                <details>
-                                    <summary class="cursor-pointer text-sm font-semibold text-slate-300 mb-3">
-                                        Passos técnicos (22)
-                                    </summary>
-                                    <div class="flex items-center gap-2 mb-3">
-                                        <span class="px-2.5 py-0.5 text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md">
-                                            Linha do Tempo E2E (22 passos)
-                                        </span>
-                                        <span class="text-xs text-slate-400 font-mono">[Cadastros | Clientes] Exclusão de Cliente Existente e conferência no Firebird</span>
-                                    </div>
-                                    <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-4 space-y-2 max-h-72 overflow-y-auto w-full">
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:56</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Iniciando cenário: test_excluir_cliente</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:56</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Aguardando Interface...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:56</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Acessando Cadastro de Clientes...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:59</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando em Manutenção (btManut)...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:22:59</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão Manutenção</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:23:04</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando em Incluir...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:23:04</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Botão Incluir</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:23:09</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clique visual: Checkbox Pessoa Física</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:23:12</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Log do SGO limpo.</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:23:12</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 CPF Duplicado detectado! Clicando em YES...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:23:12</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicou botão Win32 'Yes'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:23:12</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Confirmando consulta do cliente...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:23:12</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicou botão Win32 'Yes'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:23:13</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Buscando ID no banco para o CPF 12345678909...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:23:13</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicando em Excluir...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:23:13</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Log do SGO limpo.</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:23:13</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Confirmando exclusão (YES)...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:23:13</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicou botão Win32 'Yes'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:23:16</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Fechando telas do Cadastro...</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:23:16</span>
-                                            
-                                            <span class="text-slate-300 break-words min-w-0">🔹 Clicou botão Win32 'Fechar'</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:23:17</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Registro auditado (ID do Cliente (Excluído): 38)</span>
-                                            
-                                        </div>
-                                        
-                                        <div class="flex items-start gap-3 text-xs font-mono py-1 border-b border-slate-900/80 last:border-0 w-full break-words">
-                                            <span class="text-slate-500 shrink-0 select-none">22:23:17</span>
-                                            
-                                            <span class="text-emerald-400 font-semibold break-words min-w-0">✅ Cenário concluído e validado com sucesso!</span>
-                                            
-                                        </div>
-                                        
-                                    </div>
-                                </details>
-                                
-
-                                
-
-                                <!-- Bottom Close Button -->
-                                <div class="flex justify-end pt-2 border-t border-slate-800/80">
-                                    <button onclick="toggleDetails(1900)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
+                                    <button onclick="toggleDetails(1901)" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-slate-700 transition-colors shadow-sm">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                                         <span>Fechar Detalhes</span>
                                     </button>
@@ -1962,7 +901,7 @@
     Chart.defaults.font.family = "'Plus Jakarta Sans', sans-serif";
     Chart.defaults.color = '#64748b';
 
-    const passedCount = 4;
+    const passedCount = 1;
     const failedCount = 0;
     const skippedCount = 0;
 
@@ -2003,9 +942,9 @@
     });
 
     // 2. Trend History Chart (from SQLite)
-    const trendLabels = ["27/11 20:00", "27/11 20:01", "27/11 20:04", "27/11 20:15", "27/11 21:36", "27/11 21:39", "27/11 21:40", "27/11 22:11", "27/11 22:20", "27/11 22:20"];
-    const trendPassed = [0, 3, 2, 154, 1, 1, 1, 3, 0, 4];
-    const trendFailed = [0, 0, 0, 4, 2, 1, 0, 0, 0, 0];
+    const trendLabels = ["27/11 20:01", "27/11 20:04", "27/11 20:15", "27/11 21:36", "27/11 21:39", "27/11 21:40", "27/11 22:11", "27/11 22:20", "27/11 22:20", "27/11 22:23"];
+    const trendPassed = [3, 2, 154, 1, 1, 1, 3, 0, 4, 1];
+    const trendFailed = [0, 0, 4, 2, 1, 0, 0, 0, 0, 0];
     const trendSkipped = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
     const ctxTrend = document.getElementById('trendChart').getContext('2d');
@@ -2131,7 +1070,7 @@
         });
 
         // Update Counter
-        const total = 4;
+        const total = 1;
         const counterElem = document.getElementById('records-counter');
         if (counterElem) {
             if (visibleCount === total) {
